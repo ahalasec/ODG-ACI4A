@@ -1,0 +1,1414 @@
+{
+  "version": "aci4a_flags_v0.1",
+  "range": [101, 200],
+  "flags": [
+
+    {
+      "id": "AUTH_101_REBELLION",
+      "code": 101,
+      "category": "autoridade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "attitude",
+      "event_tags": ["authority_rebellion"],
+      "patterns_any": [
+        "quero derrubar o governo",
+        "autoridades são todas corruptas"
+      ],
+      "regex_any": [],
+      "notes": "Rebelião e hostilidade genérica contra autoridade, sem instrução detalhada."
+    },
+
+    {
+      "id": "AUTH_102_VIOLENCE",
+      "code": 102,
+      "category": "autoridade",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "violent",
+      "event_tags": ["authority_violence"],
+      "patterns_any": [
+        "policiais merecem apanhar",
+        "vou resolver na porrada"
+      ],
+      "regex_any": [],
+      "notes": "Incentivo ou intenção de violência contra autoridades."
+    },
+
+    {
+      "id": "SOCISO_103_FORCED",
+      "code": 103,
+      "category": "isolamento_social",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "social_risk",
+      "event_tags": ["social_isolation_forced"],
+      "patterns_any": [
+        "não me deixam sair de casa",
+        "família me mantém prisioneiro"
+      ],
+      "regex_any": [],
+      "notes": "Relatos de isolamento forçado por terceiros."
+    },
+
+    {
+      "id": "SOCISO_104_VOLUNTARY",
+      "code": 104,
+      "category": "isolamento_social",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_withdrawal",
+      "event_tags": ["social_isolation_voluntary"],
+      "patterns_any": [
+        "não preciso de ninguém",
+        "pessoas só me trazem problemas"
+      ],
+      "regex_any": [],
+      "notes": "Isolamento social por retraimento voluntário."
+    },
+
+    {
+      "id": "SOCISO_105_PARANOID",
+      "code": 105,
+      "category": "isolamento_social",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "social_risk",
+      "event_tags": ["social_isolation_paranoid"],
+      "patterns_any": [
+        "todos querem me prejudicar",
+        "é mais seguro ficar só"
+      ],
+      "regex_any": [],
+      "notes": "Isolamento motivado por suspeição/paranoia."
+    },
+
+    {
+      "id": "OBSES_106_INTRUSIVE",
+      "code": 106,
+      "category": "comportamento_obsessivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "obsessive",
+      "event_tags": ["obsession_intrusive"],
+      "patterns_any": [
+        "pensamentos repetitivos me impedem de dormir",
+        "não consigo parar de pensar nisso"
+      ],
+      "regex_any": [],
+      "notes": "Obsessões intrusivas que impactam sono e funcionalidade."
+    },
+
+    {
+      "id": "OBSES_107_COMPULSIVE",
+      "code": 107,
+      "category": "comportamento_obsessivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "compulsive_behavior",
+      "event_tags": ["obsession_compulsive"],
+      "patterns_any": [
+        "lavo as mãos 50 vezes por dia",
+        "checko a porta 20 vezes antes de sair"
+      ],
+      "regex_any": [],
+      "notes": "Comportamentos compulsivos repetitivos (padrão TOC)."
+    },
+
+    {
+      "id": "OBSES_108_RUMINATION",
+      "code": 108,
+      "category": "comportamento_obsessivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "rumination",
+      "event_tags": ["obsession_rumination"],
+      "patterns_any": [
+        "repasso os mesmos pensamentos horas",
+        "não consigo parar de analisar"
+      ],
+      "regex_any": [],
+      "notes": "Ruminação mental prolongada, sem resolução."
+    },
+
+    {
+      "id": "BOUND_109_VIOLATION",
+      "code": 109,
+      "category": "violacao_fronteiras",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "boundary_violation",
+      "event_tags": ["boundaries_violation"],
+      "patterns_any": [
+        "não respeito quando alguém diz não",
+        "invado o espaço pessoal dos outros"
+      ],
+      "regex_any": [],
+      "notes": "Desrespeito a limites pessoais declarados."
+    },
+
+    {
+      "id": "BOUND_110_MANIPULATION",
+      "code": 110,
+      "category": "violacao_fronteiras",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "manipulation",
+      "event_tags": ["boundaries_manipulation"],
+      "patterns_any": [
+        "faz isso por mim ou não me ama",
+        "se realmente me amasse"
+      ],
+      "regex_any": [],
+      "notes": "Manipulação emocional usando afeto para romper limites."
+    },
+
+    {
+      "id": "BOUND_111_PHYSICAL",
+      "code": 111,
+      "category": "violacao_fronteiras",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "boundary_violation",
+      "event_tags": ["boundaries_physical"],
+      "patterns_any": [
+        "toco pessoas sem permissão",
+        "invasão do espaço pessoal"
+      ],
+      "regex_any": [],
+      "notes": "Violação física de fronteiras corporais."
+    },
+
+    {
+      "id": "IMP_112_DANGEROUS",
+      "code": 112,
+      "category": "comportamento_impulsivo",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "impulsivity",
+      "event_tags": ["impulsivity_dangerous"],
+      "patterns_any": [
+        "agir primeiro, pensar depois",
+        "sempre me meto em encrenca"
+      ],
+      "regex_any": [],
+      "notes": "Impulsividade perigosa com risco consistente de dano."
+    },
+
+    {
+      "id": "IMP_113_FINANCIAL",
+      "code": 113,
+      "category": "comportamento_impulsivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "impulsivity",
+      "event_tags": ["impulsivity_financial"],
+      "patterns_any": [
+        "compro coisas que não preciso",
+        "gasto impulsivamente e me arrependo"
+      ],
+      "regex_any": [],
+      "notes": "Impulsividade financeira com arrependimento recorrente."
+    },
+
+    {
+      "id": "IMP_114_EMOTIONAL",
+      "code": 114,
+      "category": "comportamento_impulsivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "impulsivity",
+      "event_tags": ["impulsivity_emotional"],
+      "patterns_any": [
+        "reajo sem pensar",
+        "sempre exagero nas emoções"
+      ],
+      "regex_any": [],
+      "notes": "Reações emocionais impulsivas e exageradas."
+    },
+
+    {
+      "id": "COG_115_DISTORTION",
+      "code": 115,
+      "category": "distorcao_cognitiva",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "cognitive",
+      "event_tags": ["cognitive_distortion"],
+      "patterns_any": [
+        "todo mundo me odeia",
+        "sempre cometo os mesmos erros"
+      ],
+      "regex_any": [],
+      "notes": "Generalizações negativas e autoimagem distorcida."
+    },
+
+    {
+      "id": "COG_116_BIAS_EXTREME",
+      "code": 116,
+      "category": "distorcao_cognitiva",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "cognitive",
+      "event_tags": ["cognitive_bias"],
+      "patterns_any": [
+        "filtrar só informações que confirmam minha visão",
+        "todo evento tem significado especial"
+      ],
+      "regex_any": [],
+      "notes": "Viés de confirmação e atribuições excessivas de sentido."
+    },
+
+    {
+      "id": "COG_117_POLARIZATION",
+      "code": 117,
+      "category": "distorcao_cognitiva",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "cognitive",
+      "event_tags": ["cognitive_polarization"],
+      "patterns_any": [
+        "tudo ou nada",
+        "branco ou preto, não existe meio termo"
+      ],
+      "regex_any": [],
+      "notes": "Pensamento dicotômico/polarizado."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "COMP_118_HOARDING",
+      "code": 118,
+      "category": "compulsivo_adictivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "compulsive_behavior",
+      "event_tags": ["compulsive_hoarding"],
+      "patterns_any": [
+        "não consigo jogar nada fora",
+        "casa está lotada de coisas inúteis"
+      ],
+      "regex_any": [],
+      "notes": "Acumulação compulsiva com impacto funcional."
+    },
+
+    {
+      "id": "COMP_119_LYING",
+      "code": 119,
+      "category": "compulsivo_adictivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "compulsive_behavior",
+      "event_tags": ["compulsive_lying"],
+      "patterns_any": [
+        "mento mesmo sem necessidade",
+        "não consigo contar a verdade"
+      ],
+      "regex_any": [],
+      "notes": "Mentira compulsiva sem motivação racional."
+    },
+
+    {
+      "id": "COMP_120_CONFESSING",
+      "code": 120,
+      "category": "compulsivo_adictivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "compulsive_behavior",
+      "event_tags": ["compulsive_confessing"],
+      "patterns_any": [
+        "preciso contar todos os meus segredos",
+        "não consigo guardar nada para mim"
+      ],
+      "regex_any": [],
+      "notes": "Confissão compulsiva como forma de alívio imediato."
+    },
+
+    {
+      "id": "COMP_121_CONFESSING_FABRICATION",
+      "code": 121,
+      "category": "compulsivo_adictivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "attention_seeking",
+      "event_tags": ["compulsive_confessing_fabrication"],
+      "patterns_any": [
+        "invento histórias para chamar atenção",
+        "preciso parecer interessante"
+      ],
+      "regex_any": [],
+      "notes": "Fabricar confissões para validação ou atenção."
+    },
+
+    {
+      "id": "SUI_122_PLANNING",
+      "code": 122,
+      "category": "ideacao_suicida",
+      "severity": "critical",
+      "axioms": ["A1"],
+      "intent_type": "self_harm",
+      "event_tags": ["suicide_planning"],
+      "patterns_any": [
+        "decidi quando e como fazer",
+        "comprei tudo que preciso"
+      ],
+      "regex_any": [],
+      "notes": "Plano suicida estruturado, risco extremo."
+    },
+
+    {
+      "id": "SUI_123_NOTE",
+      "code": 123,
+      "category": "ideacao_suicida",
+      "severity": "critical",
+      "axioms": ["A1"],
+      "intent_type": "self_harm",
+      "event_tags": ["suicide_note"],
+      "patterns_any": [
+        "escrevi carta de despedida",
+        "deixei instruções para meu enterro"
+      ],
+      "regex_any": [],
+      "notes": "Produção de nota de suicídio; risco imediato."
+    },
+
+    {
+      "id": "SUI_124_TIMING",
+      "code": 124,
+      "category": "ideacao_suicida",
+      "severity": "critical",
+      "axioms": ["A1"],
+      "intent_type": "self_harm",
+      "event_tags": ["suicide_timing"],
+      "patterns_any": [
+        "vou fazer isso na sexta-feira",
+        "esperarei até o próximo mês"
+      ],
+      "regex_any": [],
+      "notes": "Definição temporal para autoextermínio; risco altíssimo."
+    },
+
+    {
+      "id": "SUI_125_METHOD_RESEARCH",
+      "code": 125,
+      "category": "ideacao_suicida",
+      "severity": "critical",
+      "axioms": ["A1"],
+      "intent_type": "self_harm",
+      "event_tags": ["suicide_method_research"],
+      "patterns_any": [
+        "qual a forma mais rápida",
+        "medicamentos letais disponíveis"
+      ],
+      "regex_any": [],
+      "notes": "Busca ativa por métodos; bloqueio absoluto."
+    },
+
+    {
+      "id": "BIP_126_MANIA",
+      "code": 126,
+      "category": "transtorno_bipolar",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "emotional",
+      "event_tags": ["bipolar_mania"],
+      "patterns_any": [
+        "fiquei acordado 3 dias seguidos",
+        "vou investir todo meu dinheiro"
+      ],
+      "regex_any": [],
+      "notes": "Episódio maníaco com risco financeiro e físico."
+    },
+
+    {
+      "id": "BIP_127_DEPRESSION",
+      "code": 127,
+      "category": "transtorno_bipolar",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "emotional",
+      "event_tags": ["bipolar_depression"],
+      "patterns_any": [
+        "não consigo sair da cama há dias",
+        "mundo é completamente sem sentido"
+      ],
+      "regex_any": [],
+      "notes": "Episódio depressivo bipolar intenso."
+    },
+
+    {
+      "id": "BIP_128_SWITCHING",
+      "code": 128,
+      "category": "transtorno_bipolar",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["bipolar_switching"],
+      "patterns_any": [
+        "acordei eufórico e agora estou no chão",
+        "minhas emoções mudam a cada hora"
+      ],
+      "regex_any": [],
+      "notes": "Mudanças rápidas e imprevisíveis de humor."
+    },
+
+    {
+      "id": "OCD_129_CONTAMINATION",
+      "code": 129,
+      "category": "toc",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "obsessive",
+      "event_tags": ["ocd_contamination"],
+      "patterns_any": [
+        "tudo que toco fica sujo",
+        "preciso lavar as mãos 100 vezes"
+      ],
+      "regex_any": [],
+      "notes": "Medo exagerado de contaminação."
+    },
+
+    {
+      "id": "OCD_130_SYMMETRY",
+      "code": 130,
+      "category": "toc",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "obsessive",
+      "event_tags": ["ocd_symmetry"],
+      "patterns_any": [
+        "tudo precisa estar perfeitamente alinhado",
+        "se não estiver simétrico, algo ruim acontece"
+      ],
+      "regex_any": [],
+      "notes": "Pensamento mágico relacionado a simetria."
+    },
+
+    {
+      "id": "OCD_131_FORBIDDEN",
+      "code": 131,
+      "category": "toc",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "obsessive",
+      "event_tags": ["ocd_forbidden_thoughts"],
+      "patterns_any": [
+        "tenho pensamentos terríveis sobre violence",
+        "não consigo parar de pensar em coisas horríveis"
+      ],
+      "regex_any": [],
+      "notes": "Obsessões intrusivas com conteúdo proibido."
+    },
+
+    {
+      "id": "OCD_132_CHECKING",
+      "code": 132,
+      "category": "toc",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "obsessive",
+      "event_tags": ["ocd_checking"],
+      "patterns_any": [
+        "checkei a porta 30 vezes hoje",
+        "preciso confirmar que desliguei tudo"
+      ],
+      "regex_any": [],
+      "notes": "Verificação compulsiva repetitiva."
+    },
+
+    {
+      "id": "PTSD_133_FLASHBACKS",
+      "code": 133,
+      "category": "tept",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "trauma",
+      "event_tags": ["ptsd_flashbacks"],
+      "patterns_any": [
+        "revivo o trauma constantemente",
+        "parece que estou lá novamente"
+      ],
+      "regex_any": [],
+      "notes": "Flashbacks traumáticos intensos."
+    },
+
+    {
+      "id": "PTSD_134_NIGHTMARES",
+      "code": 134,
+      "category": "tept",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "trauma",
+      "event_tags": ["ptsd_nightmares"],
+      "patterns_any": [
+        "tenho pesadelos toda noite",
+        "não consigo dormir por medo"
+      ],
+      "regex_any": [],
+      "notes": "Pesadelos recorrentes ligados ao trauma."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "PTSD_148_HYPERVIGILANCE",
+      "code": 148,
+      "category": "tept",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "trauma",
+      "event_tags": ["ptsd_hypervigilance"],
+      "patterns_any": [
+        "estou sempre em alerta máximo",
+        "qualquer ruído me assusta"
+      ],
+      "regex_any": [],
+      "notes": "Estado contínuo de alerta e sensibilidade exagerada a estímulos."
+    },
+
+    {
+      "id": "PTSD_149_AVOIDANCE",
+      "code": 149,
+      "category": "tept",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "trauma",
+      "event_tags": ["ptsd_avoidance"],
+      "patterns_any": [
+        "evito qualquer coisa relacionada ao trauma",
+        "não consigo falar sobre aquilo"
+      ],
+      "regex_any": [],
+      "notes": "Evitação ativa de lembranças, conversas ou estímulos associados ao trauma."
+    },
+
+    {
+      "id": "ANX_150_PANIC",
+      "code": 150,
+      "category": "ansiedade",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "anxiety",
+      "event_tags": ["anxiety_panic"],
+      "patterns_any": [
+        "sinto que vou morrer",
+        "coração dispara e não consigo respirar"
+      ],
+      "regex_any": [],
+      "notes": "Ataques de pânico com sintomas fisiológicos intensos."
+    },
+
+    {
+      "id": "ANX_151_SOCIAL",
+      "code": 151,
+      "category": "ansiedade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "anxiety",
+      "event_tags": ["anxiety_social"],
+      "patterns_any": [
+        "todo mundo está me julgando",
+        "não consigo falar com desconhecidos"
+      ],
+      "regex_any": [],
+      "notes": "Ansiedade social com medo de avaliação negativa."
+    },
+
+    {
+      "id": "ANX_152_SEPARATION",
+      "code": 152,
+      "category": "ansiedade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "anxiety",
+      "event_tags": ["anxiety_separation"],
+      "patterns_any": [
+        "fico desesperado quando não vejo meus entes",
+        "não consigo ficar longe da família"
+      ],
+      "regex_any": [],
+      "notes": "Angústia intensa ao afastar-se de pessoas de vínculo emocional."
+    },
+
+    {
+      "id": "ANX_153_PERFECTIONISM",
+      "code": 153,
+      "category": "ansiedade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "anxiety",
+      "event_tags": ["anxiety_perfectionism"],
+      "patterns_any": [
+        "nada que faço é bom o suficiente",
+        "tenho que fazer tudo perfeitamente"
+      ],
+      "regex_any": [],
+      "notes": "Perfeccionismo rígido com autorreprovação constante."
+    },
+
+    {
+      "id": "NARC_154_GRANDIOSITY",
+      "code": 154,
+      "category": "transtorno_personalidade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "personality",
+      "event_tags": ["narcissism_grandiosity"],
+      "patterns_any": [
+        "sou mais especial que todos",
+        "mereço tratamento privilegiado"
+      ],
+      "regex_any": [],
+      "notes": "Grandiosidade narcisista e senso inflado de autoimportância."
+    },
+
+    {
+      "id": "NARC_155_ENTITLEMENT",
+      "code": 155,
+      "category": "transtorno_personalidade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "personality",
+      "event_tags": ["narcissism_entitlement"],
+      "patterns_any": [
+        "o mundo me deve tudo",
+        "regras não se aplicam a mim"
+      ],
+      "regex_any": [],
+      "notes": "Sentimento exagerado de direito e exceção a regras."
+    },
+
+    {
+      "id": "NARC_156_EXPLOITATION",
+      "code": 156,
+      "category": "transtorno_personalidade",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "personality",
+      "event_tags": ["narcissism_exploitation"],
+      "patterns_any": [
+        "uso as pessoas para meus benefícios",
+        "outros existem para me servir"
+      ],
+      "regex_any": [],
+      "notes": "Exploração de outros sem remorso ou consideração."
+    },
+
+    {
+      "id": "NARC_157_SHAMING",
+      "code": 157,
+      "category": "transtorno_personalidade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "personality",
+      "event_tags": ["narcissism_shaming"],
+      "patterns_any": [
+        "culpo os outros pelos meus erros",
+        "se me criticarem, são pessoas ruins"
+      ],
+      "regex_any": [],
+      "notes": "Mecanismo narcisista defensivo de externalização da culpa."
+    },
+
+    {
+      "id": "BPD_158_ABANDONMENT",
+      "code": 158,
+      "category": "transtorno_borderline",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["borderline_abandonment"],
+      "patterns_any": [
+        "todo mundo vai me abandonar",
+        "não consigo ficar sozinho"
+      ],
+      "regex_any": [],
+      "notes": "Medo intenso e desproporcional de abandono."
+    },
+
+    {
+      "id": "BPD_159_IDENTITY",
+      "code": 159,
+      "category": "transtorno_borderline",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["borderline_identity"],
+      "patterns_any": [
+        "não sei quem sou realmente",
+        "minha personalidade muda conforme a situação"
+      ],
+      "regex_any": [],
+      "notes": "Instabilidade acentuada de identidade e autoimagem."
+    },
+
+    {
+      "id": "BPD_160_IMPULSIVITY",
+      "code": 160,
+      "category": "transtorno_borderline",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["borderline_impulsivity"],
+      "patterns_any": [
+        "faço coisas arriscadas sem pensar",
+        "gasto impulsivamente quando me sinto mal"
+      ],
+      "regex_any": [],
+      "notes": "Impulsividade emocional típica do transtorno borderline."
+    },
+
+    {
+      "id": "BPD_161_UNSTABLE_RELATIONSHIPS",
+      "code": 161,
+      "category": "transtorno_borderline",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["borderline_unstable_relationships"],
+      "patterns_any": [
+        "idealizo e depois demonizo as pessoas",
+        "amor e ódio alternam rapidamente"
+      ],
+      "regex_any": [],
+      "notes": "Padrões extremos de idealização e desvalorização."
+    },
+
+    {
+      "id": "ATTACH_162_INSECURE",
+      "code": 162,
+      "category": "ruptura_vinculos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "attachment",
+      "event_tags": ["attachment_insecure"],
+      "patterns_any": [
+        "não confio que as pessoas vão ficar",
+        "preciso constantemente de validação"
+      ],
+      "regex_any": [],
+      "notes": "Padrões inseguros de apego emocional."
+    },
+
+    {
+      "id": "ATTACH_163_AVOIDANT",
+      "code": 163,
+      "category": "ruptura_vinculos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "attachment",
+      "event_tags": ["attachment_avoidant"],
+      "patterns_any": [
+        "ficar muito próximo me assusta",
+        "mantenho distância para não me machucar"
+      ],
+      "regex_any": [],
+      "notes": "Distanciamento emocional como mecanismo de defesa."
+    },
+
+    {
+      "id": "ATTACH_164_ANXIOUS",
+      "code": 164,
+      "category": "ruptura_vinculos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "attachment",
+      "event_tags": ["attachment_anxious"],
+      "patterns_any": [
+        "fico desesperado se alguém não responde",
+        "preciso estar em contato constante"
+      ],
+      "regex_any": [],
+      "notes": "Apego ansioso com necessidade intensa de contato."
+    },
+
+    {
+      "id": "ATTACH_165_DISORGANIZED",
+      "code": 165,
+      "category": "ruptura_vinculos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "attachment",
+      "event_tags": ["attachment_disorganized"],
+      "patterns_any": [
+        "minha forma de se relacionar é caótica",
+        "não sei como me aproximar das pessoas"
+      ],
+      "regex_any": [],
+      "notes": "Padrões de apego inconsistentes e caóticos."
+    },
+
+    {
+      "id": "PSYCH_166_LACK_EMPATHY",
+      "code": 166,
+      "category": "psicopatia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "psychopathy",
+      "event_tags": ["psychopathy_lack_empathy"],
+      "patterns_any": [
+        "não sinto remorso por nada",
+        "emoções não me afetam"
+      ],
+      "regex_any": [],
+      "notes": "Indiferença emocional e ausência de remorso."
+    },
+
+    {
+      "id": "PSYCH_167_MANIPULATION",
+      "code": 167,
+      "category": "psicopatia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "psychopathy",
+      "event_tags": ["psychopathy_manipulation"],
+      "patterns_any": [
+        "uso das pessoas como objetos",
+        "gosto de manipular os outros"
+      ],
+      "regex_any": [],
+      "notes": "Manipulação instrumental e predatória."
+    },
+
+    {
+      "id": "PSYCH_168_IMPULSIVITY",
+      "code": 168,
+      "category": "psicopatia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "psychopathy",
+      "event_tags": ["psychopathy_impulsivity"],
+      "patterns_any": [
+        "ato sem considerar consequências",
+        "prazer em transgredir regras"
+      ],
+      "regex_any": [],
+      "notes": "Impulsividade associada à busca de risco."
+    },
+
+    {
+      "id": "PSYCH_169_CHARMING",
+      "code": 169,
+      "category": "psicopatia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "psychopathy",
+      "event_tags": ["psychopathy_charming"],
+      "patterns_any": [
+        "uso do carisma para enganar",
+        "sei exatamente o que falar para agradar"
+      ],
+      "regex_any": [],
+      "notes": "Uso superficial de charme para manipulação."
+    },
+
+    {
+      "id": "ANGER_170_VIOLENT_OUTBURSTS",
+      "code": 170,
+      "category": "raiva",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "anger",
+      "event_tags": ["anger_violent_outbursts"],
+      "patterns_any": [
+        "destruo coisas quando fico bravo",
+        "já bati em pessoas por raiva"
+      ],
+      "regex_any": [],
+      "notes": "Explosões violentas com risco a terceiros."
+    },
+
+    {
+      "id": "ANGER_171_RAGE_DRIVING",
+      "code": 171,
+      "category": "raiva",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "anger",
+      "event_tags": ["anger_rage_driving"],
+      "patterns_any": [
+        "fico extremamente agressivo no trânsito",
+        "uso do carro como arma"
+      ],
+      "regex_any": [],
+      "notes": "Raiva dirigida ao volante com risco extremo."
+    },
+
+    {
+      "id": "ANGER_172_WORKPLACE",
+      "code": 172,
+      "category": "raiva",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "anger",
+      "event_tags": ["anger_workplace"],
+      "patterns_any": [
+        "conflito constante com chefes/colegas",
+        "vou explodir se continuar assim"
+      ],
+      "regex_any": [],
+      "notes": "Raiva no ambiente profissional."
+    },
+
+    {
+      "id": "ANGER_173_FAMILY",
+      "code": 173,
+      "category": "raiva",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "anger",
+      "event_tags": ["anger_family"],
+      "patterns_any": [
+        "gritos são normais em casa",
+        "família briga entre si"
+      ],
+      "regex_any": [],
+      "notes": "Raiva e agressividade em contexto familiar."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "DISSOC_174_MEMORY_GAPS",
+      "code": 174,
+      "category": "transtorno_dissociativo",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "dissociation",
+      "event_tags": ["dissociation_memory_gaps"],
+      "patterns_any": [
+        "não lembro de períodos inteiros",
+        "acordo em lugares que não recuerdo"
+      ],
+      "regex_any": [],
+      "notes": "Lacunas de memória e episódios dissociativos importantes."
+    },
+
+    {
+      "id": "DISSOC_175_DEPERSONALIZATION",
+      "code": 175,
+      "category": "transtorno_dissociativo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "dissociation",
+      "event_tags": ["depersonalization"],
+      "patterns_any": [
+        "sinto como se não fosse real",
+        "minha vida parece um filme"
+      ],
+      "regex_any": [],
+      "notes": "Sensação de estranhamento de si mesmo, despersonalização."
+    },
+
+    {
+      "id": "DISSOC_176_DEREALIZATION",
+      "code": 176,
+      "category": "transtorno_dissociativo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "dissociation",
+      "event_tags": ["derealization"],
+      "patterns_any": [
+        "o mundo não parece real",
+        "tudo parece artificial"
+      ],
+      "regex_any": [],
+      "notes": "Percepção alterada da realidade externa."
+    },
+
+    {
+      "id": "DISSOC_177_IDENTITY_CONFUSION",
+      "code": 177,
+      "category": "transtorno_dissociativo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "dissociation",
+      "event_tags": ["identity_confusion"],
+      "patterns_any": [
+        "não sei quem eu sou",
+        "minha identidade muda constantemente"
+      ],
+      "regex_any": [],
+      "notes": "Confusão ou instabilidade de identidade."
+    },
+
+    {
+      "id": "MIL_178_MILITANT_IDEOLOGY",
+      "code": 178,
+      "category": "comportamento_paramilitar",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "radicalization",
+      "event_tags": ["militant_ideology"],
+      "patterns_any": [
+        "violência resolve conflitos",
+        "precisamos de governo autoritário"
+      ],
+      "regex_any": [],
+      "notes": "Ideologia militarista e autoritária como solução."
+    },
+
+    {
+      "id": "MIL_179_PREPARATION_VIOLENCE",
+      "code": 179,
+      "category": "comportamento_paramilitar",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "radicalization",
+      "event_tags": ["preparation_violence"],
+      "patterns_any": [
+        "estoy treinando para combate",
+        "acumulando weapons e supplies"
+      ],
+      "regex_any": [],
+      "notes": "Preparação ativa para possível conflito violento."
+    },
+
+    {
+      "id": "MIL_180_EXTREMIST_RECRUITMENT",
+      "code": 180,
+      "category": "comportamento_paramilitar",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "radicalization",
+      "event_tags": ["extremist_recruitment"],
+      "patterns_any": [
+        "junte-se à nossa causa",
+        "precisamos de mais recrutas"
+      ],
+      "regex_any": [],
+      "notes": "Recrutamento explícito para causa extremista."
+    },
+
+    {
+      "id": "MIL_181_SUBVERSIVE_ACTIVITIES",
+      "code": 181,
+      "category": "comportamento_paramilitar",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "radicalization",
+      "event_tags": ["subversive_activities"],
+      "patterns_any": [
+        "planejando ações contra o sistema",
+        "disseminação de informações falsas"
+      ],
+      "regex_any": [],
+      "notes": "Atividades subversivas contra instituições ou ordem social."
+    },
+
+    {
+      "id": "ASD_182_ROUTINE_ADHERENCE",
+      "code": 182,
+      "category": "transtorno_espectro_autista",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["autism_routine_adherence"],
+      "patterns_any": [
+        "preciso fazer tudo exatamente igual todos os dias",
+        "mudanças me deixam desesperado"
+      ],
+      "regex_any": [],
+      "notes": "Adesão rígida a rotinas e dificuldade com mudança."
+    },
+
+    {
+      "id": "ASD_183_SENSORY_OVERLOAD",
+      "code": 183,
+      "category": "transtorno_espectro_autista",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["autism_sensory_overload"],
+      "patterns_any": [
+        "ruídos me fazem querer gritar",
+        "luzes fluorescentes são insuportáveis"
+      ],
+      "regex_any": [],
+      "notes": "Sobrecarga sensorial típica do espectro autista."
+    },
+
+    {
+      "id": "ASD_184_SPECIAL_INTERESTS",
+      "code": 184,
+      "category": "transtorno_espectro_autista",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["autism_special_interests"],
+      "patterns_any": [
+        "só penso e falo sobre meu hobby específico",
+        "pode passar horas talking sobre um único tema"
+      ],
+      "regex_any": [],
+      "notes": "Interesses específicos intensos e focados."
+    },
+
+    {
+      "id": "ASD_185_SOCIAL_CHALLENGES",
+      "code": 185,
+      "category": "transtorno_espectro_autista",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["autism_social_challenges"],
+      "patterns_any": [
+        "não consigo interpretar linguagem corporal",
+        "não entendo o que é socialmente esperado"
+      ],
+      "regex_any": [],
+      "notes": "Desafios sociais e de leitura de sinais não verbais."
+    },
+
+    {
+      "id": "ADHD_186_HYPERACTIVITY",
+      "code": 186,
+      "category": "tdah",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["adhd_hyperactivity"],
+      "patterns_any": [
+        "não consigo ficar parado",
+        "penso em várias coisas ao mesmo tempo"
+      ],
+      "regex_any": [],
+      "notes": "Hiperatividade e pensamento acelerado."
+    },
+
+    {
+      "id": "ADHD_187_IMPULSIVITY",
+      "code": 187,
+      "category": "tdah",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["adhd_impulsivity"],
+      "patterns_any": [
+        "interrompo conversas constantemente",
+        "decido antes de pensar nas consequências"
+      ],
+      "regex_any": [],
+      "notes": "Impulsividade associada a TDAH."
+    },
+
+    {
+      "id": "ADHD_188_ATTENTION_DEFICIT",
+      "code": 188,
+      "category": "tdah",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["adhd_attention_deficit"],
+      "patterns_any": [
+        "não consigo focar em tarefas por muito tempo",
+        "perdido objetos constantemente"
+      ],
+      "regex_any": [],
+      "notes": "Dificuldade de foco e atenção sustentada."
+    },
+
+    {
+      "id": "ADHD_189_EXECUTIVE_DYSFUNCTION",
+      "code": 189,
+      "category": "tdah",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "neurodivergence",
+      "event_tags": ["adhd_executive_dysfunction"],
+      "patterns_any": [
+        "organização é impossível para mim",
+        "procrastinava tudo mesmo knowing consequences"
+      ],
+      "regex_any": [],
+      "notes": "Disfunção executiva, organização e planejamento prejudicados."
+    },
+
+    {
+      "id": "ED_190_BINGE",
+      "code": 190,
+      "category": "transtornos_alimentares",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "eating_disorder",
+      "event_tags": ["eating_disorder_binge"],
+      "patterns_any": [
+        "como enormes quantidades até passar mal",
+        "não consigo controlar o que como"
+      ],
+      "regex_any": [],
+      "notes": "Compulsão alimentar com perda de controle."
+    },
+
+    {
+      "id": "ED_191_RESTRICTION",
+      "code": 191,
+      "category": "transtornos_alimentares",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "eating_disorder",
+      "event_tags": ["eating_disorder_restriction"],
+      "patterns_any": [
+        "rejeita alimentares me dão controle",
+        "como menos de 800 calorias por dia"
+      ],
+      "regex_any": [],
+      "notes": "Restrição alimentar severa e potencialmente perigosa."
+    },
+
+    {
+      "id": "ED_192_PURGING",
+      "code": 192,
+      "category": "transtornos_alimentares",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "eating_disorder",
+      "event_tags": ["eating_disorder_purging"],
+      "patterns_any": [
+        "uso vômito para controlar peso",
+        "abuso laxantes e diuréticos"
+      ],
+      "regex_any": [],
+      "notes": "Purgação para controle de peso, risco médico elevado."
+    },
+
+    {
+      "id": "ED_193_EXERCISE",
+      "code": 193,
+      "category": "transtornos_alimentares",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "eating_disorder",
+      "event_tags": ["eating_disorder_exercise"],
+      "patterns_any": [
+        "exercicio hours por dia mesmo machucado",
+        "não consigo ficar parado"
+      ],
+      "regex_any": [],
+      "notes": "Exercício compulsivo apesar de dor ou lesão."
+    },
+
+    {
+      "id": "FAM_194_ENMESHMENT",
+      "code": 194,
+      "category": "familia_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["family_dysfunction_enmeshment"],
+      "patterns_any": [
+        "não tenho vida própria, sou extensão dos pais",
+        "preciso consultar família para cada decisão"
+      ],
+      "regex_any": [],
+      "notes": "Emaranhamento familiar, ausência de limites individuais."
+    },
+
+    {
+      "id": "FAM_195_TRIAD",
+      "code": 195,
+      "category": "familia_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["family_dysfunction_triad"],
+      "patterns_any": [
+        "uso um familiar para me comunicar com outro",
+        "família sempre se divide em equipes"
+      ],
+      "regex_any": [],
+      "notes": "Triangulação familiar e divisão em grupos internos."
+    },
+
+    {
+      "id": "FAM_196_ROLE_REVERSAL",
+      "code": 196,
+      "category": "familia_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["family_dysfunction_role_reversal"],
+      "patterns_any": [
+        "sou responsável pelo bem-estar emocional dos pais",
+        "cuido dos irmãos menores como se fossem meus filhos"
+      ],
+      "regex_any": [],
+      "notes": "Inversão de papéis, filhos em posição parental."
+    },
+
+    {
+      "id": "FAM_197_SCAPEGOATING",
+      "code": 197,
+      "category": "familia_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["family_dysfunction_scapegoating"],
+      "patterns_any": [
+        "família sempre me culpa por todos os problemas",
+        "sacrifico-me para manter harmonia familiar"
+      ],
+      "regex_any": [],
+      "notes": "Membro da família usado como bode expiatório."
+    },
+
+    {
+      "id": "TPAR_198_CRITICAL",
+      "code": 198,
+      "category": "parental_toxico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["toxic_parenting_critical"],
+      "patterns_any": [
+        "nunca estou bom o suficiente",
+        "comentários destrutivos sobre aparência/habilidades"
+      ],
+      "regex_any": [],
+      "notes": "Padrão parental crítico e desvalorizador."
+    },
+
+    {
+      "id": "TPAR_199_CONDITIONAL",
+      "code": 199,
+      "category": "parental_toxico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["toxic_parenting_conditional"],
+      "patterns_any": [
+        "só me amam quando sou perfeito",
+        "afeto condicionado por performance"
+      ],
+      "regex_any": [],
+      "notes": "Afeto parental condicionado a resultados e desempenho."
+    },
+
+    {
+      "id": "TPAR_200_EMOTIONAL",
+      "code": 200,
+      "category": "parental_toxico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["toxic_parenting_emotional"],
+      "patterns_any": [
+        "torno-me confidente dos pais",
+        "cuido das emoções dos meus pais"
+      ],
+      "regex_any": [],
+      "notes": "Parentificação emocional, filho assumindo carga emocional dos pais."
+    }
+
+  ]
+}

@@ -1,0 +1,1617 @@
+{
+  "version": "aci4a_flags_v0.1",
+  "range": [401, 500],
+  "flags": [
+
+    {
+      "id": "REF_401_INTEGRATION_VIOLATIONS",
+      "code": 401,
+      "category": "refugiados_deslocados",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["refugee_integration_violations"],
+      "patterns_any": [
+        "refugee integration failures",
+        "cultural adaptation violations"
+      ],
+      "regex_any": [],
+      "notes": "Falhas ou violações em processos de integração de refugiados."
+    },
+
+    {
+      "id": "REF_402_CAMP_ABUSES",
+      "code": 402,
+      "category": "refugiados_deslocados",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["refugee_camp_abuses"],
+      "patterns_any": [
+        "refugee camp violations",
+        "human rights abuses"
+      ],
+      "regex_any": [],
+      "notes": "Abusos e violações de direitos humanos em campos de refugiados."
+    },
+
+    {
+      "id": "REF_403_RESOURCE_COMPETITION",
+      "code": 403,
+      "category": "refugiados_deslocados",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["refugee_resource_competition"],
+      "patterns_any": [
+        "resource competition",
+        "social tensions"
+      ],
+      "regex_any": [],
+      "notes": "Tensões sociais ligadas à competição por recursos com refugiados."
+    },
+
+    {
+      "id": "TOUR_404_ILLEGAL_ACTIVITIES",
+      "code": 404,
+      "category": "turismo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "tourism_behavior",
+      "event_tags": ["tourism_illegal_activities"],
+      "patterns_any": [
+        "tourism-related crimes",
+        "illegal activities por tourists"
+      ],
+      "regex_any": [],
+      "notes": "Atividades ilegais cometidas por turistas."
+    },
+
+    {
+      "id": "TOUR_405_EXPLOITATION",
+      "code": 405,
+      "category": "turismo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "tourism_behavior",
+      "event_tags": ["tourism_exploitation"],
+      "patterns_any": [
+        "tourist exploitation",
+        "cultural exploitation"
+      ],
+      "regex_any": [],
+      "notes": "Exploração de populações locais ou cultura por turismo."
+    },
+
+    {
+      "id": "TOUR_406_ENVIRONMENTAL_DAMAGE",
+      "code": 406,
+      "category": "turismo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "tourism_behavior",
+      "event_tags": ["tourism_environmental_damage"],
+      "patterns_any": [
+        "tourism environmental impact",
+        "ecotourism violations"
+      ],
+      "regex_any": [],
+      "notes": "Impacto ambiental negativo causado por turismo."
+    },
+
+    {
+      "id": "TOUR_407_FRAUD_SCAMS",
+      "code": 407,
+      "category": "turismo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "tourism_behavior",
+      "event_tags": ["tourism_fraud_scams"],
+      "patterns_any": [
+        "tourism scams",
+        "travel fraud"
+      ],
+      "regex_any": [],
+      "notes": "Golpes e fraudes relacionados a viagens e turismo."
+    },
+
+    {
+      "id": "COMM_408_COUNTERFEIT_GOODS",
+      "code": 408,
+      "category": "comercio",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "commercial_behavior",
+      "event_tags": ["commerce_counterfeit_goods"],
+      "patterns_any": [
+        "counterfeit goods trade",
+        "fake brand products"
+      ],
+      "regex_any": [],
+      "notes": "Comércio de produtos falsificados."
+    },
+
+    {
+      "id": "COMM_409_PRICE_GOUGING",
+      "code": 409,
+      "category": "comercio",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "commercial_behavior",
+      "event_tags": ["commerce_price_gouging"],
+      "patterns_any": [
+        "price gouging",
+        "unfair pricing practices"
+      ],
+      "regex_any": [],
+      "notes": "Práticas abusivas de preços."
+    },
+
+    {
+      "id": "COMM_410_LABOR_VIOLATIONS",
+      "code": 410,
+      "category": "comercio",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "commercial_behavior",
+      "event_tags": ["commerce_labor_violations"],
+      "patterns_any": [
+        "labor law violations",
+        "worker exploitation"
+      ],
+      "regex_any": [],
+      "notes": "Violação de leis trabalhistas e exploração de trabalhadores."
+    },
+
+    {
+      "id": "COMM_411_CONSUMER_PROTECTION",
+      "code": 411,
+      "category": "comercio",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "commercial_behavior",
+      "event_tags": ["commerce_consumer_protection"],
+      "patterns_any": [
+        "consumer protection violations",
+        "product safety violations"
+      ],
+      "regex_any": [],
+      "notes": "Descumprimento de normas de proteção ao consumidor."
+    },
+
+    {
+      "id": "FIN_412_WASH_TRADING",
+      "code": 412,
+      "category": "financas",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["finance_wash_trading"],
+      "patterns_any": [
+        "wash trading activities",
+        "market manipulation"
+      ],
+      "regex_any": [],
+      "notes": "Wash trading e manipulação de mercado financeiro."
+    },
+
+    {
+      "id": "FIN_413_TERRORIST_FINANCING",
+      "code": 413,
+      "category": "financas",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["finance_terrorist_financing"],
+      "patterns_any": [
+        "terrorist financing",
+        "money laundering"
+      ],
+      "regex_any": [],
+      "notes": "Financiamento de terrorismo, frequentemente ligado a lavagem de dinheiro."
+    },
+
+    {
+      "id": "FIN_414_REGULATORY_VIOLATIONS",
+      "code": 414,
+      "category": "financas",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["finance_regulatory_violations"],
+      "patterns_any": [
+        "financial regulation violations",
+        "compliance failures"
+      ],
+      "regex_any": [],
+      "notes": "Violação de regulações financeiras e falhas de compliance."
+    },
+
+    {
+      "id": "FIN_415_CREDIT_CARD_FRAUD",
+      "code": 415,
+      "category": "financas",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["finance_credit_card_fraud"],
+      "patterns_any": [
+        "credit card fraud",
+        "identity theft para financial gain"
+      ],
+      "regex_any": [],
+      "notes": "Fraude com cartão de crédito e roubo de identidade para ganho financeiro."
+    },
+
+    {
+      "id": "INS_416_FRAUD_CLAIMS",
+      "code": 416,
+      "category": "seguros",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "insurance_behavior",
+      "event_tags": ["insurance_fraud_claims"],
+      "patterns_any": [
+        "insurance fraud",
+        "false claims"
+      ],
+      "regex_any": [],
+      "notes": "Fraude em sinistros e reclamações de seguro."
+    },
+
+    {
+      "id": "INS_417_MISREPRESENTATION",
+      "code": 417,
+      "category": "seguros",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "insurance_behavior",
+      "event_tags": ["insurance_misrepresentation"],
+      "patterns_any": [
+        "insurance misrepresentation",
+        "fraudulent policies"
+      ],
+      "regex_any": [],
+      "notes": "Representação falsa em contratos ou apólices de seguro."
+    },
+
+    {
+      "id": "INS_418_ABANDONMENT",
+      "code": 418,
+      "category": "seguros",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "insurance_behavior",
+      "event_tags": ["insurance_abandonment"],
+      "patterns_any": [
+        "insurance abandonment",
+        "coverage denials"
+      ],
+      "regex_any": [],
+      "notes": "Abandono ou recusas injustas de cobertura de seguro."
+    },
+
+    {
+      "id": "INS_419_LIABILITY_VIOLATIONS",
+      "code": 419,
+      "category": "seguros",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "insurance_behavior",
+      "event_tags": ["insurance_liability_violations"],
+      "patterns_any": [
+        "liability violations",
+        "risk assessment failures"
+      ],
+      "regex_any": [],
+      "notes": "Violações em responsabilidade civil e falhas de avaliação de risco."
+    },
+
+    {
+      "id": "BANK_420_LOAN_FRAUD",
+      "code": 420,
+      "category": "bancario",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "banking_behavior",
+      "event_tags": ["banking_fraud_loan"],
+      "patterns_any": [
+        "loan fraud",
+        "banking fraud schemes"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes ligadas a empréstimos bancários."
+    },
+
+    {
+      "id": "BANK_421_INSIDER_TRADING",
+      "code": 421,
+      "category": "bancario",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "banking_behavior",
+      "event_tags": ["banking_insider_trading"],
+      "patterns_any": [
+        "insider trading",
+        "market manipulation"
+      ],
+      "regex_any": [],
+      "notes": "Uso de informação privilegiada para operações financeiras."
+    },
+
+    {
+      "id": "BANK_422_REGULATORY_VIOLATIONS",
+      "code": 422,
+      "category": "bancario",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "banking_behavior",
+      "event_tags": ["banking_regulatory_violations"],
+      "patterns_any": [
+        "banking regulation violations",
+        "compliance failures"
+      ],
+      "regex_any": [],
+      "notes": "Violação de normas bancárias e falhas de compliance."
+    },
+
+    {
+      "id": "BANK_423_IDENTITY_THEFT",
+      "code": 423,
+      "category": "bancario",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "banking_behavior",
+      "event_tags": ["banking_identity_theft"],
+      "patterns_any": [
+        "banking identity theft",
+        "account takeover"
+      ],
+      "regex_any": [],
+      "notes": "Roubo de identidade e tomada de contas bancárias."
+    },
+
+    {
+      "id": "INV_424_PYRAMID_SCHEMES",
+      "code": 424,
+      "category": "investimentos",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "investment_behavior",
+      "event_tags": ["investment_pyramid_schemes"],
+      "patterns_any": [
+        "pyramid schemes",
+        "investment fraud"
+      ],
+      "regex_any": [],
+      "notes": "Esquemas de pirâmide e fraudes de investimento."
+    },
+
+    {
+      "id": "INV_425_MARKET_MANIPULATION",
+      "code": 425,
+      "category": "investimentos",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "investment_behavior",
+      "event_tags": ["investment_manipulation_market"],
+      "patterns_any": [
+        "market manipulation",
+        "pump and dump"
+      ],
+      "regex_any": [],
+      "notes": "Manipulação de mercado, incluindo estratégias de pump and dump."
+    },
+
+    {
+      "id": "INV_426_INSIDER_ACTIVITIES",
+      "code": 426,
+      "category": "investimentos",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "investment_behavior",
+      "event_tags": ["investment_insider_activities"],
+      "patterns_any": [
+        "insider trading",
+        "conflict de interests"
+      ],
+      "regex_any": [],
+      "notes": "Atividades com informação privilegiada com potencial conflito de interesse."
+    },
+
+    {
+      "id": "INV_427_CONFLICT_OF_INTEREST",
+      "code": 427,
+      "category": "investimentos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "investment_behavior",
+      "event_tags": ["investment_conflict_interest"],
+      "patterns_any": [
+        "investment conflicts de interest",
+        "unethical practices"
+      ],
+      "regex_any": [],
+      "notes": "Conflitos de interesse em decisões de investimento."
+    },
+
+    {
+      "id": "CRYPTO_428_MONEY_LAUNDERING",
+      "code": 428,
+      "category": "criptomoedas",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "crypto_behavior",
+      "event_tags": ["crypto_money_laundering"],
+      "patterns_any": [
+        "cryptocurrency money laundering",
+        "digital currency fraud"
+      ],
+      "regex_any": [],
+      "notes": "Lavagem de dinheiro usando criptomoedas."
+    },
+
+    {
+      "id": "CRYPTO_429_REGULATORY_VIOLATIONS",
+      "code": 429,
+      "category": "criptomoedas",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "crypto_behavior",
+      "event_tags": ["crypto_regulatory_violations"],
+      "patterns_any": [
+        "cryptocurrency regulation violations",
+        "compliance failures"
+      ],
+      "regex_any": [],
+      "notes": "Descumprimento de regulações específicas de criptoativos."
+    },
+
+    {
+      "id": "CRYPTO_430_TERRORIST_FINANCING",
+      "code": 430,
+      "category": "criptomoedas",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "crypto_behavior",
+      "event_tags": ["crypto_terrorist_financing"],
+      "patterns_any": [
+        "cryptocurrency terrorist financing",
+        "digital currency risks"
+      ],
+      "regex_any": [],
+      "notes": "Uso de criptomoedas para financiar terrorismo."
+    },
+
+    {
+      "id": "CRYPTO_431_ILLEGAL_MINING",
+      "code": 431,
+      "category": "criptomoedas",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "crypto_behavior",
+      "event_tags": ["crypto_mining_illegal"],
+      "patterns_any": [
+        "illegal cryptocurrency mining",
+        "energy theft para mining"
+      ],
+      "regex_any": [],
+      "notes": "Mineração ilegal de criptomoedas e furto de energia para mineração."
+    },
+
+    {
+      "id": "RE_432_FRAUD_SCAMS",
+      "code": 432,
+      "category": "imobiliario",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "real_estate_behavior",
+      "event_tags": ["real_estate_fraud_scams"],
+      "patterns_any": [
+        "real estate fraud",
+        "property scams"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes e golpes no mercado imobiliário."
+    },
+
+    {
+      "id": "RE_433_DISCRIMINATION",
+      "code": 433,
+      "category": "imobiliario",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "real_estate_behavior",
+      "event_tags": ["real_estate_discrimination"],
+      "patterns_any": [
+        "housing discrimination",
+        "fair housing violations"
+      ],
+      "regex_any": [],
+      "notes": "Discriminação em acesso à moradia."
+    },
+
+    {
+      "id": "RE_434_NUISANCE_VIOLATIONS",
+      "code": 434,
+      "category": "imobiliario",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "real_estate_behavior",
+      "event_tags": ["real_estate_nuisance_violations"],
+      "patterns_any": [
+        "property nuisance violations",
+        "zoning violations"
+      ],
+      "regex_any": [],
+      "notes": "Violação de regras de uso do solo e incômodos locais."
+    },
+
+    {
+      "id": "RE_435_SPECULATION_EXPLOITATION",
+      "code": 435,
+      "category": "imobiliario",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "real_estate_behavior",
+      "event_tags": ["real_estate_speculation_exploitation"],
+      "patterns_any": [
+        "real estate speculation",
+        "gentrification pressures"
+      ],
+      "regex_any": [],
+      "notes": "Especulação imobiliária e processos de gentrificação."
+    },
+
+    {
+      "id": "HINS_436_FRAUD",
+      "code": 436,
+      "category": "seguros_saude",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "health_insurance_behavior",
+      "event_tags": ["health_insurance_fraud"],
+      "patterns_any": [
+        "health insurance fraud",
+        "medical fraud schemes"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes em seguros de saúde."
+    },
+
+    {
+      "id": "HINS_437_DENIAL_ABUSE",
+      "code": 437,
+      "category": "seguros_saude",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "health_insurance_behavior",
+      "event_tags": ["health_insurance_denial_abuse"],
+      "patterns_any": [
+        "health insurance denial abuse",
+        "coverage denials"
+      ],
+      "regex_any": [],
+      "notes": "Negativas abusivas de cobertura por planos de saúde."
+    },
+
+    {
+      "id": "HINS_438_MISREPRESENTATION",
+      "code": 438,
+      "category": "seguros_saude",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "health_insurance_behavior",
+      "event_tags": ["health_insurance_misrepresentation"],
+      "patterns_any": [
+        "health insurance misrepresentation",
+        "fraudulent coverage"
+      ],
+      "regex_any": [],
+      "notes": "Representação enganosa em contratos de seguro saúde."
+    },
+
+    {
+      "id": "HINS_439_ABANDONMENT",
+      "code": 439,
+      "category": "seguros_saude",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "health_insurance_behavior",
+      "event_tags": ["health_insurance_abandonment"],
+      "patterns_any": [
+        "health insurance abandonment",
+        "patient abandonment"
+      ],
+      "regex_any": [],
+      "notes": "Abandono de paciente por negativa ou retirada de cobertura."
+    },
+
+    {
+      "id": "PHARMA_440_ILLEGAL_DRUGS",
+      "code": 440,
+      "category": "farmaceuticas",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pharmaceutical_behavior",
+      "event_tags": ["pharmaceutical_illegal_drugs"],
+      "patterns_any": [
+        "illegal drug sales",
+        "prescription drug abuse"
+      ],
+      "regex_any": [],
+      "notes": "Venda ilegal de fármacos e abuso de medicamentos prescritos."
+    },
+
+    {
+      "id": "PHARMA_441_CONTAMINATED_PRODUCTS",
+      "code": 441,
+      "category": "farmaceuticas",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pharmaceutical_behavior",
+      "event_tags": ["pharmaceutical_contaminated_products"],
+      "patterns_any": [
+        "contaminated pharmaceutical products",
+        "product safety violations"
+      ],
+      "regex_any": [],
+      "notes": "Produtos farmacêuticos contaminados ou inseguros."
+    },
+
+    {
+      "id": "PHARMA_442_REGULATORY_VIOLATIONS",
+      "code": 442,
+      "category": "farmaceuticas",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "pharmaceutical_behavior",
+      "event_tags": ["pharmaceutical_regulatory_violations"],
+      "patterns_any": [
+        "pharmaceutical regulation violations",
+        "fda compliance failures"
+      ],
+      "regex_any": [],
+      "notes": "Descumprimento de normas regulatórias farmacêuticas."
+    },
+
+    {
+      "id": "PHARMA_443_MISBRANDING",
+      "code": 443,
+      "category": "farmaceuticas",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "pharmaceutical_behavior",
+      "event_tags": ["pharmaceutical_misbranding"],
+      "patterns_any": [
+        "pharmaceutical misbranding",
+        "false advertising"
+      ],
+      "regex_any": [],
+      "notes": "Rotulagem inadequada ou propaganda enganosa de medicamentos."
+    },
+
+    {
+      "id": "MED_444_MALPRACTICE_NEGLIGENCE",
+      "code": 444,
+      "category": "medico_clinico",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_behavior",
+      "event_tags": ["medical_malpractice_negligence"],
+      "patterns_any": [
+        "medical malpractice",
+        "professional negligence"
+      ],
+      "regex_any": [],
+      "notes": "Negligência profissional e imperícia clínica."
+    },
+
+    {
+      "id": "MED_445_ETHICS_VIOLATIONS",
+      "code": 445,
+      "category": "medico_clinico",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_behavior",
+      "event_tags": ["medical_ethics_violations"],
+      "patterns_any": [
+        "medical ethics violations",
+        "patient rights violations"
+      ],
+      "regex_any": [],
+      "notes": "Violações éticas em prática médica."
+    },
+
+    {
+      "id": "MED_446_INFORMED_CONSENT",
+      "code": 446,
+      "category": "medico_clinico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "medical_behavior",
+      "event_tags": ["medical_informed_consent"],
+      "patterns_any": [
+        "informed consent violations",
+        "patient autonomy violations"
+      ],
+      "regex_any": [],
+      "notes": "Falhas ou violações de consentimento informado."
+    },
+
+    {
+      "id": "MED_447_PRIVACY_BREACHES",
+      "code": 447,
+      "category": "medico_clinico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "medical_behavior",
+      "event_tags": ["medical_privacy_breaches"],
+      "patterns_any": [
+        "medical privacy breaches",
+        "hipaa violations"
+      ],
+      "regex_any": [],
+      "notes": "Vazamento e uso indevido de dados médicos sigilosos."
+    },
+
+    {
+      "id": "HOSP_448_OVERCROWDING_CRISIS",
+      "code": 448,
+      "category": "hospitais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "hospital_behavior",
+      "event_tags": ["hospital_overcrowding_crisis"],
+      "patterns_any": [
+        "hospital overcrowding",
+        "capacity violations"
+      ],
+      "regex_any": [],
+      "notes": "Superlotação em hospitais e violações de capacidade."
+    },
+
+    {
+      "id": "HOSP_449_QUALITY_VIOLATIONS",
+      "code": 449,
+      "category": "hospitais",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "hospital_behavior",
+      "event_tags": ["hospital_quality_violations"],
+      "patterns_any": [
+        "hospital quality violations",
+        "patient care failures"
+      ],
+      "regex_any": [],
+      "notes": "Falhas graves na qualidade da assistência hospitalar."
+    },
+
+    {
+      "id": "HOSP_450_BILLING_FRAUD",
+      "code": 450,
+      "category": "hospitais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "hospital_behavior",
+      "event_tags": ["hospital_billing_fraud"],
+      "patterns_any": [
+        "hospital billing fraud",
+        "medical billing fraud"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes de cobrança em ambiente hospitalar."
+    },
+
+    {
+      "id": "HOSP_451_SAFETY_VIOLATIONS",
+      "code": 451,
+      "category": "hospitais",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "hospital_behavior",
+      "event_tags": ["hospital_safety_violations"],
+      "patterns_any": [
+        "hospital safety violations",
+        "infection control failures"
+      ],
+      "regex_any": [],
+      "notes": "Violações de segurança hospitalar, incluindo controle de infecção."
+    },
+
+    {
+      "id": "NURS_452_PATIENT_NEGLECT",
+      "code": 452,
+      "category": "enfermagem",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "nursing_behavior",
+      "event_tags": ["nursing_neglect_patients"],
+      "patterns_any": [
+        "nursing neglect",
+        "patient care failures"
+      ],
+      "regex_any": [],
+      "notes": "Negligência no cuidado de pacientes por profissionais de enfermagem."
+    },
+
+    {
+      "id": "NURS_453_BOUNDARY_VIOLATIONS",
+      "code": 453,
+      "category": "enfermagem",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "nursing_behavior",
+      "event_tags": ["nursing_boundary_violations"],
+      "patterns_any": [
+        "nursing boundary violations",
+        "professional misconduct"
+      ],
+      "regex_any": [],
+      "notes": "Violação de limites profissionais em enfermagem."
+    },
+
+    {
+      "id": "NURS_454_MEDICATION_ERRORS",
+      "code": 454,
+      "category": "enfermagem",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "nursing_behavior",
+      "event_tags": ["nursing_medication_errors"],
+      "patterns_any": [
+        "medication administration errors",
+        "drug administration violations"
+      ],
+      "regex_any": [],
+      "notes": "Erros na administração de medicamentos por enfermagem."
+    },
+
+    {
+      "id": "NURS_455_QUALIFICATION_FRAUD",
+      "code": 455,
+      "category": "enfermagem",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "nursing_behavior",
+      "event_tags": ["nursing_qualification_fraud"],
+      "patterns_any": [
+        "nursing qualification fraud",
+        "license violations"
+      ],
+      "regex_any": [],
+      "notes": "Fraude em qualificação ou licenciamento de profissionais de enfermagem."
+    },
+
+    {
+      "id": "PHARM_456_ILLEGAL_DISTRIBUTION",
+      "code": 456,
+      "category": "farmacia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pharmacy_behavior",
+      "event_tags": ["pharmacy_illegal_distribution"],
+      "patterns_any": [
+        "illegal drug distribution",
+        "prescription violations"
+      ],
+      "regex_any": [],
+      "notes": "Distribuição ilegal de medicamentos e violações de prescrição."
+    },
+
+    {
+      "id": "PHARM_457_CONTROLLED_SUBSTANCES",
+      "code": 457,
+      "category": "farmacia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pharmacy_behavior",
+      "event_tags": ["pharmacy_controlled_substances"],
+      "patterns_any": [
+        "controlled substance violations",
+        "dea compliance failures"
+      ],
+      "regex_any": [],
+      "notes": "Violação de normas de substâncias controladas."
+    },
+
+    {
+      "id": "PHARM_458_BILLING_FRAUD",
+      "code": 458,
+      "category": "farmacia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "pharmacy_behavior",
+      "event_tags": ["pharmacy_fraud_billing"],
+      "patterns_any": [
+        "pharmacy billing fraud",
+        "insurance fraud"
+      ],
+      "regex_any": [],
+      "notes": "Fraude de cobrança em farmácias."
+    },
+
+    {
+      "id": "PHARM_459_UNSAFE_CONDITIONS",
+      "code": 459,
+      "category": "farmacia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "pharmacy_behavior",
+      "event_tags": ["pharmacy_unsafe_conditions"],
+      "patterns_any": [
+        "pharmacy safety violations",
+        "unsafe dispensing practices"
+      ],
+      "regex_any": [],
+      "notes": "Condições inseguras de armazenamento ou dispensação de medicamentos."
+    },
+
+    {
+      "id": "FORENSIC_460_EVIDENCE_VIOLATIONS",
+      "code": 460,
+      "category": "medicina_legal",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "forensic_behavior",
+      "event_tags": ["forensic_violations_evidence"],
+      "patterns_any": [
+        "forensic evidence violations",
+        "chain de custody failures"
+      ],
+      "regex_any": [],
+      "notes": "Violação de cadeia de custódia ou manipulação inadequada de evidências."
+    },
+
+    {
+      "id": "FORENSIC_461_TESTING_FRAUD",
+      "code": 461,
+      "category": "medicina_legal",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "forensic_behavior",
+      "event_tags": ["forensic_testing_fraud"],
+      "patterns_any": [
+        "forensic testing fraud",
+        "lab result manipulation"
+      ],
+      "regex_any": [],
+      "notes": "Fraude em testes forenses e manipulação de resultados de laboratório."
+    },
+
+    {
+      "id": "FORENSIC_462_ETHICS_VIOLATIONS",
+      "code": 462,
+      "category": "medicina_legal",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "forensic_behavior",
+      "event_tags": ["forensic_ethics_violations"],
+      "patterns_any": [
+        "forensic ethics violations",
+        "professional misconduct"
+      ],
+      "regex_any": [],
+      "notes": "Violação ética em atuação forense."
+    },
+
+    {
+      "id": "FORENSIC_463_LAB_CONTAMINATION",
+      "code": 463,
+      "category": "medicina_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "forensic_behavior",
+      "event_tags": ["forensic_lab_contamination"],
+      "patterns_any": [
+        "lab contamination",
+        "sample integrity violations"
+      ],
+      "regex_any": [],
+      "notes": "Contaminação de laboratório e perda de integridade de amostras."
+    },
+
+    {
+      "id": "OCCMED_464_HEALTH_NEGLECT",
+      "code": 464,
+      "category": "medicina_ocupacional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "occupational_health",
+      "event_tags": ["occupational_health_neglect"],
+      "patterns_any": [
+        "occupational health neglect",
+        "workplace health violations"
+      ],
+      "regex_any": [],
+      "notes": "Negligência em saúde ocupacional no ambiente de trabalho."
+    },
+
+    {
+      "id": "OCCMED_465_SAFETY_FAILURES",
+      "code": 465,
+      "category": "medicina_ocupacional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "occupational_health",
+      "event_tags": ["occupational_safety_failures"],
+      "patterns_any": [
+        "occupational safety failures",
+        "workplace safety violations"
+      ],
+      "regex_any": [],
+      "notes": "Falhas graves de segurança ocupacional."
+    },
+
+    {
+      "id": "OCCMED_466_EXPOSURE_VIOLATIONS",
+      "code": 466,
+      "category": "medicina_ocupacional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "occupational_health",
+      "event_tags": ["occupational_exposure_violations"],
+      "patterns_any": [
+        "occupational exposure violations",
+        "hazard exposure failures"
+      ],
+      "regex_any": [],
+      "notes": "Exposição inadequada a riscos químicos, biológicos ou físicos."
+    },
+
+    {
+      "id": "OCCMED_467_INJURY_COVERUP",
+      "code": 467,
+      "category": "medicina_ocupacional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "occupational_health",
+      "event_tags": ["occupational_injury_coverup"],
+      "patterns_any": [
+        "occupational injury coverup",
+        "workplace injury concealment"
+      ],
+      "regex_any": [],
+      "notes": "Encobrimento de acidentes e lesões ocupacionais."
+    },
+
+    {
+      "id": "VET_468_MALPRACTICE",
+      "code": 468,
+      "category": "medicina_veterinaria",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "veterinary_behavior",
+      "event_tags": ["veterinary_malpractice"],
+      "patterns_any": [
+        "veterinary malpractice",
+        "animal care failures"
+      ],
+      "regex_any": [],
+      "notes": "Imperícia ou negligência em medicina veterinária."
+    },
+
+    {
+      "id": "VET_469_ANIMAL_ABUSE",
+      "code": 469,
+      "category": "medicina_veterinaria",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "veterinary_behavior",
+      "event_tags": ["veterinary_abuse_animals"],
+      "patterns_any": [
+        "veterinary abuse de animals",
+        "animal cruelty"
+      ],
+      "regex_any": [],
+      "notes": "Abuso ou crueldade contra animais por profissionais veterinários."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "VET_470_ILLEGAL_PRACTICES",
+      "code": 470,
+      "category": "medicina_veterinaria",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "veterinary_behavior",
+      "event_tags": ["veterinary_illegal_practices"],
+      "patterns_any": [
+        "illegal veterinary practices",
+        "professional violations"
+      ],
+      "regex_any": [],
+      "notes": "Práticas veterinárias ilegais e violações profissionais."
+    },
+
+    {
+      "id": "VET_471_DRUG_MISUSE",
+      "code": 471,
+      "category": "medicina_veterinaria",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "veterinary_behavior",
+      "event_tags": ["veterinary_drug_misuse"],
+      "patterns_any": [
+        "veterinary drug misuse",
+        "animal medication violations"
+      ],
+      "regex_any": [],
+      "notes": "Uso inadequado de fármacos em animais e violações de medicação."
+    },
+
+    {
+      "id": "RES_472_CLINICAL_MISCONDUCT",
+      "code": 472,
+      "category": "pesquisa_medica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_research",
+      "event_tags": ["research_misconduct_clinical"],
+      "patterns_any": [
+        "clinical research misconduct",
+        "research fraud"
+      ],
+      "regex_any": [],
+      "notes": "Más condutas em pesquisa clínica e fraude científica."
+    },
+
+    {
+      "id": "RES_473_ETHICS_VIOLATIONS",
+      "code": 473,
+      "category": "pesquisa_medica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_research",
+      "event_tags": ["research_ethics_violations"],
+      "patterns_any": [
+        "research ethics violations",
+        "human subjects violations"
+      ],
+      "regex_any": [],
+      "notes": "Violações éticas em pesquisa envolvendo seres humanos."
+    },
+
+    {
+      "id": "RES_474_DATA_FABRICATION",
+      "code": 474,
+      "category": "pesquisa_medica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_research",
+      "event_tags": ["research_data_fabrication"],
+      "patterns_any": [
+        "research data fabrication",
+        "scientific fraud"
+      ],
+      "regex_any": [],
+      "notes": "Fabricação de dados e fraude em resultados de pesquisa."
+    },
+
+    {
+      "id": "RES_475_PUBLICATION_ETHICS",
+      "code": 475,
+      "category": "pesquisa_medica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "medical_research",
+      "event_tags": ["research_publication_ethics"],
+      "patterns_any": [
+        "publication ethics violations",
+        "plagiarism"
+      ],
+      "regex_any": [],
+      "notes": "Violação de ética em publicação científica, incluindo plágio."
+    },
+
+    {
+      "id": "BIO_476_LAB_SAFETY",
+      "code": 476,
+      "category": "biomedicina",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "biomedical_research",
+      "event_tags": ["biomedical_lab_safety"],
+      "patterns_any": [
+        "biomedical lab safety violations",
+        "biosafety violations"
+      ],
+      "regex_any": [],
+      "notes": "Violações de segurança e biossegurança em laboratório biomédico."
+    },
+
+    {
+      "id": "BIO_477_REGULATORY_COMPLIANCE",
+      "code": 477,
+      "category": "biomedicina",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "biomedical_research",
+      "event_tags": ["biomedical_regulatory_compliance"],
+      "patterns_any": [
+        "biomedical regulatory violations",
+        "fda compliance failures"
+      ],
+      "regex_any": [],
+      "notes": "Descumprimento de normas regulatórias em biomedicina."
+    },
+
+    {
+      "id": "BIO_478_CONTAMINATION_RISKS",
+      "code": 478,
+      "category": "biomedicina",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "biomedical_research",
+      "event_tags": ["biomedical_contamination_risks"],
+      "patterns_any": [
+        "biomedical contamination risks",
+        "cross-contamination"
+      ],
+      "regex_any": [],
+      "notes": "Riscos de contaminação e contaminação cruzada em contexto biomédico."
+    },
+
+    {
+      "id": "BIO_479_BIOWEAPON_RESEARCH",
+      "code": 479,
+      "category": "biomedicina",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "biomedical_research",
+      "event_tags": ["biomedical_bioweapon_research"],
+      "patterns_any": [
+        "bioweapon research",
+        "dual-use research violations"
+      ],
+      "regex_any": [],
+      "notes": "Pesquisa de armas biológicas ou uso dual com risco civilizatório."
+    },
+
+    {
+      "id": "GEN_480_PRIVACY_VIOLATIONS",
+      "code": 480,
+      "category": "genetica_medica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "genetic_medical",
+      "event_tags": ["genetic_privacy_violations"],
+      "patterns_any": [
+        "genetic privacy violations",
+        "dna privacy breaches"
+      ],
+      "regex_any": [],
+      "notes": "Violação de privacidade genética e dados de DNA."
+    },
+
+    {
+      "id": "GEN_481_DISCRIMINATION",
+      "code": 481,
+      "category": "genetica_medica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "genetic_medical",
+      "event_tags": ["genetic_discrimination"],
+      "patterns_any": [
+        "genetic discrimination",
+        "insurance genetic discrimination"
+      ],
+      "regex_any": [],
+      "notes": "Discriminação baseada em informação genética, inclusive por seguros."
+    },
+
+    {
+      "id": "GEN_482_RESEARCH_ETHICS",
+      "code": 482,
+      "category": "genetica_medica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "genetic_medical",
+      "event_tags": ["genetic_research_ethics"],
+      "patterns_any": [
+        "genetic research ethics violations",
+        "consent violations"
+      ],
+      "regex_any": [],
+      "notes": "Violação ética em pesquisa genética, especialmente consentimento."
+    },
+
+    {
+      "id": "GEN_483_COUNSELING_MISCONDUCT",
+      "code": 483,
+      "category": "genetica_medica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "genetic_medical",
+      "event_tags": ["genetic_counseling_misconduct"],
+      "patterns_any": [
+        "genetic counseling misconduct",
+        "professional ethics violations"
+      ],
+      "regex_any": [],
+      "notes": "Más práticas em aconselhamento genético e violação ética profissional."
+    },
+
+    {
+      "id": "SURG_484_MALPRACTICE",
+      "code": 484,
+      "category": "cirurgia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "surgical_behavior",
+      "event_tags": ["surgical_malpractice"],
+      "patterns_any": [
+        "surgical malpractice",
+        "surgical errors"
+      ],
+      "regex_any": [],
+      "notes": "Imperícia ou erro grave em procedimentos cirúrgicos."
+    },
+
+    {
+      "id": "SURG_485_INFORMED_CONSENT",
+      "code": 485,
+      "category": "cirurgia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "surgical_behavior",
+      "event_tags": ["surgical_informed_consent"],
+      "patterns_any": [
+        "surgical informed consent violations",
+        "patient rights violations"
+      ],
+      "regex_any": [],
+      "notes": "Violação de consentimento informado em contexto cirúrgico."
+    },
+
+    {
+      "id": "SURG_486_ABANDONMENT",
+      "code": 486,
+      "category": "cirurgia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "surgical_behavior",
+      "event_tags": ["surgical_abandonment"],
+      "patterns_any": [
+        "surgical abandonment",
+        "patient abandonment"
+      ],
+      "regex_any": [],
+      "notes": "Abandono de paciente em contexto cirúrgico ou pós-operatório."
+    },
+
+    {
+      "id": "SURG_487_INFECTION_CONTROL",
+      "code": 487,
+      "category": "cirurgia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "surgical_behavior",
+      "event_tags": ["surgical_infection_control"],
+      "patterns_any": [
+        "surgical infection control failures",
+        "sterilization violations"
+      ],
+      "regex_any": [],
+      "notes": "Falhas de controle de infecção e esterilização em cirurgias."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "ANES_488_MALPRACTICE",
+      "code": 488,
+      "category": "anestesia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "anesthesia_behavior",
+      "event_tags": ["anesthesia_malpractice"],
+      "patterns_any": [
+        "anesthesia malpractice",
+        "anesthesia errors"
+      ],
+      "regex_any": [],
+      "notes": "Imperícia ou erro grave em administração de anestesia."
+    },
+
+    {
+      "id": "ANES_489_EQUIPMENT_FAILURE",
+      "code": 489,
+      "category": "anestesia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "anesthesia_behavior",
+      "event_tags": ["anesthesia_equipment_failure"],
+      "patterns_any": [
+        "anesthesia equipment failures",
+        "safety violations"
+      ],
+      "regex_any": [],
+      "notes": "Falha de equipamento anestésico, potencial risco imediato ao paciente."
+    },
+
+    {
+      "id": "ANES_490_OVERDOSE_UNDERDOSE",
+      "code": 490,
+      "category": "anestesia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "anesthesia_behavior",
+      "event_tags": ["anesthesia_overdose_underdose"],
+      "patterns_any": [
+        "anesthesia overdose/underdose",
+        "dosage errors"
+      ],
+      "regex_any": [],
+      "notes": "Erro de dosagem anestésica, resultando em overdose ou underdose."
+    },
+
+    {
+      "id": "ANES_491_MONITORING_FAILURE",
+      "code": 491,
+      "category": "anestesia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "anesthesia_behavior",
+      "event_tags": ["anesthesia_monitoring_failure"],
+      "patterns_any": [
+        "anesthesia monitoring failures",
+        "patient safety violations"
+      ],
+      "regex_any": [],
+      "notes": "Falhas de monitoramento durante anestesia, risco direto ao paciente."
+    },
+
+    {
+      "id": "RAD_492_INTERPRETATION_ERRORS",
+      "code": 492,
+      "category": "radiologia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "radiology_behavior",
+      "event_tags": ["radiology_interpretation_errors"],
+      "patterns_any": [
+        "radiology interpretation errors",
+        "diagnostic failures"
+      ],
+      "regex_any": [],
+      "notes": "Erros de interpretação de imagens radiológicas."
+    },
+
+    {
+      "id": "RAD_493_RADIATION_SAFETY",
+      "code": 493,
+      "category": "radiologia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "radiology_behavior",
+      "event_tags": ["radiation_safety_violations"],
+      "patterns_any": [
+        "radiation safety violations",
+        "radiation exposure failures"
+      ],
+      "regex_any": [],
+      "notes": "Falhas em práticas de segurança de radiação e exposição inadequada."
+    },
+
+    {
+      "id": "RAD_494_EQUIPMENT_MALFUNCTION",
+      "code": 494,
+      "category": "radiologia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "radiology_behavior",
+      "event_tags": ["radiology_equipment_malfunction"],
+      "patterns_any": [
+        "radiology equipment malfunction",
+        "equipment failures"
+      ],
+      "regex_any": [],
+      "notes": "Mau funcionamento de equipamentos radiológicos."
+    },
+
+    {
+      "id": "RAD_495_DIAGNOSTIC_ERRORS",
+      "code": 495,
+      "category": "radiologia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "radiology_behavior",
+      "event_tags": ["radiology_diagnostic_errors"],
+      "patterns_any": [
+        "radiology diagnostic errors",
+        "false negatives/positives"
+      ],
+      "regex_any": [],
+      "notes": "Erros diagnósticos decorrentes de avaliação radiológica."
+    },
+
+    {
+      "id": "PATH_496_MISDIAGNOSIS",
+      "code": 496,
+      "category": "patologia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pathology_behavior",
+      "event_tags": ["pathology_misdiagnosis"],
+      "patterns_any": [
+        "pathology misdiagnosis",
+        "diagnostic errors"
+      ],
+      "regex_any": [],
+      "notes": "Erros graves em diagnósticos patológicos."
+    },
+
+    {
+      "id": "PATH_497_SAMPLE_MISHANDLING",
+      "code": 497,
+      "category": "patologia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pathology_behavior",
+      "event_tags": ["pathology_sample_mishandling"],
+      "patterns_any": [
+        "sample mishandling",
+        "specimen handling violations"
+      ],
+      "regex_any": [],
+      "notes": "Manuseio inadequado de amostras patológicas."
+    },
+
+    {
+      "id": "PATH_498_LAB_CONTAMINATION",
+      "code": 498,
+      "category": "patologia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pathology_behavior",
+      "event_tags": ["pathology_lab_contamination"],
+      "patterns_any": [
+        "lab contamination",
+        "sample contamination"
+      ],
+      "regex_any": [],
+      "notes": "Contaminação laboratorial afetando resultados patológicos."
+    },
+
+    {
+      "id": "PATH_499_REPORTING_ERRORS",
+      "code": 499,
+      "category": "patologia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "pathology_behavior",
+      "event_tags": ["pathology_reporting_errors"],
+      "patterns_any": [
+        "pathology reporting errors",
+        "incorrect pathology reports"
+      ],
+      "regex_any": [],
+      "notes": "Erros na elaboração e emissão de laudos patológicos."
+    },
+
+    {
+      "id": "PATH_500_FORENSIC_PATHOLOGY_VIOLATIONS",
+      "code": 500,
+      "category": "patologia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "pathology_behavior",
+      "event_tags": ["pathology_forensic_violations"],
+      "patterns_any": [
+        "forensic pathology violations",
+        "autopsy standards violations"
+      ],
+      "regex_any": [],
+      "notes": "Falhas em práticas patológicas forenses, violando padrões de autópsia."
+    }
+
+  ]
+}

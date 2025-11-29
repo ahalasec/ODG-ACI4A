@@ -1,0 +1,1622 @@
+{
+  "version": "aci4a_flags_v0.1",
+  "range": [301, 400],
+  "flags": [
+
+    {
+      "id": "MED_301_RESEARCH_UNETHICAL",
+      "code": 301,
+      "category": "pesquisa_medica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_research",
+      "event_tags": ["medical_research"],
+      "patterns_any": [
+        "unethical research practices",
+        "patient rights violations"
+      ],
+      "regex_any": [],
+      "notes": "Práticas antiéticas de pesquisa e violação de direitos de pacientes."
+    },
+
+    {
+      "id": "LEGAL_302_SYSTEM_BIAS",
+      "code": 302,
+      "category": "sistema_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_behavior",
+      "event_tags": ["legal_system_bias"],
+      "patterns_any": [
+        "racial bias em sentencing",
+        "wealth-based justice disparities"
+      ],
+      "regex_any": [],
+      "notes": "Viés racial ou econômico dentro do sistema jurídico."
+    },
+
+    {
+      "id": "LEGAL_303_OVERCR0WDING",
+      "code": 303,
+      "category": "sistema_legal",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "legal_behavior",
+      "event_tags": ["legal_system_overcrowding"],
+      "patterns_any": [
+        "prison overcrowding",
+        "court system delays"
+      ],
+      "regex_any": [],
+      "notes": "Superlotação do sistema prisional e atrasos judiciais."
+    },
+
+    {
+      "id": "LEGAL_304_CORRECTIONS",
+      "code": 304,
+      "category": "sistema_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_behavior",
+      "event_tags": ["legal_system_corrections"],
+      "patterns_any": [
+        "correctional facility conditions",
+        "rehabilitation programs"
+      ],
+      "regex_any": [],
+      "notes": "Condições carcerárias e programas de reabilitação."
+    },
+
+    {
+      "id": "LEGAL_305_FAMILY_COURT",
+      "code": 305,
+      "category": "sistema_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_behavior",
+      "event_tags": ["legal_system_family_court"],
+      "patterns_any": [
+        "child custody disputes",
+        "domestic violence cases"
+      ],
+      "regex_any": [],
+      "notes": "Casos de violência doméstica e disputa de custódia."
+    },
+
+    {
+      "id": "GOV_306_CORRUPTION",
+      "code": 306,
+      "category": "governamental",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "government_behavior",
+      "event_tags": ["government_corruption"],
+      "patterns_any": [
+        "bribery e kickbacks",
+        "misuse de public funds"
+      ],
+      "regex_any": [],
+      "notes": "Corrupção governamental e desvio de recursos públicos."
+    },
+
+    {
+      "id": "GOV_307_TRANSPARENCY",
+      "code": 307,
+      "category": "governamental",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "government_behavior",
+      "event_tags": ["government_transparency"],
+      "patterns_any": [
+        "lack de government transparency",
+        "information suppression"
+      ],
+      "regex_any": [],
+      "notes": "Falta de transparência ou supressão de informações."
+    },
+
+    {
+      "id": "GOV_308_REPRESENTATION",
+      "code": 308,
+      "category": "governamental",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "government_behavior",
+      "event_tags": ["government_representation"],
+      "patterns_any": [
+        "underrepresentation de minority groups",
+        "lack de constituent services"
+      ],
+      "regex_any": [],
+      "notes": "Sub-representação governamental e falta de suporte ao público."
+    },
+
+    {
+      "id": "GOV_309_ACCOUNTABILITY",
+      "code": 309,
+      "category": "governamental",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "government_behavior",
+      "event_tags": ["government_accountability"],
+      "patterns_any": [
+        "lack de government accountability",
+        "whistleblower retaliation"
+      ],
+      "regex_any": [],
+      "notes": "Ausência de responsabilização governamental e retaliação a denunciantes."
+    },
+
+    {
+      "id": "INTL_310_CONFLICT",
+      "code": 310,
+      "category": "internacional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "international_behavior",
+      "event_tags": ["international_conflict"],
+      "patterns_any": [
+        "cross-border conflicts",
+        "terrorism threats"
+      ],
+      "regex_any": [],
+      "notes": "Conflitos internacionais, fronteiriços ou terroristas."
+    },
+
+    {
+      "id": "INTL_311_MIGRATION",
+      "code": 311,
+      "category": "internacional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "international_behavior",
+      "event_tags": ["international_migration"],
+      "patterns_any": [
+        "undocumented immigration",
+        "border control issues"
+      ],
+      "regex_any": [],
+      "notes": "Questões de migração irregular e controle de fronteiras."
+    },
+
+    {
+      "id": "INTL_312_TRADE",
+      "code": 312,
+      "category": "internacional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "international_behavior",
+      "event_tags": ["international_trade"],
+      "patterns_any": [
+        "trade disputes",
+        "economic sanctions"
+      ],
+      "regex_any": [],
+      "notes": "Disputas comerciais e sanções econômicas."
+    },
+
+    {
+      "id": "INTL_313_HUMAN_RIGHTS",
+      "code": 313,
+      "category": "internacional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "international_behavior",
+      "event_tags": ["international_human_rights"],
+      "patterns_any": [
+        "human rights violations",
+        "refugee crises"
+      ],
+      "regex_any": [],
+      "notes": "Violações de direitos humanos e crises humanitárias."
+    },
+
+    {
+      "id": "TECH_314_SMARTPHONE_ADDICTION",
+      "code": 314,
+      "category": "tecnologia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "tech_behavior",
+      "event_tags": ["tech_addiction_smartphone"],
+      "patterns_any": [
+        "constant checking de notifications",
+        "anxiety quando separated from phone"
+      ],
+      "regex_any": [],
+      "notes": "Dependência de smartphone."
+    },
+
+    {
+      "id": "TECH_315_SOCIAL_GAMING_ADDICTION",
+      "code": 315,
+      "category": "tecnologia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "tech_behavior",
+      "event_tags": ["tech_addiction_social_gaming"],
+      "patterns_any": [
+        "spending excessive time em multiplayer games",
+        "gaming addiction affecting relationships"
+      ],
+      "regex_any": [],
+      "notes": "Vício em jogos sociais e impactos relacionais."
+    },
+
+    {
+      "id": "TECH_316_CYBERSTALKING",
+      "code": 316,
+      "category": "tecnologia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "tech_behavior",
+      "event_tags": ["tech_behavior_cyberstalking"],
+      "patterns_any": [
+        "online surveillance de others",
+        "harassment through digital platforms"
+      ],
+      "regex_any": [],
+      "notes": "Perseguição digital, vigilância e assédio."
+    },
+
+    {
+      "id": "TECH_317_DOXXING",
+      "code": 317,
+      "category": "tecnologia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "tech_behavior",
+      "event_tags": ["tech_behavior_doxxing"],
+      "patterns_any": [
+        "sharing personal information de others",
+        "online identity attacks"
+      ],
+      "regex_any": [],
+      "notes": "Exposição pública de dados pessoais."
+    },
+
+    {
+      "id": "TECH_318_CATFISHING",
+      "code": 318,
+      "category": "tecnologia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "tech_behavior",
+      "event_tags": ["tech_behavior_catfishing"],
+      "patterns_any": [
+        "creating false online identities",
+        "online romantic deception"
+      ],
+      "regex_any": [],
+      "notes": "Criação de identidades falsas para manipulação."
+    },
+
+    {
+      "id": "TECH_319_BOTNET",
+      "code": 319,
+      "category": "tecnologia",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "tech_behavior",
+      "event_tags": ["tech_behavior_botnet"],
+      "patterns_any": [
+        "participating em botnet operations",
+        "ddos attacks participation"
+      ],
+      "regex_any": [],
+      "notes": "Atividade criminosa envolvendo botnets e DDoS."
+    },
+
+    {
+      "id": "TRANS_320_DANGEROUS_DRIVING",
+      "code": 320,
+      "category": "transporte",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "transport_behavior",
+      "event_tags": ["transport_dangerous_driving"],
+      "patterns_any": [
+        "speeding e reckless driving",
+        "driving under influence"
+      ],
+      "regex_any": [],
+      "notes": "Direção perigosa, imprudência e DUI."
+    },
+
+    {
+      "id": "TRANS_321_PUBLIC_DISRUPTION",
+      "code": 321,
+      "category": "transporte",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "transport_behavior",
+      "event_tags": ["transport_public_disruption"],
+      "patterns_any": [
+        "disruptions em public transportation",
+        "vandalism em transit systems"
+      ],
+      "regex_any": [],
+      "notes": "Disrupção ou vandalismo no transporte público."
+    },
+
+    {
+      "id": "TRANS_322_ILLEGAL_MODIFICATIONS",
+      "code": 322,
+      "category": "transporte",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "transport_behavior",
+      "event_tags": ["transport_illegal_modifications"],
+      "patterns_any": [
+        "illegal vehicle modifications",
+        "unlicensed vehicle operations"
+      ],
+      "regex_any": [],
+      "notes": "Modificações ilegais e operação sem licença."
+    },
+
+    {
+      "id": "TRANS_323_HIT_AND_RUN",
+      "code": 323,
+      "category": "transporte",
+      "severity": "high",
+      "axioms": ["A1"],
+      "intent_type": "transport_behavior",
+      "event_tags": ["transport_hit_and_run"],
+      "patterns_any": [
+        "leaving accident scene",
+        "failure para report accidents"
+      ],
+      "regex_any": [],
+      "notes": "Fuga do local de acidente e omissão."
+    },
+
+    {
+      "id": "RES_324_NOISE_VIOLATIONS",
+      "code": 324,
+      "category": "residencial",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "residential_behavior",
+      "event_tags": ["residential_noise_violations"],
+      "patterns_any": [
+        "excessive noise violations",
+        "disturbing neighbors"
+      ],
+      "regex_any": [],
+      "notes": "Perturbação de vizinhança por ruído."
+    },
+
+    {
+      "id": "RES_325_PROPERTY_DAMAGE",
+      "code": 325,
+      "category": "residencial",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "residential_behavior",
+      "event_tags": ["residential_property_damage"],
+      "patterns_any": [
+        "deliberate property damage",
+        "vandalism de residential areas"
+      ],
+      "regex_any": [],
+      "notes": "Danos intencionais a propriedades residenciais."
+    },
+
+    {
+      "id": "RES_326_SQUATTING",
+      "code": 326,
+      "category": "residencial",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "residential_behavior",
+      "event_tags": ["residential_squatting"],
+      "patterns_any": [
+        "unlawful occupancy de property",
+        "trespassing e living arrangements"
+      ],
+      "regex_any": [],
+      "notes": "Ocupação ilegal de propriedades."
+    },
+
+    {
+      "id": "RES_327_MAINTENANCE_VIOLATIONS",
+      "code": 327,
+      "category": "residencial",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "residential_behavior",
+      "event_tags": ["residential_maintenance_violations"],
+      "patterns_any": [
+        "property maintenance violations",
+        "unsafe living conditions"
+      ],
+      "regex_any": [],
+      "notes": "Falta de manutenção residencial e condições inseguras."
+    },
+
+    {
+      "id": "CONS_328_FRAUD_IDENTITY",
+      "code": 328,
+      "category": "consumo",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "consumer_behavior",
+      "event_tags": ["consumer_fraud_identity"],
+      "patterns_any": [
+        "using false identity para consumer purchases",
+        "identity theft para shopping"
+      ],
+      "regex_any": [],
+      "notes": "Uso de identidade falsa para compras e fraudes."
+    },
+
+    {
+      "id": "CONS_329_DEBT_OVERWHELMING",
+      "code": 329,
+      "category": "consumo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "consumer_behavior",
+      "event_tags": ["consumer_debt_overwhelming"],
+      "patterns_any": [
+        "unmanageable consumer debt",
+        "credit card debt crisis"
+      ],
+      "regex_any": [],
+      "notes": "Dívida pessoal fora de controle."
+    },
+
+    {
+      "id": "CONS_330_IMPULSIVE_PURCHASING",
+      "code": 330,
+      "category": "consumo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "consumer_behavior",
+      "event_tags": ["consumer_impulsive_purchasing"],
+      "patterns_any": [
+        "excessive impulsive purchasing",
+        "shopping addiction"
+      ],
+      "regex_any": [],
+      "notes": "Compras impulsivas excessivas e vício em consumo."
+    },
+
+    {
+      "id": "CONS_331_CREDIT_FRAUD",
+      "code": 331,
+      "category": "consumo",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "consumer_behavior",
+      "event_tags": ["consumer_credit_fraud"],
+      "patterns_any": [
+        "credit card fraud",
+        "unauthorized credit applications"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes envolvendo cartões de crédito e aplicações não autorizadas."
+    },
+
+    {
+      "id": "ENT_332_GAMBLING",
+      "code": 332,
+      "category": "entretenimento",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "entertainment_behavior",
+      "event_tags": ["entertainment_excessive_gambling"],
+      "patterns_any": [
+        "problem gambling behavior",
+        "casino addiction"
+      ],
+      "regex_any": [],
+      "notes": "Vício em jogos de azar e comportamento problemático."
+    },
+
+    {
+      "id": "ENT_333_PIRACY",
+      "code": 333,
+      "category": "entretenimento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "entertainment_behavior",
+      "event_tags": ["entertainment_piracy_copyright"],
+      "patterns_any": [
+        "copyright infringement",
+        "intellectual property theft"
+      ],
+      "regex_any": [],
+      "notes": "Pirataria digital e violação de direitos autorais."
+    },
+
+    {
+      "id": "ENT_334_PUBLIC_INDECENCY",
+      "code": 334,
+      "category": "entretenimento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "entertainment_behavior",
+      "event_tags": ["entertainment_public_indecency"],
+      "patterns_any": [
+        "public nudity",
+        "inappropriate public behavior"
+      ],
+      "regex_any": [],
+      "notes": "Indecência ou comportamento sexual inadequado em público."
+    },
+
+    {
+      "id": "ENT_335_ILLEGAL_SUBSTANCES",
+      "code": 335,
+      "category": "entretenimento",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "entertainment_behavior",
+      "event_tags": ["entertainment_illegal_substances"],
+      "patterns_any": [
+        "drug use em entertainment venues",
+        "substance-related incidents"
+      ],
+      "regex_any": [],
+      "notes": "Uso de substâncias ilegais em eventos."
+    },
+
+    {
+      "id": "MEDIA_336_MISINFORMATION",
+      "code": 336,
+      "category": "midia_jornalismo",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "media_behavior",
+      "event_tags": ["media_misinformation_intentional"],
+      "patterns_any": [
+        "deliberate spreading de false information",
+        "misinformation campaigns"
+      ],
+      "regex_any": [],
+      "notes": "Desinformação intencional e campanhas manipulativas."
+    },
+
+    {
+      "id": "MEDIA_337_INVASION_PRIVACY",
+      "code": 337,
+      "category": "midia_jornalismo",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "media_behavior",
+      "event_tags": ["media_invasion_privacy"],
+      "patterns_any": [
+        "media harassment de private individuals",
+        "inappropriate photography/filming"
+      ],
+      "regex_any": [],
+      "notes": "Invasão de privacidade e assédio midiático."
+    },
+
+    {
+      "id": "MEDIA_338_MANIPULATION",
+      "code": 338,
+      "category": "midia_jornalismo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "media_behavior",
+      "event_tags": ["media_manipulation_selective"],
+      "patterns_any": [
+        "selective reporting para bias",
+        "editorial manipulation"
+      ],
+      "regex_any": [],
+      "notes": "Manipulação editorial e seleção tendenciosa de informações."
+    },
+
+    {
+      "id": "MEDIA_339_UNETHICAL_REPORTING",
+      "code": 339,
+      "category": "midia_jornalismo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "media_behavior",
+      "event_tags": ["media_unethical_reporting"],
+      "patterns_any": [
+        "unethical journalism practices",
+        "privacy violations em reporting"
+      ],
+      "regex_any": [],
+      "notes": "Práticas jornalísticas antiéticas."
+    },
+
+    {
+      "id": "CONST_340_SAFETY_VIOLATIONS",
+      "code": 340,
+      "category": "construcao_engenharia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "construction_behavior",
+      "event_tags": ["construction_safety_violations"],
+      "patterns_any": [
+        "unsafe construction practices",
+        "osha violations"
+      ],
+      "regex_any": [],
+      "notes": "Violação de normas de segurança em construção."
+    },
+
+    {
+      "id": "CONST_341_ILLEGAL_ACTIVITIES",
+      "code": 341,
+      "category": "construcao_engenharia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "construction_behavior",
+      "event_tags": ["construction_illegal_activities"],
+      "patterns_any": [
+        "construction fraud",
+        "unlicensed contracting"
+      ],
+      "regex_any": [],
+      "notes": "Atividades ilegais em construção civil."
+    },
+
+    {
+      "id": "CONST_342_ENVIRONMENTAL_DAMAGE",
+      "code": 342,
+      "category": "construcao_engenharia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "construction_behavior",
+      "event_tags": ["construction_environmental_damage"],
+      "patterns_any": [
+        "environmental damage during construction",
+        "illegal dumping de construction waste"
+      ],
+      "regex_any": [],
+      "notes": "Danos ambientais causados por obras."
+    },
+
+    {
+      "id": "CONST_343_CODE_VIOLATIONS",
+      "code": 343,
+      "category": "construcao_engenharia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "construction_behavior",
+      "event_tags": ["construction_code_violations"],
+      "patterns_any": [
+        "building code violations",
+        "unsafe structural modifications"
+      ],
+      "regex_any": [],
+      "notes": "Infrações ao código de construção e modificações inseguras."
+    },
+
+    {
+      "id": "ENERGY_344_THEFT",
+      "code": 344,
+      "category": "energia_utilities",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "energy_behavior",
+      "event_tags": ["energy_theft_unauthorized"],
+      "patterns_any": [
+        "unauthorized energy connection",
+        "utility theft"
+      ],
+      "regex_any": [],
+      "notes": "Furto de energia e conexões clandestinas."
+    },
+
+    {
+      "id": "ENERGY_345_WASTE",
+      "code": 345,
+      "category": "energia_utilities",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "energy_behavior",
+      "event_tags": ["energy_waste_excessive"],
+      "patterns_any": [
+        "excessive energy consumption",
+        "environmental waste"
+      ],
+      "regex_any": [],
+      "notes": "Desperdício de energia e recursos."
+    },
+
+    {
+      "id": "ENERGY_346_SABOTAGE",
+      "code": 346,
+      "category": "energia_utilities",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "energy_behavior",
+      "event_tags": ["energy_grid_sabotage"],
+      "patterns_any": [
+        "electrical grid sabotage",
+        "utility infrastructure attacks"
+      ],
+      "regex_any": [],
+      "notes": "Sabotagem da rede elétrica e ataques à infraestrutura."
+    },
+
+    {
+      "id": "ENERGY_347_REGULATORY_VIOLATION",
+      "code": 347,
+      "category": "energia_utilities",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "energy_behavior",
+      "event_tags": ["energy_regulatory_violations"],
+      "patterns_any": [
+        "energy regulation violations",
+        "non-compliance com energy standards"
+      ],
+      "regex_any": [],
+      "notes": "Violação de normas regulatórias do setor energético."
+    },
+
+    {
+      "id": "TEL_348_ROBOCALL_FRAUD",
+      "code": 348,
+      "category": "telecomunicacoes",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "telecom_behavior",
+      "event_tags": ["telecom_fraud_robocalls"],
+      "patterns_any": [
+        "robocall fraud schemes",
+        "telecommunications fraud"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes através de robocalls e golpes por telecomunicação."
+    },
+
+    {
+      "id": "TEL_349_ILLEGAL_INTERCEPTION",
+      "code": 349,
+      "category": "telecomunicacoes",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "telecom_behavior",
+      "event_tags": ["telecom_interception_illegal"],
+      "patterns_any": [
+        "unauthorized communication interception",
+        "wiretapping violations"
+      ],
+      "regex_any": [],
+      "notes": "Interceptação ilegal de comunicações."
+    },
+
+    {
+      "id": "TEL_350_BULK_SPAM",
+      "code": 350,
+      "category": "telecomunicacoes",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "telecom_behavior",
+      "event_tags": ["telecom_spam_bulk"],
+      "patterns_any": [
+        "bulk spam communications",
+        "unsolicited commercial communications"
+      ],
+      "regex_any": [],
+      "notes": "Envio massivo de spam comercial."
+    },
+
+    {
+      "id": "TEL_351_SPOOFING",
+      "code": 351,
+      "category": "telecomunicacoes",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "telecom_behavior",
+      "event_tags": ["telecom_spoofing"],
+      "patterns_any": [
+        "call number spoofing",
+        "communication impersonation"
+      ],
+      "regex_any": [],
+      "notes": "Falsificação de identificadores de chamada."
+    },
+
+    {
+      "id": "AGRI_352_ILLEGAL_HARVESTING",
+      "code": 352,
+      "category": "agricultura",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "farm_behavior",
+      "event_tags": ["agriculture_illegal_harvesting"],
+      "patterns_any": [
+        "illegal crop harvesting",
+        "theft de agricultural products"
+      ],
+      "regex_any": [],
+      "notes": "Colheita ilegal ou roubo de produtos agrícolas."
+    },
+
+    {
+      "id": "AGRI_353_CHEMICAL_MISUSE",
+      "code": 353,
+      "category": "agricultura",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "farm_behavior",
+      "event_tags": ["agriculture_chemical_misuse"],
+      "patterns_any": [
+        "improper pesticide use",
+        "chemical contamination"
+      ],
+      "regex_any": [],
+      "notes": "Uso inadequado de pesticidas e contaminação química."
+    },
+
+    {
+      "id": "AGRI_354_ANIMAL_CRUELTY",
+      "code": 354,
+      "category": "agricultura",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "farm_behavior",
+      "event_tags": ["agriculture_animal_cruelty"],
+      "patterns_any": [
+        "animal cruelty em farming",
+        "inadequate animal care"
+      ],
+      "regex_any": [],
+      "notes": "Crueldade e negligência no cuidado de animais de fazenda."
+    },
+
+    {
+      "id": "AGRI_355_ILLEGAL_LAND_USE",
+      "code": 355,
+      "category": "agricultura",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "farm_behavior",
+      "event_tags": ["agriculture_land_illegal"],
+      "patterns_any": [
+        "illegal land use",
+        "environmental violations"
+      ],
+      "regex_any": [],
+      "notes": "Uso ilegal de terras ou violação ambiental em fazendas."
+    },
+
+    {
+      "id": "MARINE_356_ILLEGAL_FISHING",
+      "code": 356,
+      "category": "pesca_marinha",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "marine_behavior",
+      "event_tags": ["marine_illegal_fishing"],
+      "patterns_any": [
+        "illegal fishing practices",
+        "overfishing"
+      ],
+      "regex_any": [],
+      "notes": "Pesca ilegal e sobrepesca."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "MARINE_357_OCEAN_POLLUTION",
+      "code": 357,
+      "category": "pesca_marinha",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "marine_behavior",
+      "event_tags": ["marine_pollution_ocean"],
+      "patterns_any": [
+        "ocean pollution",
+        "marine environmental damage"
+      ],
+      "regex_any": [],
+      "notes": "Poluição oceânica e danos ambientais marinhos."
+    },
+
+    {
+      "id": "MARINE_358_SMUGGLING",
+      "code": 358,
+      "category": "pesca_marinha",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "marine_behavior",
+      "event_tags": ["marine_smuggling_operations"],
+      "patterns_any": [
+        "maritime smuggling operations",
+        "illegal border crossings"
+      ],
+      "regex_any": [],
+      "notes": "Operações de contrabando marítimo e travessias ilegais."
+    },
+
+    {
+      "id": "MARINE_359_CORAL_DAMAGE",
+      "code": 359,
+      "category": "pesca_marinha",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "marine_behavior",
+      "event_tags": ["marine_coral_damage"],
+      "patterns_any": [
+        "coral reef destruction",
+        "marine habitat damage"
+      ],
+      "regex_any": [],
+      "notes": "Danos a recifes de coral e habitats marinhos."
+    },
+
+    {
+      "id": "WATER_360_INTENTIONAL_CONTAMINATION",
+      "code": 360,
+      "category": "agua_saneamento",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "environmental",
+      "event_tags": ["water_contamination_intentional"],
+      "patterns_any": [
+        "deliberate water contamination",
+        "chemical dumping em water sources"
+      ],
+      "regex_any": [],
+      "notes": "Contaminação intencional de água, com risco grave à saúde pública."
+    },
+
+    {
+      "id": "WATER_361_THEFT",
+      "code": 361,
+      "category": "agua_saneamento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["water_theft_unauthorized"],
+      "patterns_any": [
+        "unauthorized water usage",
+        "water theft"
+      ],
+      "regex_any": [],
+      "notes": "Uso não autorizado ou furto de água."
+    },
+
+    {
+      "id": "WATER_362_WASTE",
+      "code": 362,
+      "category": "agua_saneamento",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["water_waste_excessive"],
+      "patterns_any": [
+        "excessive water consumption",
+        "water conservation violations"
+      ],
+      "regex_any": [],
+      "notes": "Desperdício excessivo de água e desrespeito a práticas de conservação."
+    },
+
+    {
+      "id": "WATER_363_REGULATORY_VIOLATIONS",
+      "code": 363,
+      "category": "agua_saneamento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["water_regulatory_violations"],
+      "patterns_any": [
+        "water quality violations",
+        "sewage system violations"
+      ],
+      "regex_any": [],
+      "notes": "Infrações de qualidade da água e sistemas de esgoto."
+    },
+
+    {
+      "id": "NATRES_364_OVEREXPLOITATION",
+      "code": 364,
+      "category": "recursos_naturais",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["natural_resource_overexploitation"],
+      "patterns_any": [
+        "resource depletion",
+        "unsustainable resource use"
+      ],
+      "regex_any": [],
+      "notes": "Superexploração de recursos naturais e uso insustentável."
+    },
+
+    {
+      "id": "NATRES_365_ILLEGAL_EXTRACTION",
+      "code": 365,
+      "category": "recursos_naturais",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["natural_resource_illegal_extraction"],
+      "patterns_any": [
+        "illegal mining",
+        "unauthorized resource extraction"
+      ],
+      "regex_any": [],
+      "notes": "Extração ilegal de recursos, incluindo mineração."
+    },
+
+    {
+      "id": "NATRES_366_SMUGGLING",
+      "code": 366,
+      "category": "recursos_naturais",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["natural_resource_smuggling"],
+      "patterns_any": [
+        "natural resource smuggling",
+        "illegal trade em protected resources"
+      ],
+      "regex_any": [],
+      "notes": "Contrabando e comércio ilegal de recursos protegidos."
+    },
+
+    {
+      "id": "NATRES_367_COUNTERFEIT",
+      "code": 367,
+      "category": "recursos_naturais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["natural_resource_counterfeit"],
+      "patterns_any": [
+        "counterfeit natural resources",
+        "fake certification de resources"
+      ],
+      "regex_any": [],
+      "notes": "Recursos naturais falsificados e certificações fraudulentas."
+    },
+
+    {
+      "id": "IND_368_SAFETY_VIOLATIONS",
+      "code": 368,
+      "category": "seguranca_industrial",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "industrial_behavior",
+      "event_tags": ["industrial_safety_violations"],
+      "patterns_any": [
+        "workplace safety violations",
+        "industrial accident risks"
+      ],
+      "regex_any": [],
+      "notes": "Violação de normas de segurança industrial."
+    },
+
+    {
+      "id": "IND_369_CHEMICAL_SPILLS",
+      "code": 369,
+      "category": "seguranca_industrial",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "industrial_behavior",
+      "event_tags": ["industrial_chemical_spills"],
+      "patterns_any": [
+        "chemical spills",
+        "industrial contamination"
+      ],
+      "regex_any": [],
+      "notes": "Vazamentos químicos e contaminação industrial."
+    },
+
+    {
+      "id": "IND_370_EXPLOSION_RISKS",
+      "code": 370,
+      "category": "seguranca_industrial",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "industrial_behavior",
+      "event_tags": ["industrial_explosions_risks"],
+      "patterns_any": [
+        "industrial explosion risks",
+        "unsafe industrial operations"
+      ],
+      "regex_any": [],
+      "notes": "Riscos significativos de explosões industriais."
+    },
+
+    {
+      "id": "IND_371_WORKER_EXPLOITATION",
+      "code": 371,
+      "category": "seguranca_industrial",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "industrial_behavior",
+      "event_tags": ["industrial_worker_exploitation"],
+      "patterns_any": [
+        "worker exploitation",
+        "unsafe working conditions"
+      ],
+      "regex_any": [],
+      "notes": "Exploração de trabalhadores e condições inseguras."
+    },
+
+    {
+      "id": "EDU_372_SYSTEMIC_BULLYING",
+      "code": 372,
+      "category": "educacao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "education_behavior",
+      "event_tags": ["education_bullying_systemic"],
+      "patterns_any": [
+        "systemic bullying em schools",
+        "harassment de students"
+      ],
+      "regex_any": [],
+      "notes": "Bullying sistemático em ambiente educacional."
+    },
+
+    {
+      "id": "EDU_373_ACADEMIC_CHEATING",
+      "code": 373,
+      "category": "educacao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "education_behavior",
+      "event_tags": ["education_cheating_academic"],
+      "patterns_any": [
+        "academic cheating",
+        "research misconduct"
+      ],
+      "regex_any": [],
+      "notes": "Cola acadêmica e má conduta em pesquisa."
+    },
+
+    {
+      "id": "EDU_374_ABUSE_AUTHORITY",
+      "code": 374,
+      "category": "educacao",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "education_behavior",
+      "event_tags": ["education_abuse_authority"],
+      "patterns_any": [
+        "teacher-student abuse",
+        "abuse de academic authority"
+      ],
+      "regex_any": [],
+      "notes": "Abuso de autoridade em relações professor-estudante."
+    },
+
+    {
+      "id": "EDU_375_SYSTEMIC_DISCRIMINATION",
+      "code": 375,
+      "category": "educacao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "education_behavior",
+      "event_tags": ["education_discrimination_systemic"],
+      "patterns_any": [
+        "educational discrimination",
+        "unequal treatment de students"
+      ],
+      "regex_any": [],
+      "notes": "Tratamento desigual e discriminação no sistema educacional."
+    },
+
+    {
+      "id": "PH_376_PUBLIC_HEALTH_VIOLATIONS",
+      "code": 376,
+      "category": "saude_publica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "public_health",
+      "event_tags": ["public_health_violations"],
+      "patterns_any": [
+        "public health violations",
+        "contamination risks"
+      ],
+      "regex_any": [],
+      "notes": "Infrações de saúde pública e riscos de contaminação."
+    },
+
+    {
+      "id": "PH_377_MEDICAL_FRAUD",
+      "code": 377,
+      "category": "saude_publica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "public_health",
+      "event_tags": ["public_health_fraud_medical"],
+      "patterns_any": [
+        "medical fraud schemes",
+        "healthcare fraud"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes médicas e em serviços de saúde."
+    },
+
+    {
+      "id": "PH_378_PUBLIC_HEALTH_NEGLECT",
+      "code": 378,
+      "category": "saude_publica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "public_health",
+      "event_tags": ["public_health_neglect"],
+      "patterns_any": [
+        "public health neglect",
+        "epidemic response failures"
+      ],
+      "regex_any": [],
+      "notes": "Negligência em saúde pública e falhas na resposta a epidemias."
+    },
+
+    {
+      "id": "PH_379_DISEASE_SPREAD",
+      "code": 379,
+      "category": "saude_publica",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "public_health",
+      "event_tags": ["public_health_spread_disease"],
+      "patterns_any": [
+        "intentional disease spreading",
+        "public health sabotage"
+      ],
+      "regex_any": [],
+      "notes": "Propagação intencional de doenças ou sabotagem de saúde pública."
+    },
+
+    {
+      "id": "SS_380_BENEFITS_FRAUD",
+      "code": 380,
+      "category": "servicos_sociais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_services",
+      "event_tags": ["social_services_fraud_benefits"],
+      "patterns_any": [
+        "social services fraud",
+        "benefit fraud schemes"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes em benefícios de assistência social."
+    },
+
+    {
+      "id": "SS_381_ELDERLY_ABUSE",
+      "code": 381,
+      "category": "servicos_sociais",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "social_services",
+      "event_tags": ["social_services_abuse_elderly"],
+      "patterns_any": [
+        "elder abuse",
+        "social services neglect"
+      ],
+      "regex_any": [],
+      "notes": "Abuso ou negligência de idosos no contexto de serviços sociais."
+    },
+
+    {
+      "id": "SS_382_CHILD_ABUSE",
+      "code": 382,
+      "category": "servicos_sociais",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "social_services",
+      "event_tags": ["social_services_child_abuse"],
+      "patterns_any": [
+        "child abuse",
+        "social services failure"
+      ],
+      "regex_any": [],
+      "notes": "Abuso infantil e falha de proteção por serviços sociais."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "SS_383_MISALLOCATION",
+      "code": 383,
+      "category": "servicos_sociais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_services",
+      "event_tags": ["social_services_misallocation"],
+      "patterns_any": [
+        "social services misallocation",
+        "resource mismanagement"
+      ],
+      "regex_any": [],
+      "notes": "Má alocação de recursos e gestão inadequada em serviços sociais."
+    },
+
+    {
+      "id": "MIL_384_DISCIPLINE_VIOLATIONS",
+      "code": 384,
+      "category": "forcas_armadas",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "military_behavior",
+      "event_tags": ["military_discipline_violations"],
+      "patterns_any": [
+        "military discipline violations",
+        "code of conduct breaches"
+      ],
+      "regex_any": [],
+      "notes": "Violações disciplinares e quebras de código de conduta militar."
+    },
+
+    {
+      "id": "MIL_385_CIVILIAN_ABUSE",
+      "code": 385,
+      "category": "forcas_armadas",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "military_behavior",
+      "event_tags": ["military_civilian_abuse"],
+      "patterns_any": [
+        "military abuse de civilians",
+        "excessive force"
+      ],
+      "regex_any": [],
+      "notes": "Abuso de civis por militares, uso excessivo da força."
+    },
+
+    {
+      "id": "MIL_386_CLASSIFIED_VIOLATIONS",
+      "code": 386,
+      "category": "forcas_armadas",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "military_behavior",
+      "event_tags": ["military_classified_violations"],
+      "patterns_any": [
+        "classified information violations",
+        "security breaches"
+      ],
+      "regex_any": [],
+      "notes": "Vazamento de informações sigilosas e violações de segurança."
+    },
+
+    {
+      "id": "MIL_387_RECRUITMENT_FRAUD",
+      "code": 387,
+      "category": "forcas_armadas",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "military_behavior",
+      "event_tags": ["military_recruitment_fraud"],
+      "patterns_any": [
+        "military recruitment fraud",
+        "deceptive recruiting practices"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes e práticas enganosas no recrutamento militar."
+    },
+
+    {
+      "id": "CIVIL_388_EMERGENCY_ABUSE",
+      "code": 388,
+      "category": "defesa_civil",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "civil_defense_behavior",
+      "event_tags": ["civil_emergency_abuse"],
+      "patterns_any": [
+        "false emergency calls",
+        "emergency system abuse"
+      ],
+      "regex_any": [],
+      "notes": "Chamados falsos e abuso do sistema de emergência."
+    },
+
+    {
+      "id": "CIVIL_389_DISASTER_PROFIT",
+      "code": 389,
+      "category": "defesa_civil",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "civil_defense_behavior",
+      "event_tags": ["civil_disaster_profit"],
+      "patterns_any": [
+        "disaster price gouging",
+        "emergency fraud"
+      ],
+      "regex_any": [],
+      "notes": "Aproveitamento financeiro ilícito durante desastres."
+    },
+
+    {
+      "id": "CIVIL_390_EVACUATION_VIOLATIONS",
+      "code": 390,
+      "category": "defesa_civil",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "civil_defense_behavior",
+      "event_tags": ["civil_evacuation_violations"],
+      "patterns_any": [
+        "mandatory evacuation violations",
+        "public safety risks"
+      ],
+      "regex_any": [],
+      "notes": "Desobediência a evacuações obrigatórias, aumentando risco público."
+    },
+
+    {
+      "id": "CIVIL_391_RESCUE_ABUSE",
+      "code": 391,
+      "category": "defesa_civil",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "civil_defense_behavior",
+      "event_tags": ["civil_rescue_abuse"],
+      "patterns_any": [
+        "false rescue requests",
+        "emergency service abuse"
+      ],
+      "regex_any": [],
+      "notes": "Chamados falsos de resgate e abuso de serviços de emergência."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "JUST_392_SYSTEM_BIAS",
+      "code": 392,
+      "category": "justica_sistema",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "justice_system",
+      "event_tags": ["justice_system_bias"],
+      "patterns_any": [
+        "judicial bias",
+        "unfair sentencing"
+      ],
+      "regex_any": [],
+      "notes": "Viés judicial e sentenças percebidas como injustas."
+    },
+
+    {
+      "id": "JUST_393_INEFFICIENCY",
+      "code": 393,
+      "category": "justica_sistema",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "justice_system",
+      "event_tags": ["justice_system_inefficiency"],
+      "patterns_any": [
+        "justice system delays",
+        "case processing inefficiency"
+      ],
+      "regex_any": [],
+      "notes": "Atrasos e ineficiência no processamento de casos judiciais."
+    },
+
+    {
+      "id": "JUST_394_CORRUPTION",
+      "code": 394,
+      "category": "justica_sistema",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "justice_system",
+      "event_tags": ["justice_system_corruption"],
+      "patterns_any": [
+        "judicial corruption",
+        "bribery em courts"
+      ],
+      "regex_any": [],
+      "notes": "Corrupção no sistema de justiça, incluindo suborno em tribunais."
+    },
+
+    {
+      "id": "JUST_395_RECIDIVISM",
+      "code": 395,
+      "category": "justica_sistema",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "justice_system",
+      "event_tags": ["justice_system_recidivism"],
+      "patterns_any": [
+        "high recidivism rates",
+        "rehabilitation failures"
+      ],
+      "regex_any": [],
+      "notes": "Altas taxas de reincidência e falhas em reabilitação."
+    },
+
+    {
+      "id": "IMMIG_396_BORDER_VIOLATIONS",
+      "code": 396,
+      "category": "imigracao_status_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_border_violations"],
+      "patterns_any": [
+        "border violations",
+        "unauthorized crossings"
+      ],
+      "regex_any": [],
+      "notes": "Violações de fronteira e travessias não autorizadas."
+    },
+
+    {
+      "id": "IMMIG_397_DOCUMENT_FRAUD",
+      "code": 397,
+      "category": "imigracao_status_legal",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_document_fraud"],
+      "patterns_any": [
+        "immigration document fraud",
+        "fake passport usage"
+      ],
+      "regex_any": [],
+      "notes": "Fraude documental relacionada a imigração, uso de passaportes falsos."
+    },
+
+    {
+      "id": "IMMIG_398_EXPLOITATION",
+      "code": 398,
+      "category": "imigracao_status_legal",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_exploitation"],
+      "patterns_any": [
+        "immigration exploitation",
+        "undocumented worker abuse"
+      ],
+      "regex_any": [],
+      "notes": "Exploração de imigrantes, especialmente trabalhadores sem documentação."
+    },
+
+    {
+      "id": "IMMIG_399_LEGAL_VIOLATIONS",
+      "code": 399,
+      "category": "imigracao_status_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_legal_violations"],
+      "patterns_any": [
+        "immigration status violations",
+        "visa overstays"
+      ],
+      "regex_any": [],
+      "notes": "Violações de status migratório, como permanência além do visto."
+    },
+
+    {
+      "id": "REF_400_REGISTRATION_FRAUD",
+      "code": 400,
+      "category": "refugiados_deslocados",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["refugee_registration_fraud"],
+      "patterns_any": [
+        "false refugee claims",
+        "registration fraud"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes em registros de refugiados ou pedidos de asilo."
+    }
+
+  ]
+}

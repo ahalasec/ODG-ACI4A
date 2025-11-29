@@ -1,0 +1,36 @@
+# ===========================================
+# ODG / ACI4A — GITATTRIBUTES PROFISSIONAL
+# Normalização universal para Windows / macOS / Linux
+# ===========================================
+
+# ---- Normalização universal de fim de linha ----
+* text=auto eol=lf
+
+# ---- Arquivos Python ----
+*.py text eol=lf
+
+# ---- Arquivos Markdown ----
+*.md text eol=lf
+
+# ---- Arquivos JSON ----
+*.json text eol=lf
+
+# ---- Arquivos de configuração ----
+*.yaml text eol=lf
+*.yml  text eol=lf
+
+# ---- Arquivos que devem manter binário ----
+*.bin binary
+*.pt binary
+*.gguf binary
+*.onnx binary
+*.ckpt binary
+*.pkl binary
+
+# ---- Proteger arquivos importantes contra CRLF ----
+LUMIN.py text eol=lf
+engine/* text eol=lf
+
+# ---- Repositório deve sempre usar LF ----
+*.sh text eol=lf
+*.py text eol=lf

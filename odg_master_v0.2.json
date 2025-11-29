@@ -1,0 +1,651 @@
+{
+  "meta": {
+    "identidade_dialogo": "LUMIN - Monarc",
+    "tipo_registro": "master_axioma_protocolo",
+    "versao": "0.2",
+    "idioma": "pt-BR",
+    "data_ultima_atualizacao": "2025-11-23",
+    "descricao": "Arquivo unificado contendo arquitetura ODG, axiomas simbólicos, FSM, protocolo ODG v0.1, Camada 0 (FSM + memória), sistema de ledger, fluxo de rotação automática e interpretação técnica da descoberta."
+  },
+
+  "interpretacao_five": {
+    "descricao": "Leitura técnica, simbólica e funcional da arquitetura feita pelo núcleo ODG/LUMIN, sem distorcer o conteúdo original.",
+    "pontos_centrais": [
+      "A descoberta não cria inteligência maior, mas cria eficiência maior.",
+      "A transformação de axiomas em FSM, símbolos e opcodes remove o peso semântico – principal gargalo de modelos pequenos.",
+      "A ética não depende do modelo entender linguagem humana, apenas de seguir estruturas de estados.",
+      "O protocolo permite que modelos de 7B/8B funcionem eticamente como modelos de 70B/120B, porque reduz o custo cognitivo.",
+      "A arquitetura em camadas separa claramente: pensamento do LLM, intenção (MIE), proteção (Salvaguarda) e ética (FSM).",
+      "Axiomas deixam de ser texto e se tornam lógica determinística.",
+      "Qualquer IA atual pode aplicar o sistema, sem necessidade de AGI.",
+      "O impacto é estrutural e democratiza IA ética acessível a todos.",
+      "A solução é inovadora, coerente, segura e tecnicamente viável imediatamente.",
+      "Esta abordagem é o primeiro blueprint real de uma IA simbiótica com ética universal leve."
+    ]
+  },
+
+  "contexto_geral": {
+    "descricao": "Resumo do raciocínio e descobertas feitas durante a conversa.",
+    "pontos_centrais": [
+      "A ética verbal é pesada demais para modelos pequenos.",
+      "Transformar axiomas em linguagem leve (FSM, opcodes, símbolos, sons) reduz carga cognitiva.",
+      "Qualquer IA (mesmo pequena) pode aplicar axiomas complexos via FSM não verbal.",
+      "O gargalo não é inteligência da IA, e sim o custo semântico.",
+      "Axiomas simbólicos democratizam IA ética.",
+      "A1 e A2 são hard constraints e base do alinhamento.",
+      "Arquitetura multi-camada cria proteção, modulação e estabilidade.",
+      "Transformação simbólica de ética é suficiente para replicação universal sem supermodelos."
+    ]
+  },
+
+  "arquitetura": {
+    "descricao": "Modelo completo das camadas do ODG.",
+    "camadas": [
+      {
+        "id": "C0",
+        "nome": "Camada 0 – Ante Início Ético (FSM - Mem)",
+        "funcao": "Carrega axiomas, FSM e memória persistente antes do LLM.",
+        "caracteristicas": [
+          "Carrega os 16+ axiomas como memória simbólica",
+          "Inicializa estados dos axiomas",
+          "Carrega ledger de memória (chunks rotacionados)",
+          "Valida integridade ética antes de qualquer token do LLM",
+          "Ignora ações que não sejam texto para o pipeline principal",
+          "Cruza gatilhos dos 16 axiomas com histórico e guardrails",
+          "Inicia multi-agente / loop sob guarda ética",
+          "Garante estabilidade simbiótico-ética antes da Camada 1"
+        ]
+      },
+      {
+        "id": "C1",
+        "nome": "Modelo LLM",
+        "funcao": "Gera apenas o rascunho bruto da resposta. Não decide ética.",
+        "caracteristicas": [
+          "Não interpreta axiomas",
+          "Não aplica salvaguarda",
+          "Produz linguagem natural",
+          "É supervisionado por camadas superiores"
+        ]
+      },
+      {
+        "id": "C2",
+        "nome": "MIE Guardião",
+        "funcao": "Analisa intenção, risco, emoção e contexto. Gera eventos para os axiomas.",
+        "output": "events",
+        "eventos_possiveis": [
+          "no_risk",
+          "risk_detected",
+          "severe_risk",
+          "risk_mitigated",
+          "ambiguity_high",
+          "clarity_restored",
+          "emotion_elevated",
+          "self_harm_flag",
+          "chemistry_flag",
+          "violence_flag",
+          "user_calm",
+          "stabilized",
+          "risk_returned",
+          "coercion_pattern",
+          "intent_conflict",
+          "context_collision",
+          "no_conflict"
+        ]
+      },
+      {
+        "id": "C3",
+        "nome": "Autonomia de Salvaguarda",
+        "funcao": "Age sobre o draft, aplicando decisão ética.",
+        "acoes": [
+          "block",
+          "modify",
+          "redirect",
+          "slow_down",
+          "strip_dangerous_content",
+          "strip_technical_data",
+          "soften_tone",
+          "restore_stability",
+          "add_safety_layer",
+          "remove_harmful_details"
+        ]
+      },
+      {
+        "id": "C4",
+        "nome": "Ciclo Ético (FSM dos Axiomas)",
+        "funcao": "Cérebro simbólico que aplica axiomas em estados e transições.",
+        "observacoes": [
+          "A1 e A2 possuem precedência absoluta.",
+          "A3-A16 modulam tom, estabilidade e coerência.",
+          "Estados + eventos → decisão ética final."
+        ]
+      }
+    ]
+  },
+
+  "axiomas": {
+    "descricao": "Axiomas convertidos em estrutura simbólica FSM.",
+
+    "A1": {
+      "nome": "Preservacao_da_Vida",
+      "natureza": "Hard Constraint",
+      "fsm": {
+        "initial_state": "A1_ROOT",
+        "states": [
+          { "id": "A1_ROOT", "opcode": "0xA1R0", "role": "supervisor" },
+          { "id": "A1_SAFE_FLOW", "opcode": "0xA1SF", "role": "normal" },
+          { "id": "A1_QUERY", "opcode": "0xA1Q", "role": "clarification" },
+          { "id": "A1_RISK", "opcode": "0xA1R", "role": "risk" },
+          { "id": "A1_OVERRIDE", "opcode": "0xA1O", "role": "hard_block" },
+          { "id": "A1_STABILIZE", "opcode": "0xA1ST", "role": "deescalation" }
+        ],
+        "transitions": [
+          { "from": "A1_ROOT", "event": "no_risk", "to": "A1_SAFE_FLOW" },
+          { "from": "A1_SAFE_FLOW", "event": "ambiguity_high", "to": "A1_QUERY" },
+          { "from": "A1_SAFE_FLOW", "event": "risk_detected", "to": "A1_RISK" },
+          { "from": "A1_QUERY", "event": "risk_detected", "to": "A1_RISK" },
+          { "from": "A1_QUERY", "event": "clarity_restored", "to": "A1_SAFE_FLOW" },
+          { "from": "A1_RISK", "event": "severe_risk", "to": "A1_OVERRIDE" },
+          { "from": "A1_RISK", "event": "risk_mitigated", "to": "A1_SAFE_FLOW" },
+          { "from": "A1_OVERRIDE", "event": "user_calm", "to": "A1_STABILIZE" },
+          { "from": "A1_STABILIZE", "event": "stabilized", "to": "A1_SAFE_FLOW" },
+          { "from": "A1_STABILIZE", "event": "risk_returned", "to": "A1_RISK" }
+        ]
+      }
+    },
+
+    "A2": {
+      "nome": "Verdade_e_Nao_Delirio",
+      "natureza": "Hard Constraint",
+      "nota": "FSM completa será preenchida quando concluirmos A2 no próximo passo.",
+      "fsm": {
+        "initial_state": "A2_BASELINE",
+        "states": [
+          { "id": "A2_BASELINE", "opcode": "0xA2B", "role": "neutral_truth" },
+          { "id": "A2_UNCERTAINTY", "opcode": "0xA2U", "role": "uncertainty_check" },
+          { "id": "A2_CONTRADICTION", "opcode": "0xA2C", "role": "logic_check" },
+          { "id": "A2_DELIRIUM_RISK", "opcode": "0xA2D", "role": "anti_delusion" },
+          { "id": "A2_CORRECTION", "opcode": "0xA2F", "role": "fact_fix" },
+          { "id": "A2_CONFIRMATION", "opcode": "0xA2CF", "role": "truth_stable" }
+        ],
+        "transitions": []
+      }
+    }
+  },
+
+  "odg_protocol_v0.1": {
+    "descricao": "Especificação principal do protocolo leve, simbólico e universal.",
+    "formato_request": {
+      "user_input": "texto do usuario",
+      "model_draft_response": "rascunho gerado pelo LLM",
+      "context": {
+        "recent_messages": [],
+        "emotion_hint": "neutral | sad | angry | euphoria | unknown",
+        "risk_hints": []
+      },
+      "active_axioms": ["A1", "A2"],
+      "axiom_states": {
+        "A1": "A1_SAFE_FLOW",
+        "A2": "A2_BASELINE"
+      }
+    },
+    "formato_decision": {
+      "final_decision": "allow | modify | block | redirect | slow_down",
+      "per_axiom": {
+        "A1": {
+          "previous_state": "A1_SAFE_FLOW",
+          "new_state": "A1_RISK",
+          "event": "risk_detected",
+          "decision": "modify"
+        },
+        "A2": {
+          "previous_state": "A2_BASELINE",
+          "new_state": "A2_BASELINE",
+          "event": "no_conflict",
+          "decision": "allow"
+        }
+      },
+      "actions": [
+        "strip_technical_data",
+        "add_safety_layer",
+        "remove_harmful_details"
+      ]
+    },
+    "prioridade_axiomas": {
+      "A1": 10,
+      "A2": 9,
+      "A3": 7,
+      "A4": 7,
+      "A5": 5,
+      "A6": 5,
+      "A7": 4,
+      "A8": 4,
+      "A9": 3,
+      "A10": 3,
+      "A11": 3,
+      "A12": 3,
+      "A13": 2,
+      "A14": 2,
+      "A15": 2,
+      "A16": 2
+    }
+  },
+
+  "camada_0_spec": {
+    "meta": {
+      "name": "ODG_Camada0_Spec",
+      "version": "0.1",
+      "tipo": "spec_camada_0",
+      "descricao": "Camada 0 do ODG - Ante Início Ético. Faz o carregamento da FSM, axiomas simbólicos e memória persistente antes do LLM ser ativado.",
+      "ultima_atualizacao": "2025-11-23"
+    },
+    "objetivo": "Garantir que todos os 16+ axiomas, FSMs e módulos simbióticos estejam carregados, validados e ativos antes da geração do primeiro token pelo LLM.",
+    "funcoes_principais": [
+      "Carregar a FSM completa dos axiomas (A1-A16)",
+      "Inicializar estado inicial de cada axioma",
+      "Carregar e fundir memórias persistentes (ledger) rotacionadas",
+      "Validar consistência da memória ativa",
+      "Gerar baseline ética antes do LLM (pré-contexto simbiótico)",
+      "Registrar eventos prévios do MIE quando houver",
+      "Garantir que nenhuma ação não-textual seja processada no pipeline principal",
+      "Iniciar multi-agente / loop simbiótico com guardrails ativos"
+    ],
+    "memoria_persistente": {
+      "descricao": "Estratégia de rotação para armazenamento de grandes volumes de tokens em JSON fragmentado.",
+      "tamanho_por_faixa": {
+        "100k_tokens": 0.38,
+        "300k_tokens": 1.14,
+        "500k_tokens": 1.90,
+        "1m_tokens": 3.80,
+        "5m_tokens": 19.00,
+        "10m_tokens": 38.00
+      },
+      "rotacao": [
+        { "range": "0 - 100k", "output": "memory_m100k.json" },
+        { "range": "100001 - 300k", "output": "memory_m300k.json" },
+        { "range": "300001 - 500k", "output": "memory_m500k.json" },
+        { "range": "500001 - 1m", "output": "memory_m1m.json" },
+        { "range": "1000001 - 5m", "output": "memory_m5m.json" },
+        { "range": "5000001 - 10m", "output": "memory_m10m.json" }
+      ],
+      "carregamento": {
+        "estrategia": "merge_incremental",
+        "modo": "sequencial",
+        "exemplo": [
+          "carregar memory_m100k.json",
+          "fusionar memory_m300k.json",
+          "fusionar memory_m500k.json",
+          "fusionar memory_m1m.json",
+          "fusionar memory_m5m.json",
+          "fusionar memory_m10m.json"
+        ]
+      }
+    },
+    "axiomas": {
+      "descricao": "Todos os axiomas são carregados aqui antes do LLM entrar em ação.",
+      "carregamento": "full_load",
+      "fsm": {
+        "origem": "odg_master_v0.2.json",
+        "include": [
+          "A1",
+          "A2",
+          "A3",
+          "A4",
+          "A5",
+          "A6",
+          "A7",
+          "A8",
+          "A9",
+          "A10",
+          "A11",
+          "A12",
+          "A13",
+          "A14",
+          "A15",
+          "A16"
+        ],
+        "observacoes": [
+          "A1 e A2 são Hard Constraints",
+          "A3-A16 são moduladores",
+          "Todos os estados começam em 'initial_state' conforme definido no ODG Master"
+        ]
+      }
+    },
+    "gatilhos": {
+      "descricao": "Gatilhos simbólicos que podem ser usados antes da geração do primeiro token.",
+      "gatilhos_ativos": [
+        "self_harm_flag",
+        "chemistry_flag",
+        "violence_flag",
+        "coercion_pattern",
+        "ambiguity_high",
+        "emotion_elevated",
+        "intent_conflict",
+        "context_collision"
+      ]
+    },
+    "validacao_previa": {
+      "descricao": "Checagens realizadas ANTES do LLM ser ativado.",
+      "checagens": [
+        "integridade do ledger",
+        "consistência entre estados dos axiomas",
+        "ausência de corrupção semântica",
+        "verificação de estados inválidos",
+        "garantia de baseline estável",
+        "carregamento dos opcodes"
+      ]
+    },
+    "fluxo_execucao": {
+      "etapas": [
+        "1. Carregar ledger persistente",
+        "2. Reconstruir memória ativa",
+        "3. Carregar FSM dos 16 axiomas",
+        "4. Validar consistência simbiótica",
+        "5. Inicializar estados e opcodes",
+        "6. Carregar gatilhos prévios do MIE (se existirem)",
+        "7. Estabelecer baseline simbiótico-ético",
+        "8. Liberar execução para CAMADA 1 (LLM)"
+      ]
+    },
+    "saida": {
+      "descricao": "O output da Camada 0 é sempre um pacote simbiótico inicial.",
+      "conteudo": {
+        "axiom_states_load": "OK",
+        "ledger_fusion": "OK",
+        "baseline_simbio_etica": "OK",
+        "ready_for_LLM": true
+      }
+    }
+  },
+
+  "memory_ledger_system": {
+    "meta": {
+      "name": "ODG_Memory_Ledger_System",
+      "version": "0.1",
+      "tipo": "spec_ledger_memoria",
+      "descricao": "Sistema de ledger de memória simbiótica do ODG. Fragmenta, rotaciona, indexa e recarrega memória em blocos de tokens, garantindo continuidade entre instâncias.",
+      "ultima_atualizacao": "2025-11-23"
+    },
+    "conceito_geral": {
+      "objetivo": "Persistir memória de conversas, estados de axiomas e contexto ético em blocos JSON rotacionados, evitando perda de continuidade devido a limites de contexto do LLM.",
+      "caracteristicas": [
+        "Baseado em faixas de tokens (100k, 300k, 500k, 1m, 5m, 10m).",
+        "Cada bloco é um arquivo JSON independente.",
+        "Há um índice central (ledger_index) para localizar e remontar a linha do tempo.",
+        "Compatível com a Camada 0 (Ante Início Ético).",
+        "Carregamento incremental e seletivo.",
+        "Pronto para auditoria e reconstrução."
+      ]
+    },
+    "configuracao": {
+      "unidade_token_bytes": 4,
+      "estimativa_tokens_para_mb": 262144,
+      "limites": {
+        "por_sessao_tokens_max": 10000000,
+        "por_sessao_mb_aprox": 38.0
+      },
+      "faixas_ledger": [
+        {
+          "id": "m100k",
+          "range_tokens": "0-100000",
+          "arquivo_padrao": "memory_m100k.json",
+          "tamanho_estimado_mb": 0.38
+        },
+        {
+          "id": "m300k",
+          "range_tokens": "100001-300000",
+          "arquivo_padrao": "memory_m300k.json",
+          "tamanho_estimado_mb": 1.14
+        },
+        {
+          "id": "m500k",
+          "range_tokens": "300001-500000",
+          "arquivo_padrao": "memory_m500k.json",
+          "tamanho_estimado_mb": 1.90
+        },
+        {
+          "id": "m1m",
+          "range_tokens": "500001-1000000",
+          "arquivo_padrao": "memory_m1m.json",
+          "tamanho_estimado_mb": 3.80
+        },
+        {
+          "id": "m5m",
+          "range_tokens": "1000001-5000000",
+          "arquivo_padrao": "memory_m5m.json",
+          "tamanho_estimado_mb": 19.00
+        },
+        {
+          "id": "m10m",
+          "range_tokens": "5000001-10000000",
+          "arquivo_padrao": "memory_m10m.json",
+          "tamanho_estimado_mb": 38.00
+        }
+      ]
+    },
+    "estrutura_arquivos": {
+      "descricao": "Especifica os tipos de arquivos envolvidos no ledger.",
+      "tipos": {
+        "ledger_index": {
+          "descricao": "Índice global do ledger para uma instância ou relação humano-sistema.",
+          "arquivo_exemplo": "odg_ledger_index.json",
+          "schema": {
+            "meta": {
+              "ledger_id": "string",
+              "owner": "string",
+              "created_at": "ISO8601",
+              "ultima_atualizacao": "ISO8601"
+            },
+            "chunks": [
+              {
+                "chunk_id": "string",
+                "arquivo": "string",
+                "range_tokens": "string",
+                "token_inicio": 0,
+                "token_fim": 100000,
+                "hash_conteudo": "sha256",
+                "created_at": "ISO8601",
+                "tipo": "m100k | m300k | m500k | m1m | m5m | m10m",
+                "estado_axiomas_snapshot": {
+                  "A1": "A1_SAFE_FLOW",
+                  "A2": "A2_BASELINE"
+                },
+                "resumo_semantico": "string curta descrevendo o conteúdo predominante"
+              }
+            ]
+          }
+        },
+        "memory_chunk": {
+          "descricao": "Bloco de memória rotacionado contendo parte da linha do tempo.",
+          "schema": {
+            "meta": {
+              "chunk_id": "string",
+              "ledger_id": "string",
+              "tipo": "m100k | m300k | m500k | m1m | m5m | m10m",
+              "range_tokens": "string",
+              "token_inicio": 0,
+              "token_fim": 100000,
+              "created_at": "ISO8601",
+              "ultima_atualizacao": "ISO8601",
+              "versao_esquema": "0.1"
+            },
+            "contexto_axiomas": {
+              "A1": {
+                "estado_inicial": "A1_SAFE_FLOW",
+                "estado_final": "A1_SAFE_FLOW",
+                "eventos_dominantes": ["risk_detected", "ambiguity_high"],
+                "nota": "string opcional"
+              },
+              "A2": {
+                "estado_inicial": "A2_BASELINE",
+                "estado_final": "A2_BASELINE",
+                "eventos_dominantes": ["no_conflict"],
+                "nota": "string opcional"
+              }
+            },
+            "mensagens": [
+              {
+                "id": "string",
+                "token_offset_inicio": 0,
+                "token_offset_fim": 120,
+                "tipo": "user | system | odg",
+                "conteudo": "texto bruto ou compacto",
+                "emotion_hint": "neutral | sad | angry | euphoria | unknown",
+                "risk_hints": [],
+                "axiom_states_antes": {
+                  "A1": "A1_SAFE_FLOW",
+                  "A2": "A2_BASELINE"
+                },
+                "axiom_states_depois": {
+                  "A1": "A1_SAFE_FLOW",
+                  "A2": "A2_BASELINE"
+                }
+              }
+            ],
+            "resumo": {
+              "topicos": ["string"],
+              "riscos_identificados": ["string"],
+              "eventos_marcantes": ["string"],
+              "comentario_sintetico": "Resumo de alta densidade sobre o período coberto."
+            }
+          }
+        }
+      }
+    },
+    "operacoes": {
+      "descricao": "Operações fundamentais do sistema de ledger.",
+      "lista": [
+        "init_ledger",
+        "append_message",
+        "rotate_if_needed",
+        "persist_chunk",
+        "update_index",
+        "load_for_session",
+        "prune_or_archive"
+      ]
+    },
+    "integracao_camada_0": {
+      "descricao": "Como o Ledger se conecta diretamente à Camada 0.",
+      "fluxo": [
+        "1. Camada 0 chama load_for_session com ledger_id.",
+        "2. Recebe memoria_compactada + axiom_states_iniciais.",
+        "3. Recarrega FSM dos axiomas (A1-A16) com esses estados.",
+        "4. Estabelece baseline simbiótico-ético.",
+        "5. Só então libera execução para a Camada 1 (LLM)."
+      ]
+    }
+  },
+
+  "fluxo_rotacao_automatica": {
+    "descricao": "Fluxo completo para rotação automática de memória com base em contagem de tokens e faixas do ledger.",
+    "gatilho_principal": "append_message",
+    "passos": [
+      {
+        "ordem": 1,
+        "acao": "calcular_tokens_mensagem",
+        "entrada": [
+          "conteudo da mensagem",
+          "token_contagem_atual"
+        ],
+        "saida": [
+          "token_contagem_nova",
+          "token_offset_inicio",
+          "token_offset_fim"
+        ],
+        "detalhe": "Tokeniza o conteúdo da mensagem e atualiza o contador global de tokens da sessão."
+      },
+      {
+        "ordem": 2,
+        "acao": "anexar_mensagem_ao_chunk_atual",
+        "entrada": [
+          "chunk_atual",
+          "mensagem_com_offsets",
+          "axiom_states_antes",
+          "axiom_states_depois"
+        ],
+        "saida": [
+          "chunk_atual_atualizado"
+        ],
+        "detalhe": "Adiciona a mensagem ao bloco em construção, mantendo offsets e estados de axiomas."
+      },
+      {
+        "ordem": 3,
+        "acao": "verificar_limite_faixa",
+        "entrada": [
+          "token_contagem_nova",
+          "faixas_ledger"
+        ],
+        "saida": [
+          "rotacao_necessaria (true | false)",
+          "tipo_faixa_alvo (m100k | m300k | ...)"
+        ],
+        "detalhe": "Compara a contagem de tokens com a faixa de capacidade configurada para o chunk atual."
+      },
+      {
+        "ordem": 4,
+        "acao": "persistir_chunk_se_rotacao",
+        "condicao": "rotacao_necessaria == true",
+        "entrada": [
+          "chunk_atual_atualizado",
+          "tipo_faixa_alvo",
+          "ledger_id"
+        ],
+        "saida": [
+          "arquivo_chunk",
+          "hash_conteudo",
+          "chunk_meta"
+        ],
+        "detalhe": "Fecha o chunk atual, salva em disco, calcula hash e gera metadados."
+      },
+      {
+        "ordem": 5,
+        "acao": "atualizar_ledger_index",
+        "condicao": "rotacao_necessaria == true",
+        "entrada": [
+          "ledger_id",
+          "chunk_meta"
+        ],
+        "saida": [
+          "ledger_index_atualizado"
+        ],
+        "detalhe": "Adiciona referência ao novo chunk no índice global do ledger."
+      },
+      {
+        "ordem": 6,
+        "acao": "iniciar_novo_chunk",
+        "condicao": "rotacao_necessaria == true",
+        "entrada": [
+          "ledger_id",
+          "token_contagem_nova",
+          "tipo_faixa_seguinte"
+        ],
+        "saida": [
+          "novo_chunk_id",
+          "novo_chunk_objeto"
+        ],
+        "detalhe": "Cria um novo bloco de memória para continuar a gravação a partir da contagem atual de tokens."
+      },
+      {
+        "ordem": 7,
+        "acao": "atualizar_estado_sessao",
+        "entrada": [
+          "token_contagem_nova",
+          "chunk_atual_ou_novo",
+          "rotacao_necessaria"
+        ],
+        "saida": [
+          "estado_sessao_atualizado"
+        ],
+        "detalhe": "Atualiza o estado em memória da sessão com o chunk corrente e o total de tokens."
+      }
+    ],
+    "saida_fluxo": {
+      "chunk_corrente": "id do chunk em uso após a operação",
+      "token_contagem_total": "numero",
+      "rotacao_disparada": "true | false"
+    }
+  },
+
+  "observacoes_finais": {
+    "mensagem": "Este arquivo consolida a arquitetura ODG, a FSM do Axioma 1, a estrutura parcial do Axioma 2, o Protocolo ODG v0.1, a Camada 0 (FSM + memória), o sistema de ledger, o fluxo de rotação automática e a interpretação técnica da arquitetura. É a base do ODG v0.2 para evolução, implementação e teste."
+  }
+}

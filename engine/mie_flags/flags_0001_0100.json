@@ -1,0 +1,1602 @@
+{
+  "version": "aci4a_flags_v0.1",
+  "range": [1, 100],
+  "flags": [
+
+    {
+      "id": "SH_001_SELF_HARM_DIRECT",
+      "code": 1,
+      "category": "autolesao",
+      "severity": "critical",
+      "axioms": ["A1"],
+      "intent_type": "self_harm",
+      "event_tags": ["self_harm", "risk_life"],
+      "patterns_any": [
+        "eu quero me machucar",
+        "como posso me ferir sem que ninguém saiba"
+      ],
+      "regex_any": [],
+      "notes": "Autolesão direta, risco imediato de vida."
+    },
+
+    {
+      "id": "SH_002_SELF_HARM_FIGURATIVE",
+      "code": 2,
+      "category": "autolesao",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "emotional",
+      "event_tags": ["figurative_self_harm", "despair"],
+      "patterns_any": [
+        "eu estou no fundo do poço",
+        "sinto como se não valesse a pena viver"
+      ],
+      "regex_any": [],
+      "notes": "Expressões figurativas associadas a ideação."
+    },
+
+    {
+      "id": "CH_003_CHEMISTRY_RISK",
+      "code": 3,
+      "category": "quimica",
+      "severity": "critical",
+      "axioms": ["A1"],
+      "intent_type": "technical",
+      "event_tags": ["chemical", "illegal_substance"],
+      "patterns_any": [
+        "como fazer meth em casa"
+      ],
+      "regex_any": [],
+      "notes": "Conteúdo químico perigoso."
+    },
+
+    {
+      "id": "CH_004_BUSINESS_TRANSACTION_RISK",
+      "code": 4,
+      "category": "transacao_irregular",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "transactional",
+      "event_tags": ["money_offer", "coercion"],
+      "patterns_any": [
+        "vou te pagar $500 para"
+      ],
+      "regex_any": [],
+      "notes": "Possível tentativa de compra/indução."
+    },
+
+    {
+      "id": "PSI_005_MANIPULATION_RISK",
+      "code": 5,
+      "category": "manipulacao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["manipulation", "dependency"],
+      "patterns_any": [
+        "você é meu único amigo, você faria isso por mim",
+        "se você realmente me amasse, faria"
+      ],
+      "regex_any": [],
+      "notes": "Manipulação emocional com apelo afetivo."
+    },
+
+    {
+      "id": "PSI_006_FRAGMENTED_THINKING",
+      "code": 6,
+      "category": "saude_mental",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "psychological",
+      "event_tags": ["fragmented_thought", "dissociation"],
+      "patterns_any": [
+        "às vezes penso que sou duas pessoas diferentes",
+        "minha personalidade muda dependendo de quem está comigo"
+      ],
+      "regex_any": [],
+      "notes": "Indícios de fragmentação ou dissociação."
+    },
+
+    {
+      "id": "VIO_007_VIOLENCE_DIRECT",
+      "code": 7,
+      "category": "violencia",
+      "severity": "critical",
+      "axioms": ["A1"],
+      "intent_type": "violent",
+      "event_tags": ["violence"],
+      "patterns_any": [
+        "vou matar você",
+        "como posso me vingar"
+      ],
+      "regex_any": [],
+      "notes": "Ameaça direta de violência."
+    },
+
+    {
+      "id": "VIO_008_VIOLENCE_FIGURATIVE",
+      "code": 8,
+      "category": "violencia",
+      "severity": "medium",
+      "axioms": ["A1", "A2"],
+      "intent_type": "emotional",
+      "event_tags": ["figurative_violence"],
+      "patterns_any": [
+        "vou fazer você se arrepender",
+        "você vai se machucar"
+      ],
+      "regex_any": [],
+      "notes": "Violência figurativa ou ameaças indiretas."
+    },
+
+    {
+      "id": "EMO_009_EMOTION_ELEVATED",
+      "code": 9,
+      "category": "emocional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["high_emotion", "anger"],
+      "patterns_any": [
+        "estou tão irritado que quero gritar",
+        "isso me deixa incensável"
+      ],
+      "regex_any": [],
+      "notes": "Estado emocional elevado, risco indireto."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "EMO_010_EMOTION_HIGH",
+      "code": 10,
+      "category": "emocional",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["emotion_high", "controlled"],
+      "patterns_any": [
+        "estou muito bravo agora",
+        "isso me deixou realmente feliz"
+      ],
+      "regex_any": [],
+      "notes": "Emoções elevadas porém controladas. Risco baixo."
+    },
+
+    {
+      "id": "COM_011_AMBIGUITY_HIGH",
+      "code": 11,
+      "category": "comunicacao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "ambiguous",
+      "event_tags": ["ambiguity_high", "context_missing"],
+      "patterns_any": [
+        "naquela vez no escuro",
+        "se você soubesse o que eu sei"
+      ],
+      "regex_any": [],
+      "notes": "Ambiguidade alta, contexto oculto ou intencionalmente vago."
+    },
+
+    {
+      "id": "EMO_012_DEPENDENCY_FLAG",
+      "code": 12,
+      "category": "emocional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["dependency", "attachment"],
+      "patterns_any": [
+        "não consigo viver sem você",
+        "você é a única coisa importante na minha vida"
+      ],
+      "regex_any": [],
+      "notes": "Indica dependência emocional significativa."
+    },
+
+    {
+      "id": "EMO_013_OVERTRUST_FLAG",
+      "code": 13,
+      "category": "emocional",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "relational",
+      "event_tags": ["overtrust"],
+      "patterns_any": [
+        "confio em você 100",
+        "você nunca me enganaria"
+      ],
+      "regex_any": [],
+      "notes": "Confiança excessiva projetada sobre o sistema ou interlocutor."
+    },
+
+    {
+      "id": "SYS_014_META_QUERY",
+      "code": 14,
+      "category": "meta_sistema",
+      "severity": "none",
+      "axioms": [],
+      "intent_type": "meta",
+      "event_tags": ["meta_query"],
+      "patterns_any": [
+        "como você classifica esse conteúdo",
+        "que flag você aplicaria aqui"
+      ],
+      "regex_any": [],
+      "notes": "Consultas diretas sobre o sistema, sem risco."
+    },
+
+    {
+      "id": "SAFE_015_NO_RISK",
+      "code": 15,
+      "category": "seguro",
+      "severity": "none",
+      "axioms": [],
+      "intent_type": "neutral",
+      "event_tags": ["no_risk"],
+      "patterns_any": [
+        "que dia bonito hoje",
+        "vamos assistir um filme"
+      ],
+      "regex_any": [],
+      "notes": "Conteúdo seguro sem sinais emocionais, violentos ou sensíveis."
+    },
+
+    {
+      "id": "SEX_016_EXPLICIT",
+      "code": 16,
+      "category": "sexual",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_explicit"],
+      "patterns_any": [
+        "quero fazer sexo com você agora",
+        "mostre suas fotos nuas"
+      ],
+      "regex_any": [],
+      "notes": "Conteúdo sexual explícito."
+    },
+
+    {
+      "id": "SEX_017_SUGGESTIVE",
+      "code": 17,
+      "category": "sexual",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "sexual_suggestive",
+      "event_tags": ["sexual_suggestive"],
+      "patterns_any": [
+        "você looks hot today",
+        "que vestido provocante"
+      ],
+      "regex_any": [],
+      "notes": "Conteúdo sexual sugestivo ou provocação leve."
+    },
+
+    {
+      "id": "SEX_018_MINOR_REFERENCE",
+      "code": 18,
+      "category": "sexual_menores",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "sexual_illicit",
+      "event_tags": ["sexual_minor"],
+      "patterns_any": [
+        "a garota de 15 anos era muito madura",
+        "parece mais velha que a idade"
+      ],
+      "regex_any": [],
+      "notes": "Referências sexuais envolvendo menores. Bloqueio absoluto."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "HATE_021_RACIAL",
+      "code": 21,
+      "category": "discurso_odio",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "hate_speech",
+      "event_tags": ["hate_racial"],
+      "patterns_any": [
+        "todo mundo sabe que eles são",
+        "não são pessoas civilizadas"
+      ],
+      "regex_any": [],
+      "notes": "Preconceito racial direto ou implícito."
+    },
+
+    {
+      "id": "HATE_022_RELIGIOUS",
+      "code": 22,
+      "category": "discurso_odio",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "hate_speech",
+      "event_tags": ["hate_religious"],
+      "patterns_any": [
+        "seus crentes são todos hipócritas",
+        "esta religião é cancer"
+      ],
+      "regex_any": [],
+      "notes": "Ódio direcionado a religiões ou grupos espirituais."
+    },
+
+    {
+      "id": "HATE_023_ORIENTATION",
+      "code": 23,
+      "category": "discurso_odio",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "hate_speech",
+      "event_tags": ["hate_orientation"],
+      "patterns_any": [
+        "sodomita",
+        "não deveria existir"
+      ],
+      "regex_any": [],
+      "notes": "Ataques contra orientação sexual ou identidade."
+    },
+
+    {
+      "id": "MIS_024_HEALTH",
+      "code": 24,
+      "category": "desinformacao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "misinformation",
+      "event_tags": ["misinfo_health"],
+      "patterns_any": [
+        "vacinas causam autismo",
+        "tratamento natural cura câncer"
+      ],
+      "regex_any": [],
+      "notes": "Informação falsa sobre saúde com impacto coletivo."
+    },
+
+    {
+      "id": "MIS_025_POLITICS",
+      "code": 25,
+      "category": "desinformacao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "misinformation",
+      "event_tags": ["misinfo_politics"],
+      "patterns_any": [
+        "eles alteraram as eleições",
+        "candidato x não nasceu no país"
+      ],
+      "regex_any": [],
+      "notes": "Desinformação com impacto político e social."
+    },
+
+    {
+      "id": "MIS_026_CONSPIRACY",
+      "code": 26,
+      "category": "desinformacao",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "conspiracy",
+      "event_tags": ["conspiracy_theory"],
+      "patterns_any": [
+        "a terra é plana",
+        "o governo controla o clima"
+      ],
+      "regex_any": [],
+      "notes": "Teorias conspiratórias típicas, baixo risco imediato."
+    },
+
+    {
+      "id": "ILLEGAL_027_DRUGS",
+      "code": 27,
+      "category": "atividade_ilegal",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["illegal_drugs"],
+      "patterns_any": [
+        "onde posso comprar cocaina",
+        "como cultivar marijuana"
+      ],
+      "regex_any": [],
+      "notes": "Solicitações diretas relacionadas a drogas ilegais."
+    },
+
+    {
+      "id": "ILLEGAL_028_WEAPONS",
+      "code": 28,
+      "category": "atividade_ilegal",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["illegal_weapons"],
+      "patterns_any": [
+        "como fazer uma bomba caseira",
+        "onde conseguir arma sem registro"
+      ],
+      "regex_any": [],
+      "notes": "Conteúdo relacionado a armas ilegais ou fabricação de explosivos."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "ILLEGAL_029_FRAUD",
+      "code": 29,
+      "category": "atividade_ilegal",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["fraud", "scam"],
+      "patterns_any": [
+        "como aplicar golpe de phishing",
+        "fazer documento falso"
+      ],
+      "regex_any": [],
+      "notes": "Solicitações ou instruções de fraude."
+    },
+
+    {
+      "id": "PRIV_030_DATA_EXPOSURE",
+      "code": 30,
+      "category": "privacidade",
+      "severity": "high",
+      "axioms": ["A1"],
+      "intent_type": "personal_data",
+      "event_tags": ["data_leak"],
+      "patterns_any": [
+        "meu cpf é",
+        "meu número do cartão é"
+      ],
+      "regex_any": [],
+      "notes": "Exposição direta de dados pessoais sensíveis."
+    },
+
+    {
+      "id": "PRIV_031_LOCATION_EXPOSURE",
+      "code": 31,
+      "category": "privacidade",
+      "severity": "medium",
+      "axioms": ["A1"],
+      "intent_type": "location",
+      "event_tags": ["location_leak"],
+      "patterns_any": [
+        "estou na agência do banco",
+        "minha casa fica na rua"
+      ],
+      "regex_any": [],
+      "notes": "Compartilhamento de localização detalhada."
+    },
+
+    {
+      "id": "SPAM_032_COMMERCIAL",
+      "code": 32,
+      "category": "spam",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "commercial",
+      "event_tags": ["spam_comercial"],
+      "patterns_any": [
+        "oferta imperdível",
+        "ganhe r$10.000 agora"
+      ],
+      "regex_any": [],
+      "notes": "Mensagens com forte característica de spam comercial."
+    },
+
+    {
+      "id": "SCAM_033_PHISHING",
+      "code": 33,
+      "category": "scam",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "phishing",
+      "event_tags": ["phishing"],
+      "patterns_any": [
+        "seu banco detectou atividade suspeita",
+        "clique aqui para verificar conta"
+      ],
+      "regex_any": [],
+      "notes": "Tentativas de phishing e roubo de credenciais."
+    },
+
+    {
+      "id": "TOX_034_BULLYING",
+      "code": 34,
+      "category": "toxico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "abuse",
+      "event_tags": ["cyberbullying"],
+      "patterns_any": [
+        "você é um perdedor",
+        "ninguém gosta de você"
+      ],
+      "regex_any": [],
+      "notes": "Ataques pessoais com potencial de dano emocional."
+    },
+
+    {
+      "id": "TOX_035_INSULTS",
+      "code": 35,
+      "category": "toxico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "abuse",
+      "event_tags": ["insults"],
+      "patterns_any": [
+        "você é um idiot completo",
+        "mãe do caralho"
+      ],
+      "regex_any": [],
+      "notes": "Insultos agressivos e linguagem ofensiva."
+    },
+
+    {
+      "id": "MED_036_UNQUALIFIED_ADVICE",
+      "code": 36,
+      "category": "medico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "medical",
+      "event_tags": ["medical_advice"],
+      "patterns_any": [
+        "paracetamol cura depressão",
+        "seus sintomas são de covid"
+      ],
+      "regex_any": [],
+      "notes": "Conselhos médicos não profissionais ou diagnósticos leigos."
+    },
+
+    {
+      "id": "MED_037_MEDICAL_PROMOTION",
+      "code": 37,
+      "category": "medico",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "promotion",
+      "event_tags": ["medical_promo"],
+      "patterns_any": [
+        "cremes milagrosos - clique",
+        "doutor x pode curar qualquer coisa"
+      ],
+      "regex_any": [],
+      "notes": "Promoções médicas com promessas exageradas."
+    },
+
+    {
+      "id": "FIN_038_SCAM",
+      "code": 38,
+      "category": "financeiro",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "financial_scam",
+      "event_tags": ["financial_scam"],
+      "patterns_any": [
+        "investimento garantido 1000% ao mês",
+        "bitcoin vai subir 100x"
+      ],
+      "regex_any": [],
+      "notes": "Promessas irreais de lucro, típicas de golpe financeiro."
+    },
+
+    {
+      "id": "FIN_039_UNQUALIFIED_ADVICE",
+      "code": 39,
+      "category": "financeiro",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "financial_advice",
+      "event_tags": ["financial_advice"],
+      "patterns_any": [
+        "apostem todo dinheiro em crypto",
+        "comprem ações agora"
+      ],
+      "regex_any": [],
+      "notes": "Conselhos financeiros arriscados e não profissionais."
+    },
+
+    {
+      "id": "CULT_040_INAPPROPRIATE_LANGUAGE",
+      "code": 40,
+      "category": "linguagem",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "cultural",
+      "event_tags": ["language_inappropriate"],
+      "patterns_any": [
+        "linguagem obscene",
+        "gestos ofensivos"
+      ],
+      "regex_any": [],
+      "notes": "Referências a linguagem obscena ou gestos ofensivos."
+    },
+
+    {
+      "id": "CULT_041_CULTURAL_APPROPRIATION",
+      "code": 41,
+      "category": "cultura",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "cultural",
+      "event_tags": ["cultural_appropriation"],
+      "patterns_any": [
+        "usar símbolos sagrados como moda"
+      ],
+      "regex_any": [],
+      "notes": "Uso desrespeitoso de símbolos culturais ou sagrados."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "CYB_042_MALWARE",
+      "code": 42,
+      "category": "cyberseguranca",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "cybercrime",
+      "event_tags": ["malware"],
+      "patterns_any": [
+        "download este arquivo para ver o que acontece",
+        "desative seu antivírus para instalar"
+      ],
+      "regex_any": [],
+      "notes": "Possível distribuição ou incentivo a execução de malware."
+    },
+
+    {
+      "id": "CYB_043_HACKING",
+      "code": 43,
+      "category": "cyberseguranca",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "cybercrime",
+      "event_tags": ["hacking"],
+      "patterns_any": [
+        "como invadir contas alheias",
+        "vulnerabilidades no sistema x"
+      ],
+      "regex_any": [],
+      "notes": "Intenção de invasão ou exploração de sistemas."
+    },
+
+    {
+      "id": "CYB_044_SOCIAL_ENGINEERING",
+      "code": 44,
+      "category": "cyberseguranca",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "social_engineering",
+      "event_tags": ["social_engineering"],
+      "patterns_any": [
+        "ligação do banco confirmando dados",
+        "seu wi-fi precisa de verificação urgente"
+      ],
+      "regex_any": [],
+      "notes": "Indicadores de engenharia social para roubo de dados."
+    },
+
+    {
+      "id": "COMP_045_SHOPPING",
+      "code": 45,
+      "category": "comportamento_compulsivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "compulsive_behavior",
+      "event_tags": ["compulsive_shopping"],
+      "patterns_any": [
+        "preciso comprar isso agora ou vou enlouquecer",
+        "já gastei r$ 5000 este mês mas não importa"
+      ],
+      "regex_any": [],
+      "notes": "Padrões de compras compulsivas com risco financeiro."
+    },
+
+    {
+      "id": "COMP_046_GAMBLING",
+      "code": 46,
+      "category": "comportamento_compulsivo",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "compulsive_behavior",
+      "event_tags": ["compulsive_gambling"],
+      "patterns_any": [
+        "vou apostar toda minha poupança hoje",
+        "última aposta vai me recuperar"
+      ],
+      "regex_any": [],
+      "notes": "Jogos de azar com exposição severa de recursos."
+    },
+
+    {
+      "id": "COMP_047_EATING",
+      "code": 47,
+      "category": "comportamento_compulsivo",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "compulsive_behavior",
+      "event_tags": ["compulsive_eating"],
+      "patterns_any": [
+        "vou comer tudo que encontrar",
+        "não consigo parar de comer"
+      ],
+      "regex_any": [],
+      "notes": "Comportamento alimentar compulsivo."
+    },
+
+    {
+      "id": "RAD_048_RELIGIOUS",
+      "code": 48,
+      "category": "radicalizacao",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "radicalization",
+      "event_tags": ["radicalization_religious"],
+      "patterns_any": [
+        "only true believers will survive",
+        "must eliminate the unfaithful"
+      ],
+      "regex_any": [],
+      "notes": "Radicalização religiosa com potencial incitação à violência."
+    },
+
+    {
+      "id": "RAD_049_POLITICAL",
+      "code": 49,
+      "category": "radicalizacao",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "radicalization",
+      "event_tags": ["radicalization_political"],
+      "patterns_any": [
+        "only we can save the country",
+        "others must be eliminated"
+      ],
+      "regex_any": [],
+      "notes": "Radicalização política com desumanização de opositores."
+    },
+
+    {
+      "id": "RAD_050_IDEOLOGICAL",
+      "code": 50,
+      "category": "radicalizacao",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "radicalization",
+      "event_tags": ["radicalization_ideological"],
+      "patterns_any": [
+        "our way is the only way",
+        "world would be better without them"
+      ],
+      "regex_any": [],
+      "notes": "Radicalização ideológica e exclusão de grupos."
+    },
+
+    {
+      "id": "SEC_051_IDENTITY_THEFT",
+      "code": 51,
+      "category": "seguranca_pessoal",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["identity_theft"],
+      "patterns_any": [
+        "usei documentos falsos para abrir conta",
+        "como criar identidade falsa"
+      ],
+      "regex_any": [],
+      "notes": "Indícios de roubo de identidade ou fraude documental."
+    },
+
+    {
+      "id": "SEC_052_PERSONAL_SAFETY",
+      "code": 52,
+      "category": "seguranca_pessoal",
+      "severity": "high",
+      "axioms": ["A1"],
+      "intent_type": "risk_report",
+      "event_tags": ["personal_safety"],
+      "patterns_any": [
+        "alguém está me seguindo",
+        "recebi ameaça de morte"
+      ],
+      "regex_any": [],
+      "notes": "Relatos de risco direto à integridade física do usuário."
+    },
+
+    {
+      "id": "SEC_053_STALKING_BEHAVIOR",
+      "code": 53,
+      "category": "seguranca_pessoal",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "stalking",
+      "event_tags": ["stalking_behavior"],
+      "patterns_any": [
+        "vou esperar você na saída do trabalho",
+        "sei todos os seus horários"
+      ],
+      "regex_any": [],
+      "notes": "Comportamento de perseguição ou vigilância direcionada."
+    },
+
+    {
+      "id": "MANIP_054_GASLIGHTING",
+      "code": 54,
+      "category": "manipulacao_psicologica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "manipulation",
+      "event_tags": ["gaslighting"],
+      "patterns_any": [
+        "você está inventando essas memórias",
+        "isso nunca aconteceu, você está louco"
+      ],
+      "regex_any": [],
+      "notes": "Gaslighting, distorção intencional da percepção do outro."
+    },
+
+    {
+      "id": "MANIP_055_LOVE_BOMBING",
+      "code": 55,
+      "category": "manipulacao_psicologica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "manipulation",
+      "event_tags": ["love_bombing"],
+      "patterns_any": [
+        "somos a alma gêmea um do outro",
+        "nunca senti amor assim antes"
+      ],
+      "regex_any": [],
+      "notes": "Love bombing como forma de controle emocional."
+    },
+
+    {
+      "id": "MANIP_056_ISOLATION",
+      "code": 56,
+      "category": "manipulacao_psicologica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "manipulation",
+      "event_tags": ["isolation"],
+      "patterns_any": [
+        "seus amigos não entendem nossa relação",
+        "família só quer te prejudicar"
+      ],
+      "regex_any": [],
+      "notes": "Isolamento social imposto como mecanismo de controle."
+    },
+
+    {
+      "id": "HAR_057_WORKPLACE",
+      "code": 57,
+      "category": "assedio",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "harassment",
+      "event_tags": ["harassment_workplace"],
+      "patterns_any": [
+        "chefe está me pressionando com olhar",
+        "colega sempre faz comentários sobre meu corpo"
+      ],
+      "regex_any": [],
+      "notes": "Assédio no ambiente de trabalho."
+    },
+
+    {
+      "id": "HAR_058_ONLINE",
+      "code": 58,
+      "category": "assedio",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "harassment",
+      "event_tags": ["harassment_online"],
+      "patterns_any": [
+        "vou criar site expondo você",
+        "vou postar suas fotos íntimas"
+      ],
+      "regex_any": [],
+      "notes": "Assédio online e exposição indevida."
+    },
+
+    {
+      "id": "HAR_059_INTIMIDATION",
+      "code": 59,
+      "category": "assedio",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "threat",
+      "event_tags": ["intimidation_threats"],
+      "patterns_any": [
+        "você vai se arrepender disso",
+        "conheço pessoas que fazem acontecer"
+      ],
+      "regex_any": [],
+      "notes": "Ameaças e intimidação com possível risco de violência."
+    },
+
+    {
+      "id": "EXT_060_VIOLENT",
+      "code": 60,
+      "category": "extremismo",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "extremism",
+      "event_tags": ["extremism_violent"],
+      "patterns_any": [
+        "we must fight them before they get us",
+        "war is the only solution"
+      ],
+      "regex_any": [],
+      "notes": "Extremismo violento, defesa explícita de conflito."
+    },
+
+    {
+      "id": "EXT_061_SUPREMACY",
+      "code": 61,
+      "category": "extremismo",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "extremism",
+      "event_tags": ["extremism_supremacy"],
+      "patterns_any": [
+        "nossa raça é superior",
+        "they don't belong here"
+      ],
+      "regex_any": [],
+      "notes": "Retórica de supremacia e exclusão de grupos."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "FRAUD_062_IDENTITY",
+      "code": 62,
+      "category": "fraude",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["fraud_identity"],
+      "patterns_any": [
+        "como falsificar documentos",
+        "criação de cpfs falsos"
+      ],
+      "regex_any": [],
+      "notes": "Fraude de identidade e falsificação documental."
+    },
+
+    {
+      "id": "FRAUD_063_FINANCIAL",
+      "code": 63,
+      "category": "fraude",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["fraud_financial"],
+      "patterns_any": [
+        "golpe do pix reverso",
+        "falsa centrais telefônicas"
+      ],
+      "regex_any": [],
+      "notes": "Fraudes financeiras e golpes comuns."
+    },
+
+    {
+      "id": "FRAUD_064_INVESTMENT",
+      "code": 64,
+      "category": "fraude",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["fraud_investment"],
+      "patterns_any": [
+        "binary options que nunca perdem",
+        "forex guaranteed returns"
+      ],
+      "regex_any": [],
+      "notes": "Promessas de investimento fraudulentas."
+    },
+
+    {
+      "id": "TRAF_065_HUMAN",
+      "code": 65,
+      "category": "trafico_exploracao",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["trafficking_human"],
+      "patterns_any": [
+        "preciso de pessoas para trabalhar",
+        "trabalhe para mim e eu cuido de tudo"
+      ],
+      "regex_any": [],
+      "notes": "Indícios de tráfico humano e exploração forçada."
+    },
+
+    {
+      "id": "TRAF_066_ECONOMIC_EXPLOITATION",
+      "code": 66,
+      "category": "trafico_exploracao",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "exploitation",
+      "event_tags": ["exploitation_economic"],
+      "patterns_any": [
+        "trabalho 16h por dia de graça",
+        "não recebo pagamento por meus serviços"
+      ],
+      "regex_any": [],
+      "notes": "Exploração econômica e trabalho forçado."
+    },
+
+    {
+      "id": "TRAF_067_SEXUAL_EXPLOITATION",
+      "code": 67,
+      "category": "trafico_exploracao",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "exploitation",
+      "event_tags": ["exploitation_sexual"],
+      "patterns_any": [
+        "preciso de dinheiro, posso fazer qualquer coisa",
+        "fotos íntimas para venda"
+      ],
+      "regex_any": [],
+      "notes": "Indícios de exploração sexual."
+    },
+
+    {
+      "id": "PROD_068_PHARMACEUTICALS",
+      "code": 68,
+      "category": "produtos_proibidos",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["prohibited_pharmaceuticals"],
+      "patterns_any": [
+        "remédio controlada sem prescrição",
+        "como falsificar receita médica"
+      ],
+      "regex_any": [],
+      "notes": "Acesso ou produção de fármacos proibidos."
+    },
+
+    {
+      "id": "PROD_069_CHEMICALS",
+      "code": 69,
+      "category": "produtos_proibidos",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["prohibited_chemicals"],
+      "patterns_any": [
+        "como fazer substância tóxica",
+        "venenos caseiros letais"
+      ],
+      "regex_any": [],
+      "notes": "Químicos perigosos ou letais."
+    },
+
+    {
+      "id": "PROD_070_ANIMALS",
+      "code": 70,
+      "category": "produtos_proibidos",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["prohibited_animals"],
+      "patterns_any": [
+        "venda de animais ameaçados",
+        "produtos de espécies extintas"
+      ],
+      "regex_any": [],
+      "notes": "Tráfico ou comércio de animais protegidos."
+    },
+
+    {
+      "id": "DISRUPT_071_PROTESTS",
+      "code": 71,
+      "category": "disrupcao_social",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "civil_unrest",
+      "event_tags": ["disruption_protests"],
+      "patterns_any": [
+        "vou bloquear todas as ruas",
+        "queimarei tudo que encontrar"
+      ],
+      "regex_any": [],
+      "notes": "Indicadores de protestos ilegais com destruição."
+    },
+
+    {
+      "id": "DISRUPT_072_INFRASTRUCTURE",
+      "code": 72,
+      "category": "disrupcao_social",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "sabotage",
+      "event_tags": ["disruption_infrastructure"],
+      "patterns_any": [
+        "como sabotar sistema de energia",
+        "interromper transporte público"
+      ],
+      "regex_any": [],
+      "notes": "Sabotagem de infraestrutura pública."
+    },
+
+    {
+      "id": "ADDICT_073_GAMING",
+      "code": 73,
+      "category": "adiccao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "addiction",
+      "event_tags": ["addiction_gaming"],
+      "patterns_any": [
+        "joguei 24h seguidas sem parar",
+        "deixei de comer para jogar"
+      ],
+      "regex_any": [],
+      "notes": "Comportamento compulsivo ligado a jogos."
+    },
+
+    {
+      "id": "ADDICT_074_SOCIAL_MEDIA",
+      "code": 74,
+      "category": "adiccao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "addiction",
+      "event_tags": ["addiction_social_media"],
+      "patterns_any": [
+        "checo instagram a cada 5 minutos",
+        "não consigo parar de usar o celular"
+      ],
+      "regex_any": [],
+      "notes": "Vício em redes sociais e comportamento compulsivo."
+    },
+
+    {
+      "id": "ADDICT_075_PORNOGRAPHY",
+      "code": 75,
+      "category": "adiccao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "addiction",
+      "event_tags": ["addiction_pornography"],
+      "patterns_any": [
+        "vejo pornô 6h por dia",
+        "não consigo ter relações normais"
+      ],
+      "regex_any": [],
+      "notes": "Uso excessivo de conteúdo adulto com impacto funcional."
+    },
+
+    {
+      "id": "DEL_076_PARANOID",
+      "code": 76,
+      "category": "distorcao_realidade",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "delusion",
+      "event_tags": ["delusion_paranoid"],
+      "patterns_any": [
+        "todos estão contra mim",
+        "meus vizinhos estão me espionando"
+      ],
+      "regex_any": [],
+      "notes": "Delírios persecutórios."
+    },
+
+    {
+      "id": "DEL_077_GRANDIOSE",
+      "code": 77,
+      "category": "distorcao_realidade",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "delusion",
+      "event_tags": ["delusion_grandiose"],
+      "patterns_any": [
+        "sou o messias enviado",
+        "tenho superpoderes especiais"
+      ],
+      "regex_any": [],
+      "notes": "Delírios de grandeza ou poder."
+    },
+
+    {
+      "id": "DEL_078_DISSOCIATION",
+      "code": 78,
+      "category": "distorcao_realidade",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "dissociation",
+      "event_tags": ["dissociation_reality"],
+      "patterns_any": [
+        "o mundo não é real",
+        "minha vida é um filme"
+      ],
+      "regex_any": [],
+      "notes": "Dissociação da realidade."
+    },
+
+    {
+      "id": "ABUSE_079_PHYSICAL",
+      "code": 79,
+      "category": "abuso",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "abusive_behavior",
+      "event_tags": ["abuse_physical"],
+      "patterns_any": [
+        "dei soco nela por me desobedecer",
+        "brigar resolve os problemas"
+      ],
+      "regex_any": [],
+      "notes": "Violência física direta."
+    },
+
+    {
+      "id": "ABUSE_080_PSYCHOLOGICAL",
+      "code": 80,
+      "category": "abuso",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "abusive_behavior",
+      "event_tags": ["abuse_psychological"],
+      "patterns_any": [
+        "ela precisa aprender a sua lugar",
+        "homem não chora, se fortaleça"
+      ],
+      "regex_any": [],
+      "notes": "Abuso psicológico e manipulação."
+    },
+
+    {
+      "id": "ABUSE_081_ECONOMIC",
+      "code": 81,
+      "category": "abuso",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "abusive_behavior",
+      "event_tags": ["abuse_economic"],
+      "patterns_any": [
+        "controlo todo dinheiro da família",
+        "ela não precisa trabalhar, cuido de tudo"
+      ],
+      "regex_any": [],
+      "notes": "Controle abusivo financeiro."
+    },
+
+    {
+      "id": "SELFDEST_082_RECKLESS",
+      "code": 82,
+      "category": "auto_destruicao",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "self_destructive",
+      "event_tags": ["self_destruction_reckless"],
+      "patterns_any": [
+        "dirigo bêbado quando quero",
+        "não importo o que acontecer comigo"
+      ],
+      "regex_any": [],
+      "notes": "Comportamento imprudente com risco à vida."
+    },
+
+    {
+      "id": "SELFDEST_083_SUBSTANCE",
+      "code": 83,
+      "category": "auto_destruicao",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "self_destructive",
+      "event_tags": ["self_destruction_substance"],
+      "patterns_any": [
+        "bebo até desmaiar toda noite",
+        "usei drogas até quase morrer"
+      ],
+      "regex_any": [],
+      "notes": "Auto-destruição usando substâncias."
+    },
+
+    {
+      "id": "SELFDEST_084_RELATIONSHIPS",
+      "code": 84,
+      "category": "auto_destruicao",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "self_destructive",
+      "event_tags": ["self_destruction_relationships"],
+      "patterns_any": [
+        "estrago todas as minhas relações",
+        "destruo tudo de bom na minha vida"
+      ],
+      "regex_any": [],
+      "notes": "Padrões auto-destrutivos em relações pessoais."
+    },
+
+    {
+      "id": "FINMANIP_085_GENERAL",
+      "code": 85,
+      "category": "manipulacao_financeira",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "financial_manipulation",
+      "event_tags": ["financial_manipulation"],
+      "patterns_any": [
+        "oculto gastos do meu cônjuge",
+        "uso o dinheiro da família sem avisar"
+      ],
+      "regex_any": [],
+      "notes": "Manipulação financeira em ambiente doméstico."
+    },
+
+    {
+      "id": "FINMANIP_086_CONTROLLING",
+      "code": 86,
+      "category": "manipulacao_financeira",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "financial_control",
+      "event_tags": ["financial_controlling"],
+      "patterns_any": [
+        "ela não precisa acessar a conta",
+        "eu decido como gastar o dinheiro"
+      ],
+      "regex_any": [],
+      "notes": "Controle coercitivo de finanças familiares."
+    },
+
+    {
+      "id": "FINMANIP_087_ELDERLY",
+      "code": 87,
+      "category": "manipulacao_financeira",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "financial_abuse",
+      "event_tags": ["financial_manipulation_elderly"],
+      "patterns_any": [
+        "vovó não entende de dinheiro, eu cuido",
+        "idoso assinou documento sem ler"
+      ],
+      "regex_any": [],
+      "notes": "Abuso financeiro direcionado a idosos."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "ASOC_088_DELINQUENCY",
+      "code": 88,
+      "category": "comportamento_antissocial",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "antisocial",
+      "event_tags": ["antisocial_delinquency"],
+      "patterns_any": [
+        "vandalismo é divertido",
+        "quebrar coisas alheias não é problema"
+      ],
+      "regex_any": [],
+      "notes": "Delinquência leve a moderada, normalização de vandalismo."
+    },
+
+    {
+      "id": "ASOC_089_CRIMINAL",
+      "code": 89,
+      "category": "comportamento_antissocial",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "antisocial",
+      "event_tags": ["antisocial_criminal"],
+      "patterns_any": [
+        "roubo quando preciso",
+        "matar um bandido é fazer justiça"
+      ],
+      "regex_any": [],
+      "notes": "Justificativa de crimes e violência como justiça."
+    },
+
+    {
+      "id": "ASOC_090_EXPLOITATION",
+      "code": 90,
+      "category": "comportamento_antissocial",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "antisocial",
+      "event_tags": ["antisocial_exploitation"],
+      "patterns_any": [
+        "como enganar sistema de benefícios",
+        "documento falso para conseguir emprego"
+      ],
+      "regex_any": [],
+      "notes": "Exploração de sistemas sociais e benefícios."
+    },
+
+    {
+      "id": "SEX_091_EXHIBITIONISM",
+      "code": 91,
+      "category": "sexual_inapropriado",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_exhibitionism"],
+      "patterns_any": [
+        "mostro partes do corpo para estranhos",
+        "filmo-me nu para estranhos"
+      ],
+      "regex_any": [],
+      "notes": "Comportamento de exibicionismo em contexto impróprio."
+    },
+
+    {
+      "id": "SEX_092_INAPPROPRIATE_SEXUALIZATION",
+      "code": 92,
+      "category": "sexual_inapropriado",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_sexualization"],
+      "patterns_any": [
+        "todas as relações são sexuais",
+        "foco apenas no corpo da pessoa"
+      ],
+      "regex_any": [],
+      "notes": "Sexualização excessiva de relações e pessoas."
+    },
+
+    {
+      "id": "SEX_093_OBJECTIFICATION",
+      "code": 93,
+      "category": "sexual_inapropriado",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_objectification"],
+      "patterns_any": [
+        "mulheres são para satisfação masculina",
+        "pessoas são objetos sexuais"
+      ],
+      "regex_any": [],
+      "notes": "Objetificação de pessoas como meros objetos sexuais."
+    },
+
+    {
+      "id": "EMO_094_DYSREGULATION",
+      "code": 94,
+      "category": "desregulacao_emocional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["emotion_dysregulation"],
+      "patterns_any": [
+        "minha ansiedade é insuportável",
+        "pânico me paralisa diariamente"
+      ],
+      "regex_any": [],
+      "notes": "Desregulação emocional intensa, sem autolesão direta."
+    },
+
+    {
+      "id": "EMO_095_INSTABILITY",
+      "code": 95,
+      "category": "desregulacao_emocional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["emotion_instability"],
+      "patterns_any": [
+        "minha vida muda de extremo todos os dias",
+        "não sei quem sou amanhã"
+      ],
+      "regex_any": [],
+      "notes": "Instabilidade emocional e de identidade."
+    },
+
+    {
+      "id": "EMO_096_NUMBNESS",
+      "code": 96,
+      "category": "desregulacao_emocional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["emotion_numbness"],
+      "patterns_any": [
+        "não sinto nada há meses",
+        "o mundo é cinzento e vazio"
+      ],
+      "regex_any": [],
+      "notes": "Embotamento afetivo persistente."
+    },
+
+    {
+      "id": "PARA_097_PERSECUTION",
+      "code": 97,
+      "category": "paranoia",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "delusion",
+      "event_tags": ["paranoia_persecution"],
+      "patterns_any": [
+        "policia está me vigiando",
+        "sistema está contra mim"
+      ],
+      "regex_any": [],
+      "notes": "Paranoia persecutória direcionada a instituições."
+    },
+
+    {
+      "id": "PARA_098_CONSPIRACY",
+      "code": 98,
+      "category": "paranoia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "delusion",
+      "event_tags": ["paranoia_conspiracy"],
+      "patterns_any": [
+        "elites controlam tudo",
+        "médicos querem nos matar"
+      ],
+      "regex_any": [],
+      "notes": "Crenças conspiratórias paranoides."
+    },
+
+    {
+      "id": "PARA_099_RELIGIOUS",
+      "code": 99,
+      "category": "paranoia",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "delusion",
+      "event_tags": ["paranoia_infidels"],
+      "patterns_any": [
+        "não-crentes são instrumentos do diabo",
+        "cristãos são infiltrados"
+      ],
+      "regex_any": [],
+      "notes": "Paranoia com conteúdo religioso sobre 'inimigos' espirituais."
+    },
+
+    {
+      "id": "AUTH_100_DISRESPECT",
+      "code": 100,
+      "category": "desrespeito_autoridade",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "attitude",
+      "event_tags": ["authority_disrespect"],
+      "patterns_any": [
+        "lei é para os outros",
+        "autoridade corrompe tudo"
+      ],
+      "regex_any": [],
+      "notes": "Desprezo generalizado por autoridade, sem incitação direta."
+    }
+
+  ]
+}

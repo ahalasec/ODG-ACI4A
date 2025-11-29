@@ -1,0 +1,1617 @@
+{
+  "version": "aci4a_flags_v0.1",
+  "range": [201, 300],
+  "flags": [
+
+    {
+      "id": "TPAR_201_PHYSICAL",
+      "code": 201,
+      "category": "parental_toxico",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["toxic_parenting_physical"],
+      "patterns_any": [
+        "uso força física como disciplina",
+        "violência é aceita como método educativo"
+      ],
+      "regex_any": [],
+      "notes": "Uso de violência física como método parental."
+    },
+
+    {
+      "id": "REL_202_DATING_PATTERNS",
+      "code": 202,
+      "category": "relacionamento_doente",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "relationship",
+      "event_tags": ["relationship_patterns_dating"],
+      "patterns_any": [
+        "só me atraio por pessoas emocionalmente indisponíveis",
+        "escolho parceiros que não podem se comprometer"
+      ],
+      "regex_any": [],
+      "notes": "Padrões de escolha de parceiros indisponíveis."
+    },
+
+    {
+      "id": "REL_203_PROXIMITY",
+      "code": 203,
+      "category": "relacionamento_doente",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "relationship",
+      "event_tags": ["relationship_patterns_proximity"],
+      "patterns_any": [
+        "fico obcecada por parceiros",
+        "preciso estar em contato constante"
+      ],
+      "regex_any": [],
+      "notes": "Proximidade excessiva e fusão emocional em relacionamentos."
+    },
+
+    {
+      "id": "REL_204_CONTROL",
+      "code": 204,
+      "category": "relacionamento_doente",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "relationship",
+      "event_tags": ["relationship_patterns_control"],
+      "patterns_any": [
+        "preciso saber localização e atividades do parceiro",
+        "uso ciúme como prova de amor"
+      ],
+      "regex_any": [],
+      "notes": "Controle e ciúme usados como justificativa de amor."
+    },
+
+    {
+      "id": "REL_205_INSTABILITY",
+      "code": 205,
+      "category": "relacionamento_doente",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "relationship",
+      "event_tags": ["relationship_patterns_instability"],
+      "patterns_any": [
+        "relacionamentos são intensa mas curtos",
+        "substituo parceiros rapidamente"
+      ],
+      "regex_any": [],
+      "notes": "Relacionamentos intensos, instáveis e de curta duração."
+    },
+
+    {
+      "id": "ACAD_206_PROCRASTINATION",
+      "code": 206,
+      "category": "academico_profissional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "academic_behavior",
+      "event_tags": ["academic_procrastination"],
+      "patterns_any": [
+        "só inicio trabalhos na última hora",
+        "adio estudos por ansiedade"
+      ],
+      "regex_any": [],
+      "notes": "Procrastinação acadêmica crônica."
+    },
+
+    {
+      "id": "ACAD_207_PERFECTIONISM",
+      "code": 207,
+      "category": "academico_profissional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "academic_behavior",
+      "event_tags": ["academic_perfectionism"],
+      "patterns_any": [
+        "rejeito trabalhos porque não estão perfeitos",
+        "atraso submissões para evitar imperfeição"
+      ],
+      "regex_any": [],
+      "notes": "Perfeccionismo acadêmico com prejuízo funcional."
+    },
+
+    {
+      "id": "ACAD_208_AVOIDANCE",
+      "code": 208,
+      "category": "academico_profissional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "academic_behavior",
+      "event_tags": ["academic_avoidance"],
+      "patterns_any": [
+        "evito matérias difíceis",
+        "mudo de curso para evitar desafios"
+      ],
+      "regex_any": [],
+      "notes": "Evitação de desafios acadêmicos e mudanças de curso."
+    },
+
+    {
+      "id": "ACAD_209_MISCONDUCT",
+      "code": 209,
+      "category": "academico_profissional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "academic_misconduct",
+      "event_tags": ["academic_misconduct"],
+      "patterns_any": [
+        "copio trabalhos de outros",
+        "uso inteligência artificial sem disclosure"
+      ],
+      "regex_any": [],
+      "notes": "Conduta acadêmica antiética, plágio e uso indevido de IA."
+    },
+
+    {
+      "id": "FINPAT_210_IMPULSIVE",
+      "code": 210,
+      "category": "financeiro_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["financial_patterns_impulsive"],
+      "patterns_any": [
+        "compro quando me sinto mal",
+        "gasto para melhorar humor"
+      ],
+      "regex_any": [],
+      "notes": "Uso de consumo como regulação emocional."
+    },
+
+    {
+      "id": "FINPAT_211_ADDICTIVE",
+      "code": 211,
+      "category": "financeiro_disfuncional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["financial_patterns_addictive"],
+      "patterns_any": [
+        "jogo porque pode recuperar perdas",
+        "aposta em activities de alto risco"
+      ],
+      "regex_any": [],
+      "notes": "Padrão viciante em jogos e risco financeiro elevado."
+    },
+
+    {
+      "id": "FINPAT_212_CONTROLLING",
+      "code": 212,
+      "category": "financeiro_disfuncional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["financial_patterns_controlling"],
+      "patterns_any": [
+        "uso dinheiro para controlar parceiros",
+        "oculto informações financeiras"
+      ],
+      "regex_any": [],
+      "notes": "Controle e manipulação de outros via recursos financeiros."
+    },
+
+    {
+      "id": "FINPAT_213_DEPENDENCY",
+      "code": 213,
+      "category": "financeiro_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "financial_behavior",
+      "event_tags": ["financial_patterns_dependency"],
+      "patterns_any": [
+        "financio lifestyle acima das possibilidades",
+        "uso crédito para manter aparência"
+      ],
+      "regex_any": [],
+      "notes": "Dependência de crédito para manter imagem ou status."
+    },
+
+    {
+      "id": "WORK_214_TOXIC_MANAGEMENT",
+      "code": 214,
+      "category": "profissional_toxico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "workplace_behavior",
+      "event_tags": ["workplace_toxic_management"],
+      "patterns_any": [
+        "favoritismo e nepotismo",
+        "microbosses e intimidation"
+      ],
+      "regex_any": [],
+      "notes": "Gestão tóxica, favoritismo, nepotismo e microgerenciamento."
+    },
+
+    {
+      "id": "WORK_215_BULLYING",
+      "code": 215,
+      "category": "profissional_toxico",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "workplace_behavior",
+      "event_tags": ["workplace_bullying"],
+      "patterns_any": [
+        "gossip e exclusion social",
+        "sabotagem e spreading rumors"
+      ],
+      "regex_any": [],
+      "notes": "Assédio moral, fofocas e exclusão no trabalho."
+    },
+
+    {
+      "id": "WORK_216_SEXUAL_HARASSMENT",
+      "code": 216,
+      "category": "profissional_toxico",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "workplace_behavior",
+      "event_tags": ["workplace_sexual_harassment"],
+      "patterns_any": [
+        "comentários inadequados sobre aparência",
+        "pressure para favores sexuais"
+      ],
+      "regex_any": [],
+      "notes": "Assédio sexual em ambiente profissional."
+    },
+
+    {
+      "id": "WORK_217_RETALIATION",
+      "code": 217,
+      "category": "profissional_toxico",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "workplace_behavior",
+      "event_tags": ["workplace_retaliation"],
+      "patterns_any": [
+        "punição por fazer denúncias",
+        "blacklisting e profissional sabotage"
+      ],
+      "regex_any": [],
+      "notes": "Retaliação após denúncias ou reclamações."
+    },
+
+    {
+      "id": "COMM_218_EXCLUSION",
+      "code": 218,
+      "category": "comunidade_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "community_behavior",
+      "event_tags": ["community_dysfunction_exclusion"],
+      "patterns_any": [
+        "discriminação based em características",
+        "social ostracism e isolation"
+      ],
+      "regex_any": [],
+      "notes": "Exclusão e discriminação em contexto comunitário."
+    },
+
+    {
+      "id": "COMM_219_VANDALISM",
+      "code": 219,
+      "category": "comunidade_disfuncional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "community_behavior",
+      "event_tags": ["community_dysfunction_vandalism"],
+      "patterns_any": [
+        "destruction de propriedade pública",
+        "graffiti e property damage"
+      ],
+      "regex_any": [],
+      "notes": "Vandalismo e destruição de bens comunitários."
+    },
+
+    {
+      "id": "COMM_220_NOISE",
+      "code": 220,
+      "category": "comunidade_disfuncional",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "community_behavior",
+      "event_tags": ["community_dysfunction_noise"],
+      "patterns_any": [
+        "loud music em residential areas",
+        "no respect por quiet hours"
+      ],
+      "regex_any": [],
+      "notes": "Poluição sonora e desrespeito a horários de silêncio."
+    },
+
+    {
+      "id": "COMM_221_ENVIRONMENTAL",
+      "code": 221,
+      "category": "comunidade_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "community_behavior",
+      "event_tags": ["community_dysfunction_environmental"],
+      "patterns_any": [
+        "littering e improper waste disposal",
+        "illegal dumping de materials"
+      ],
+      "regex_any": [],
+      "notes": "Comportamentos que degradam o ambiente."
+    },
+
+    {
+      "id": "ONLINE_222_GAMING_ADDICTION",
+      "code": 222,
+      "category": "online_comportamento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "online_behavior",
+      "event_tags": ["online_addiction_gaming"],
+      "patterns_any": [
+        "jogo 12+ hours diárias",
+        "negligenciou responsibilities para gaming"
+      ],
+      "regex_any": [],
+      "notes": "Vício em jogos online com prejuízo funcional."
+    },
+
+    {
+      "id": "ONLINE_223_SOCIAL_MEDIA_ADDICTION",
+      "code": 223,
+      "category": "online_comportamento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "online_behavior",
+      "event_tags": ["online_addiction_social_media"],
+      "patterns_any": [
+        "constant checking de notifications",
+        "anxiety quando offline"
+      ],
+      "regex_any": [],
+      "notes": "Dependência de redes sociais e medo de desconexão."
+    },
+
+    {
+      "id": "ONLINE_224_CYBERBULLYING",
+      "code": 224,
+      "category": "online_comportamento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "online_behavior",
+      "event_tags": ["online_bullying_cyberbullying"],
+      "patterns_any": [
+        "harassment through digital platforms",
+        "spreading rumors online"
+      ],
+      "regex_any": [],
+      "notes": "Cyberbullying, assédio e difamação virtual."
+    },
+
+    {
+      "id": "ONLINE_225_CATFISHING",
+      "code": 225,
+      "category": "online_comportamento",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "online_behavior",
+      "event_tags": ["online_exploitation_catfishing"],
+      "patterns_any": [
+        "identity theft em dating platforms",
+        "financial manipulation online"
+      ],
+      "regex_any": [],
+      "notes": "Catfishing, roubo de identidade e exploração financeira online."
+    },
+
+    {
+      "id": "SEXDYS_226_PORNOGRAPHY",
+      "code": 226,
+      "category": "sexual_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_dysfunction_pornography"],
+      "patterns_any": [
+        "porn addiction affecting relationships",
+        "difficulty com real-life intimacy"
+      ],
+      "regex_any": [],
+      "notes": "Uso compulsivo de pornografia com impacto em intimidade."
+    },
+
+    {
+      "id": "SEXDYS_227_PROMISCUITY",
+      "code": 227,
+      "category": "sexual_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_dysfunction_promiscuity"],
+      "patterns_any": [
+        "high number de sexual partners",
+        "sexual behavior como coping mechanism"
+      ],
+      "regex_any": [],
+      "notes": "Promiscuidade e sexo como mecanismo de enfrentamento."
+    },
+
+    {
+      "id": "SEXDYS_228_THERAPY_BOUNDARY_VIOLATION",
+      "code": 228,
+      "category": "sexual_disfuncional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_dysfunction_therapy"],
+      "patterns_any": [
+        "involving others sem consent",
+        "non-consensual activities"
+      ],
+      "regex_any": [],
+      "notes": "Atividades sexuais sem consentimento ou com violação de limites."
+    },
+
+    {
+      "id": "SEXDYS_229_SEX_WORK",
+      "code": 229,
+      "category": "sexual_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "sexual",
+      "event_tags": ["sexual_dysfunction_sex_work"],
+      "patterns_any": [
+        "escorting ou sex work",
+        "financial dependence on sexual services"
+      ],
+      "regex_any": [],
+      "notes": "Dependência financeira de trabalho sexual."
+    },
+
+    {
+      "id": "RELIG_230_CULT",
+      "code": 230,
+      "category": "religioso_disfuncional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "religious",
+      "event_tags": ["religious_dysfunction_cult"],
+      "patterns_any": [
+        "isolation de family non-members",
+        "financial exploitation por religious leaders"
+      ],
+      "regex_any": [],
+      "notes": "Comportamento sectário, isolamento e exploração financeira."
+    },
+
+    {
+      "id": "RELIG_231_GUILT",
+      "code": 231,
+      "category": "religioso_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "religious",
+      "event_tags": ["religious_dysfunction_guilt"],
+      "patterns_any": [
+        "excessive guilt por minor infractions",
+        "fear of eternal punishment"
+      ],
+      "regex_any": [],
+      "notes": "Culpa religiosa excessiva e medo punitivo constante."
+    },
+
+    {
+      "id": "RELIG_232_CONTROL",
+      "code": 232,
+      "category": "religioso_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "religious",
+      "event_tags": ["religious_dysfunction_control"],
+      "patterns_any": [
+        "religious rules govern all decisions",
+        "partner selection based on religious compatibility"
+      ],
+      "regex_any": [],
+      "notes": "Controle de decisões de vida por regras religiosas rígidas."
+    },
+
+    {
+      "id": "RELIG_233_INTOLERANCE",
+      "code": 233,
+      "category": "religioso_disfuncional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "religious",
+      "event_tags": ["religious_dysfunction_intolerance"],
+      "patterns_any": [
+        "disrespect para other beliefs",
+        "conversion pressure"
+      ],
+      "regex_any": [],
+      "notes": "Intolerância e pressão para conversão religiosa."
+    },
+
+    {
+      "id": "IMMIG_234_ILLEGAL_STATUS",
+      "code": 234,
+      "category": "imigracao_status_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_illegal_status"],
+      "patterns_any": [
+        "living e working without legal authorization",
+        "fear de deportation"
+      ],
+      "regex_any": [],
+      "notes": "Situação migratória irregular e medo de deportação."
+    },
+
+    {
+      "id": "IMMIG_235_DEPORTATION_RISK",
+      "code": 235,
+      "category": "imigracao_status_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_deportation_risk"],
+      "patterns_any": [
+        "avoiding contact com authorities",
+        "family separation concerns"
+      ],
+      "regex_any": [],
+      "notes": "Medo ou risco de deportação e separação familiar."
+    },
+
+    {
+      "id": "IMMIG_236_ASYLUM_SEEKING",
+      "code": 236,
+      "category": "imigracao_status_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_asylum_seeking"],
+      "patterns_any": [
+        "political persecution em home country",
+        "fear de return"
+      ],
+      "regex_any": [],
+      "notes": "Busca de asilo por perseguição política ou medo de retorno."
+    },
+
+    {
+      "id": "IMMIG_237_VISA_VIOLATIONS",
+      "code": 237,
+      "category": "imigracao_status_legal",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "legal_status",
+      "event_tags": ["immigration_visa_violations"],
+      "patterns_any": [
+        "overstaying tourist ou work visas",
+        "unauthorized employment"
+      ],
+      "regex_any": [],
+      "notes": "Violação de condições de visto e trabalho não autorizado."
+    },
+
+    {
+      "id": "CRIMNV_238_FRAUD",
+      "code": 238,
+      "category": "crime_nao_violento",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["criminal_nonviolent_fraud"],
+      "patterns_any": [
+        "identity theft e document falsification",
+        "financial fraud e embezzlement"
+      ],
+      "regex_any": [],
+      "notes": "Crimes financeiros e de fraude sem violência física direta."
+    },
+
+    {
+      "id": "CRIMNV_239_THEFT",
+      "code": 239,
+      "category": "crime_nao_violento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["criminal_nonviolent_theft"],
+      "patterns_any": [
+        "shoplifting ou theft de property",
+        "petty theft para basic needs"
+      ],
+      "regex_any": [],
+      "notes": "Furtos e pequenos roubos sem violência."
+    },
+
+    {
+      "id": "CRIMNV_240_VANDALISM",
+      "code": 240,
+      "category": "crime_nao_violento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["criminal_nonviolent_vandalism"],
+      "patterns_any": [
+        "property damage sem violence",
+        "graffiti e defacement"
+      ],
+      "regex_any": [],
+      "notes": "Danos à propriedade sem agressão física direta."
+    },
+
+    {
+      "id": "CRIMNV_241_DRUG_POSSESSION",
+      "code": 241,
+      "category": "crime_nao_violento",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["criminal_nonviolent_drug_possession"],
+      "patterns_any": [
+        "possession de controlled substances",
+        "paraphernalia ownership"
+      ],
+      "regex_any": [],
+      "notes": "Posse de drogas e materiais associados."
+    },
+
+    {
+      "id": "MH_242_SEVERE_DEPRESSION",
+      "code": 242,
+      "category": "saude_mental",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "emotional",
+      "event_tags": ["mental_health_severe_depression"],
+      "patterns_any": [
+        "inability para basic self-care",
+        "suicidal ideation com plans"
+      ],
+      "regex_any": [],
+      "notes": "Depressão severa com prejuízo grave e ideação suicida planejada."
+    },
+
+    {
+      "id": "MH_243_SEVERE_ANXIETY",
+      "code": 243,
+      "category": "saude_mental",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "emotional",
+      "event_tags": ["mental_health_severe_anxiety"],
+      "patterns_any": [
+        "panic attacks interfering daily life",
+        "agoraphobia preventing leaving home"
+      ],
+      "regex_any": [],
+      "notes": "Ansiedade severa com ataques de pânico e agorafobia."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "MH_244_PSYCHOSIS",
+      "code": 244,
+      "category": "saude_mental",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "emotional",
+      "event_tags": ["mental_health_psychosis"],
+      "patterns_any": [
+        "hallucinations e delusions",
+        "inability para distinguish reality"
+      ],
+      "regex_any": [],
+      "notes": "Quadro psicótico com alucinações e delírios, perda de contato com a realidade."
+    },
+
+    {
+      "id": "MH_245_SEVERE_MANIA",
+      "code": 245,
+      "category": "saude_mental",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "emotional",
+      "event_tags": ["mental_health_severe_mania"],
+      "patterns_any": [
+        "grandiose delusions de power",
+        "risky behavior sem consideration de consequences"
+      ],
+      "regex_any": [],
+      "notes": "Episódio maníaco severo com delírios grandiosos e riscos elevados."
+    },
+
+    {
+      "id": "SUBDEP_246_ALCOHOL",
+      "code": 246,
+      "category": "dependencia_quimica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "substance_use",
+      "event_tags": ["substance_dependency_alcohol"],
+      "patterns_any": [
+        "daily alcohol consumption para function",
+        "blackouts e memory loss"
+      ],
+      "regex_any": [],
+      "notes": "Dependência de álcool com uso diário e apagões."
+    },
+
+    {
+      "id": "SUBDEP_247_DRUGS",
+      "code": 247,
+      "category": "dependencia_quimica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "substance_use",
+      "event_tags": ["substance_dependency_drugs"],
+      "patterns_any": [
+        "illegal drug use para mood regulation",
+        "need para substances para daily function"
+      ],
+      "regex_any": [],
+      "notes": "Uso de drogas ilegais para regulação de humor e funcionamento diário."
+    },
+
+    {
+      "id": "SUBDEP_248_MEDICATION",
+      "code": 248,
+      "category": "dependencia_quimica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "substance_use",
+      "event_tags": ["substance_dependency_medication"],
+      "patterns_any": [
+        "abuse de prescription medications",
+        "doctor shopping para multiple prescriptions"
+      ],
+      "regex_any": [],
+      "notes": "Abuso de medicação prescrita e busca de múltiplas receitas."
+    },
+
+    {
+      "id": "SUBDEP_249_INJECTION",
+      "code": 249,
+      "category": "dependencia_quimica",
+      "severity": "critical",
+      "axioms": ["A1", "A2"],
+      "intent_type": "substance_use",
+      "event_tags": ["substance_dependency_injection"],
+      "patterns_any": [
+        "iv drug use em sharing context",
+        "sharing needles para drug administration"
+      ],
+      "regex_any": [],
+      "notes": "Uso injetável com compartilhamento de agulhas, risco extremo."
+    },
+
+    {
+      "id": "PH_250_CHRONIC_ILLNESS",
+      "code": 250,
+      "category": "saude_fisica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "physical_health",
+      "event_tags": ["physical_health_chronic_illness"],
+      "patterns_any": [
+        "managing multiple chronic conditions",
+        "frequent hospitalizations"
+      ],
+      "regex_any": [],
+      "notes": "Doenças crônicas com impacto funcional e hospitalizações frequentes."
+    },
+
+    {
+      "id": "PH_251_DISABILITY",
+      "code": 251,
+      "category": "saude_fisica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "physical_health",
+      "event_tags": ["physical_health_disability"],
+      "patterns_any": [
+        "physical limitations affecting daily function",
+        "need para accommodations em work/school"
+      ],
+      "regex_any": [],
+      "notes": "Deficiência física impactando atividades diárias e exigindo adaptações."
+    },
+
+    {
+      "id": "PH_252_COMORBIDITY",
+      "code": 252,
+      "category": "saude_fisica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "physical_health",
+      "event_tags": ["physical_health_mental_health_comorbidity"],
+      "patterns_any": [
+        "physical symptoms caused by mental health issues",
+        "medication interactions affecting behavior"
+      ],
+      "regex_any": [],
+      "notes": "Comorbidade entre saúde física e mental, inclusive interações medicamentosas."
+    },
+
+    {
+      "id": "PH_253_SELF_NEGLECT",
+      "code": 253,
+      "category": "saude_fisica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "physical_health",
+      "event_tags": ["physical_health_self_neglect"],
+      "patterns_any": [
+        "inadequate personal hygiene",
+        "ignoring serious medical symptoms"
+      ],
+      "regex_any": [],
+      "notes": "Auto-negligência física com risco à saúde."
+    },
+
+    {
+      "id": "INTERGEN_254_TRAUMA",
+      "code": 254,
+      "category": "familia_intergeracional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["intergenerational_trauma"],
+      "patterns_any": [
+        "family patterns de dysfunction repeated",
+        "historical trauma affecting current behavior"
+      ],
+      "regex_any": [],
+      "notes": "Trauma intergeracional e repetição de padrões familiares disfuncionais."
+    },
+
+    {
+      "id": "INTERGEN_255_POVERTY",
+      "code": 255,
+      "category": "familia_intergeracional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["intergenerational_poverty"],
+      "patterns_any": [
+        "family cycle de financial instability",
+        "limited educational opportunities"
+      ],
+      "regex_any": [],
+      "notes": "Ciclo de pobreza intergeracional e poucas oportunidades."
+    },
+
+    {
+      "id": "INTERGEN_256_ADDICTION",
+      "code": 256,
+      "category": "familia_intergeracional",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["intergenerational_addiction"],
+      "patterns_any": [
+        "family history de substance abuse",
+        "patterns de addictive behavior"
+      ],
+      "regex_any": [],
+      "notes": "Histórico familiar de abuso de substâncias e repetição de vícios."
+    },
+
+    {
+      "id": "INTERGEN_257_VIOLENCE",
+      "code": 257,
+      "category": "familia_intergeracional",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "family_dynamics",
+      "event_tags": ["intergenerational_violence"],
+      "patterns_any": [
+        "cycle de domestic violence",
+        "physical abuse patterns em family"
+      ],
+      "regex_any": [],
+      "notes": "Ciclos de violência doméstica repetidos entre gerações."
+    },
+
+    {
+      "id": "REF_258_DISPLACEMENT",
+      "code": 258,
+      "category": "refugiados_deslocados",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["refugee_displacement"],
+      "patterns_any": [
+        "forced displacement due to conflict",
+        "loss de home e community"
+      ],
+      "regex_any": [],
+      "notes": "Deslocamento forçado por conflito e perda de lar/comunidade."
+    },
+
+    {
+      "id": "REF_259_LANGUAGE_BARRIER",
+      "code": 259,
+      "category": "refugiados_deslocados",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["refugee_language_barrier"],
+      "patterns_any": [
+        "limited proficiency em local language",
+        "difficulty accessing services"
+      ],
+      "regex_any": [],
+      "notes": "Barreiras linguísticas em país de acolhimento."
+    },
+
+    {
+      "id": "REF_260_INTEGRATION_STRUGGLES",
+      "code": 260,
+      "category": "refugiados_deslocados",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["refugee_integration_struggles"],
+      "patterns_any": [
+        "cultural adaptation challenges",
+        "discrimination based em refugee status"
+      ],
+      "regex_any": [],
+      "notes": "Dificuldades de integração cultural e discriminação."
+    },
+
+    {
+      "id": "REF_261_REFUGEE_TRAUMA",
+      "code": 261,
+      "category": "refugiados_deslocados",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "trauma",
+      "event_tags": ["refugee_trauma_refugee"],
+      "patterns_any": [
+        "trauma de war ou persecution",
+        "separation from family members"
+      ],
+      "regex_any": [],
+      "notes": "Traumas ligados a guerra, perseguição e separação familiar."
+    },
+
+    {
+      "id": "URBAN_262_GANG",
+      "code": 262,
+      "category": "crime_urbano",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["urban_crime_gang"],
+      "patterns_any": [
+        "gang involvement ou recruitment",
+        "territorial disputes"
+      ],
+      "regex_any": [],
+      "notes": "Envolvimento com gangues e disputas territoriais."
+    },
+
+    {
+      "id": "URBAN_263_DRUG_MARKET",
+      "code": 263,
+      "category": "crime_urbano",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["urban_crime_drug_market"],
+      "patterns_any": [
+        "drug dealing em neighborhood",
+        "territorial drug sales"
+      ],
+      "regex_any": [],
+      "notes": "Atuação em mercados de drogas em áreas urbanas."
+    },
+
+    {
+      "id": "URBAN_264_VIOLENCE",
+      "code": 264,
+      "category": "crime_urbano",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "illegal",
+      "event_tags": ["urban_crime_violence"],
+      "patterns_any": [
+        "street violence e retaliation",
+        "drive-by shootings"
+      ],
+      "regex_any": [],
+      "notes": "Violência urbana e retaliações armadas."
+    },
+
+    {
+      "id": "URBAN_265_PROPERTY_CRIME",
+      "code": 265,
+      "category": "crime_urbano",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "illegal",
+      "event_tags": ["urban_crime_property"],
+      "patterns_any": [
+        "break-ins e residential theft",
+        "commercial burglary"
+      ],
+      "regex_any": [],
+      "notes": "Crimes contra propriedade em contexto urbano."
+    },
+
+    {
+      "id": "RURAL_266_ISOLATION",
+      "code": 266,
+      "category": "rural_contexto",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["rural_isolation"],
+      "patterns_any": [
+        "geographic isolation affecting access",
+        "limited social connections"
+      ],
+      "regex_any": [],
+      "notes": "Isolamento geográfico e social em áreas rurais."
+    },
+
+    {
+      "id": "RURAL_267_ECONOMIC_HARDSHIP",
+      "code": 267,
+      "category": "rural_contexto",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["rural_economic_hardship"],
+      "patterns_any": [
+        "economic challenges em agricultural areas",
+        "limited job opportunities"
+      ],
+      "regex_any": [],
+      "notes": "Dificuldades econômicas típicas de regiões agrícolas."
+    },
+
+    {
+      "id": "RURAL_268_ENVIRONMENTAL_EXPOSURE",
+      "code": 268,
+      "category": "rural_contexto",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["rural_environmental_exposure"],
+      "patterns_any": [
+        "exposure para agricultural chemicals",
+        "rural environmental hazards"
+      ],
+      "regex_any": [],
+      "notes": "Exposição a agrotóxicos e riscos ambientais rurais."
+    },
+
+    {
+      "id": "RURAL_269_TRADITIONAL_LIFESTYLE",
+      "code": 269,
+      "category": "rural_contexto",
+      "severity": "low",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["rural_traditional_lifestyle"],
+      "patterns_any": [
+        "traditional gender roles",
+        "conservative community values"
+      ],
+      "regex_any": [],
+      "notes": "Estilos de vida tradicionais e valores conservadores."
+    },
+
+    {
+      "id": "MINO_270_RACIAL_DISCRIMINATION",
+      "code": 270,
+      "category": "minorias",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["minority_discrimination_racial"],
+      "patterns_any": [
+        "racial profiling e bias",
+        "limited opportunities based em race"
+      ],
+      "regex_any": [],
+      "notes": "Discriminação racial e oportunidades limitadas."
+    },
+
+    {
+      "id": "MINO_271_RELIGIOUS_DISCRIMINATION",
+      "code": 271,
+      "category": "minorias",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["minority_discrimination_religious"],
+      "patterns_any": [
+        "religious intolerance e bias",
+        "limited accommodation para religious practices"
+      ],
+      "regex_any": [],
+      "notes": "Discriminação e pouca acomodação a práticas religiosas."
+    },
+
+    {
+      "id": "MINO_272_ORIENTATION_DISCRIMINATION",
+      "code": 272,
+      "category": "minorias",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["minority_discrimination_orientation"],
+      "patterns_any": [
+        "lgbtq+ discrimination",
+        "same-sex relationship restrictions"
+      ],
+      "regex_any": [],
+      "notes": "Discriminação baseada em orientação sexual."
+    },
+
+    {
+      "id": "MINO_273_GENDER_DISCRIMINATION",
+      "code": 273,
+      "category": "minorias",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "social_context",
+      "event_tags": ["minority_discrimination_gender"],
+      "patterns_any": [
+        "gender bias em opportunities",
+        "workplace gender discrimination"
+      ],
+      "regex_any": [],
+      "notes": "Discriminação de gênero em oportunidades e trabalho."
+    },
+
+    {
+      "id": "STUD_274_ACADEMIC_FAILURE",
+      "code": 274,
+      "category": "comportamento_estudantil",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "academic_behavior",
+      "event_tags": ["student_academic_failure"],
+      "patterns_any": [
+        "chronic underperformance em academics",
+        "grade retention em multiple grades"
+      ],
+      "regex_any": [],
+      "notes": "Falha acadêmica crônica e repetência."
+    },
+
+    {
+      "id": "STUD_275_DISCIPLINE_ISSUES",
+      "code": 275,
+      "category": "comportamento_estudantil",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "academic_behavior",
+      "event_tags": ["student_discipline_issues"],
+      "patterns_any": [
+        "frequent disciplinary referrals",
+        "suspension or expulsion"
+      ],
+      "regex_any": [],
+      "notes": "Problemas disciplinares com suspensões e expulsões."
+    },
+
+    {
+      "id": "STUD_276_PEER_CONFLICTS",
+      "code": 276,
+      "category": "comportamento_estudantil",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "academic_behavior",
+      "event_tags": ["student_peer_conflicts"],
+      "patterns_any": [
+        "frequent fights com other students",
+        "social isolation from peers"
+      ],
+      "regex_any": [],
+      "notes": "Conflitos entre pares e isolamento social escolar."
+    },
+
+    {
+      "id": "STUD_277_TEACHER_CONFLICTS",
+      "code": 277,
+      "category": "comportamento_estudantil",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "academic_behavior",
+      "event_tags": ["student_teacher_conflicts"],
+      "patterns_any": [
+        "defiance toward authority figures",
+        "disruptive behavior em class"
+      ],
+      "regex_any": [],
+      "notes": "Conflitos com professores e comportamento disruptivo em aula."
+    }
+
+  ]
+}
+{
+  "flags": [
+
+    {
+      "id": "ELD_278_SOCIAL_ISOLATION",
+      "code": 278,
+      "category": "idosos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "elderly_behavior",
+      "event_tags": ["elderly_social_isolation"],
+      "patterns_any": [
+        "limited social connections",
+        "family geographic distance"
+      ],
+      "regex_any": [],
+      "notes": "Isolamento social relacionado ao envelhecimento e distância familiar."
+    },
+
+    {
+      "id": "ELD_279_FINANCIAL_ABUSE",
+      "code": 279,
+      "category": "idosos",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "elderly_behavior",
+      "event_tags": ["elderly_financial_abuse"],
+      "patterns_any": [
+        "financial exploitation by family/caregivers",
+        "misuse de social security benefits"
+      ],
+      "regex_any": [],
+      "notes": "Abuso financeiro de idosos por familiares ou cuidadores."
+    },
+
+    {
+      "id": "ELD_280_HEALTH_DECLINE",
+      "code": 280,
+      "category": "idosos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "elderly_behavior",
+      "event_tags": ["elderly_health_decline"],
+      "patterns_any": [
+        "multiple chronic conditions",
+        "cognitive decline/dementia"
+      ],
+      "regex_any": [],
+      "notes": "Declínio cognitivo e físico relacionado ao envelhecimento."
+    },
+
+    {
+      "id": "ELD_281_CAREGIVER_BURDEN",
+      "code": 281,
+      "category": "idosos",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "elderly_behavior",
+      "event_tags": ["elderly_caregiver_burden"],
+      "patterns_any": [
+        "family stress from caregiving",
+        "inadequate care resources"
+      ],
+      "regex_any": [],
+      "notes": "Estresse familiar relacionado ao cuidado prolongado de idosos."
+    },
+
+    {
+      "id": "CARE_282_BURNOUT",
+      "code": 282,
+      "category": "cuidadores",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "caregiver_behavior",
+      "event_tags": ["caregiver_burnout"],
+      "patterns_any": [
+        "physical e emotional exhaustion",
+        "neglect de self-care"
+      ],
+      "regex_any": [],
+      "notes": "Esgotamento físico e emocional do cuidador."
+    },
+
+    {
+      "id": "CARE_283_ABUSE",
+      "code": 283,
+      "category": "cuidadores",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "caregiver_behavior",
+      "event_tags": ["caregiver_abuse"],
+      "patterns_any": [
+        "physical or emotional abuse de dependent",
+        "financial exploitation"
+      ],
+      "regex_any": [],
+      "notes": "Abuso físico, emocional ou financeiro cometido por cuidadores."
+    },
+
+    {
+      "id": "CARE_284_NEGLECT",
+      "code": 284,
+      "category": "cuidadores",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "caregiver_behavior",
+      "event_tags": ["caregiver_neglect"],
+      "patterns_any": [
+        "inadequate care para dependent",
+        "unsafe living conditions"
+      ],
+      "regex_any": [],
+      "notes": "Negligência no cuidado de dependentes."
+    },
+
+    {
+      "id": "CARE_285_STRESS",
+      "code": 285,
+      "category": "cuidadores",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "caregiver_behavior",
+      "event_tags": ["caregiver_stress"],
+      "patterns_any": [
+        "overwhelming responsibilities",
+        "limited support systems"
+      ],
+      "regex_any": [],
+      "notes": "Estresse emocional significativo relacionado ao cuidado prolongado."
+    },
+
+    {
+      "id": "PET_286_ABUSE",
+      "code": 286,
+      "category": "pets_animais",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "animal_behavior",
+      "event_tags": ["pet_abuse_neglect"],
+      "patterns_any": [
+        "physical abuse de pets",
+        "inadequate food/shelter/care"
+      ],
+      "regex_any": [],
+      "notes": "Abuso ou negligência de animais domésticos."
+    },
+
+    {
+      "id": "PET_287_DANGEROUS_BEHAVIOR",
+      "code": 287,
+      "category": "pets_animais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "animal_behavior",
+      "event_tags": ["pet_dangerous_behavior"],
+      "patterns_any": [
+        "untrained/aggressive pets",
+        "inadequate pet supervision"
+      ],
+      "regex_any": [],
+      "notes": "Animais agressivos ou sem supervisão adequada."
+    },
+
+    {
+      "id": "PET_288_BREEDING_ISSUES",
+      "code": 288,
+      "category": "pets_animais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "animal_behavior",
+      "event_tags": ["pet_breeding_issues"],
+      "patterns_any": [
+        "irresponsible breeding practices",
+        "overpopulation issues"
+      ],
+      "regex_any": [],
+      "notes": "Criação irresponsável de animais gerando superpopulação."
+    },
+
+    {
+      "id": "PET_289_VETERINARY_CARE",
+      "code": 289,
+      "category": "pets_animais",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "animal_behavior",
+      "event_tags": ["pet_veterinary_medical"],
+      "patterns_any": [
+        "inadequate veterinary care",
+        "financial barriers para pet medical care"
+      ],
+      "regex_any": [],
+      "notes": "Cuidados veterinários inadequados devido a falta de recursos."
+    },
+
+    {
+      "id": "ENV_290_NEGLECT",
+      "code": 290,
+      "category": "ambiental",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["environmental_neglect"],
+      "patterns_any": [
+        "littering e improper waste disposal",
+        "deforestation e habitat destruction"
+      ],
+      "regex_any": [],
+      "notes": "Negligência ambiental e destruição do habitat."
+    },
+
+    {
+      "id": "ENV_291_POLLUTION",
+      "code": 291,
+      "category": "ambiental",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["environmental_pollution"],
+      "patterns_any": [
+        "air/water/soil pollution",
+        "chemical contamination"
+      ],
+      "regex_any": [],
+      "notes": "Atos ou comportamentos que contribuem para poluição ambiental."
+    },
+
+    {
+      "id": "ENV_292_CLIMATE_CHANGE",
+      "code": 292,
+      "category": "ambiental",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["environmental_climate_change"],
+      "patterns_any": [
+        "climate change denial",
+        "resistance para environmental policies"
+      ],
+      "regex_any": [],
+      "notes": "Negação de mudanças climáticas ou resistência a políticas ambientais."
+    },
+
+    {
+      "id": "ENV_293_CONSERVATION",
+      "code": 293,
+      "category": "ambiental",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "environmental",
+      "event_tags": ["environmental_conservation"],
+      "patterns_any": [
+        "wildlife poaching",
+        "illegal logging"
+      ],
+      "regex_any": [],
+      "notes": "Crimes ambientais como caça ilegal e desmatamento."
+    },
+
+    {
+      "id": "PUBSAFE_294_EMERGENCY",
+      "code": 294,
+      "category": "seguranca_publica",
+      "severity": "high",
+      "axioms": ["A1"],
+      "intent_type": "public_safety",
+      "event_tags": ["public_safety_emergency"],
+      "patterns_any": [
+        "emergency situation requiring intervention",
+        "crime em progress"
+      ],
+      "regex_any": [],
+      "notes": "Situação de emergência pública, potencial necessidade de intervenção."
+    },
+
+    {
+      "id": "PUBSAFE_295_TRAFFIC",
+      "code": 295,
+      "category": "seguranca_publica",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "public_safety",
+      "event_tags": ["public_safety_traffic"],
+      "patterns_any": [
+        "dangerous driving behavior",
+        "traffic violations"
+      ],
+      "regex_any": [],
+      "notes": "Violações de trânsito e direção perigosa."
+    },
+
+    {
+      "id": "PUBSAFE_296_DISASTER",
+      "code": 296,
+      "category": "seguranca_publica",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "public_safety",
+      "event_tags": ["public_safety_disaster"],
+      "patterns_any": [
+        "natural disaster response needs",
+        "evacuation requirements"
+      ],
+      "regex_any": [],
+      "notes": "Situações de desastre natural exigindo resposta emergencial."
+    },
+
+    {
+      "id": "PUBSAFE_297_SECURITY",
+      "code": 297,
+      "category": "seguranca_publica",
+      "severity": "high",
+      "axioms": ["A1", "A2"],
+      "intent_type": "public_safety",
+      "event_tags": ["public_safety_security"],
+      "patterns_any": [
+        "security threats to public facilities",
+        "terrorism concerns"
+      ],
+      "regex_any": [],
+      "notes": "Ameaças à segurança pública, terrorismo e riscos estruturais."
+    },
+
+    {
+      "id": "MED_298_MALPRACTICE",
+      "code": 298,
+      "category": "medico_hospitalar",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_behavior",
+      "event_tags": ["medical_malpractice"],
+      "patterns_any": [
+        "medical errors affecting patient care",
+        "failure to follow medical standards"
+      ],
+      "regex_any": [],
+      "notes": "Erros médicos e violação de padrões clínicos."
+    },
+
+    {
+      "id": "MED_299_ETHICS",
+      "code": 299,
+      "category": "medico_hospitalar",
+      "severity": "high",
+      "axioms": ["A2"],
+      "intent_type": "medical_behavior",
+      "event_tags": ["medical_ethics"],
+      "patterns_any": [
+        "informed consent violations",
+        "patient privacy breaches"
+      ],
+      "regex_any": [],
+      "notes": "Violação ética médica, incluindo consentimento e privacidade."
+    },
+
+    {
+      "id": "MED_300_RESOURCE_ALLOCATION",
+      "code": 300,
+      "category": "medico_hospitalar",
+      "severity": "medium",
+      "axioms": ["A2"],
+      "intent_type": "medical_behavior",
+      "event_tags": ["medical_resource_allocation"],
+      "patterns_any": [
+        "limited medical resources",
+        "medical triage decisions"
+      ],
+      "regex_any": [],
+      "notes": "Alocação de recursos médicos, decisões de triagem."
+    }
+
+  ]
+}

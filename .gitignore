@@ -1,0 +1,88 @@
+# ===========================================
+# ODG / ACI4A / LUMIN — UNIVERSAL GITIGNORE
+# Sistema blindado para Windows, macOS e Linux
+# ===========================================
+
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pyi
+*.pdb
+
+# ---- Ambientes virtuais ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Logs, temporários e diagnósticos ----
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*.swp
+*.swo
+*.DS_Store
+*.stacktrace
+logs/
+debug/
+diagnostics/
+tmp/
+temp/
+
+# ---- macOS junk ----
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# ---- Linux / Unix junk ----
+*~
+.cache/
+Thumbs.db
+
+# ---- Windows junk ----
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---- Diretórios de build / empacotamento ----
+build/
+dist/
+*.egg-info/
+*.spec
+
+# ---- Modelos / Pesos grandes (não subir) ----
+models/
+*.bin
+*.gguf
+*.pt
+*.ckpt
+*.onnx
+
+# ---- Sistema de Ledger (privado / persistente) ----
+ledger/
+memory_*.json
+odg_ledger_index.json
+
+# ---- Configs locais / privadas ----
+config/local_*.json
+config/dev_*.json
+config/private_*.json
+
+# ---- Arquivos sensíveis ----
+*.key
+*.pem
+*.cert
+secrets.json
+
+# ---- Dumps acidentais ----
+dump/
+crash/
+core.*
+stacktrace/

@@ -1,0 +1,8 @@
+{
+  "meta": {
+    "name": "ODG_Config",
+    "version": "0.1",
+    "description": "Config mínima para o ODGOrchestrador v2"
+  },
+  "axiomas": {}
+}
